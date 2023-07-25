@@ -1,39 +1,29 @@
-from PyPDF2 import PdfReader
+import string
 import re
 
-def getStartPosition(extracted_text):
-    start_position = -1
-    tasks_pattern = r'\bInternship\s+Performed\s+Tasks\b'
-    tasks_match = re.search(tasks_pattern, extracted_text, re.IGNORECASE | re.DOTALL)
+def extract_unscanned_text(file_path)-> string :
+   pass 
+   #TODO call from extract_unscanned
 
-    if tasks_match:
-        start_position = tasks_match.end()
-    
-    return start_position
+def extract_scanned_text(file_path)-> string:
+    pass
+    #TODO use OCR 
+def is_sccanned(file_path)-> bool:
+    pass
+    #TODO 
 
-def getEndPosition(extracted_text):
-    header_text ="Internship Evaluation"
-    end_position = -1
-    end_pattern = r'\bInternship\s+Evaluation\b'
-    end_match = re.search(end_pattern, extracted_text, re.IGNORECASE | re.DOTALL)
-    if end_match:
-        end_position = end_match.end() - len(header_text)
+def extract_single_text(file_path)-> string:
+    #function checks if the file is normal or scanned pdf  
+    #then calls the appropriate function
+    if is_sccanned(file_path):
+        return extract_scanned_text(file_path)
+    else:
+        return extract_unscanned_text(file_path)
+       
 
-    return end_position
+def extract_samples(folder_path) -> None:
+    pass
+    #TODO function loops over the folders then the retuned Text 
+    #should be saved in folder called "Dirty Samples"
+    #sample name can be something like "dirty_sample_15.txt"
 
-
-def getTextFromFile(path):
-    reader = PdfReader(path)
-    extracted_text = ""
-    for page in reader.pages:
-        extracted_text += page.extract_text()
-    
-    start_position = getStartPosition(extracted_text)
-    end_position = getEndPosition(extracted_text)
-    text_after_tasks = extracted_text[start_position:end_position]
-
-    return text_after_tasks
-
-pdf_file_path = "Ahmed Abdelazeem Omar 40-13742 - Ahmad Kholy.pdf"
-extracted_text = getTextFromFile(pdf_file_path)
-print(extracted_text)
