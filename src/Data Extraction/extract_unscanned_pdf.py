@@ -28,6 +28,29 @@ def extract_unscanned_text(file_path)-> string:
     for page in reader.pages:
         extracted_text += page.extract_text()
     return extracted_text
+# def is_bold_or_underLined(file_path, phrase)-> bool:
+#     pass
+
+def find_bold_or_underlined_string(pdf_file_path, search_string):
+    text = extract_text(pdf_file_path)
+
+    for char_info in pdfminer.layout.LAParams(char_margin=2).char_margin_iter(pdf_file_path):
+        text_line, char_bbox, _ = char_info
+        char_text = text_line.get_text()
+
+        if search_string in char_text:
+            font_state = text_line.dfont
+            is_bold = font_state and font_state[1] >= 700
+            is_underlined = text_line.underline
+
+            if is_bold or is_underlined:
+                start_index = text.find(search_string, char_bbox[0])
+                return start_index, is_bold, is_underlined
+
+    return None
+
+def count_occurance(file_path, phrase) -> int:
+    pass
 
 def get_text(file_path)->string:
     extracted_text = extract_unscanned_text(file_path)
