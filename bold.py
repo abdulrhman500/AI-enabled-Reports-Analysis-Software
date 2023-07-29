@@ -8,6 +8,7 @@ def is_bold(font_flags):
 
 def extract_bold_text_with_regex(pdf_file_path, regex_pattern):
     count = 0
+    count1=0
     count_list = []
     bold_text_with_regex = []
     doc = fitz.open(pdf_file_path)
