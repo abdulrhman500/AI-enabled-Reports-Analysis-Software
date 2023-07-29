@@ -1,6 +1,8 @@
-from PyPDF2 import PdfReader
 import re
+import string
+from PyPDF2 import PdfReader
 
+# The logic will be changed
 def getStartPosition(extracted_text):
     start_position = -1
     tasks_pattern = r'\bInternship\s+Performed\s+Tasks\b'
@@ -20,20 +22,16 @@ def getEndPosition(extracted_text):
         end_position = end_match.end() - len(header_text)
 
     return end_position
-
-
-def getTextFromFile(path):
-    reader = PdfReader(path)
+def extract_unscanned_text(file_path)-> string:
+    reader = PdfReader(file_path)
     extracted_text = ""
     for page in reader.pages:
         extracted_text += page.extract_text()
-    
+    return extracted_text
+
+def get_text(file_path)->string:
+    extracted_text = extract_unscanned_text(file_path)
     start_position = getStartPosition(extracted_text)
     end_position = getEndPosition(extracted_text)
-    text_after_tasks = extracted_text[start_position:end_position]
-
-    return text_after_tasks
-
-pdf_file_path = "Ahmed Abdelazeem Omar 40-13742 - Ahmad Kholy.pdf"
-extracted_text = getTextFromFile(pdf_file_path)
-print(extracted_text)
+    tasks_text = extracted_text[start_position:end_position]
+    return tasks_text
