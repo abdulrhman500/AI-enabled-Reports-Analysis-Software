@@ -1,7 +1,7 @@
 from PyPDF2 import PdfReader
 import re
 from src import constants
-import bold2
+import bold
 
 
 def find_positions(regex_pattern, text):
@@ -18,7 +18,7 @@ def getTextFromFile(path):
 
 
 def check(terminal_list, file_path, regex):
-    _, count_list, count = bold2.extract_bold_text_with_regex(file_path, regex)
+    _, count_list, count = bold.extract_bold_text_with_regex(file_path, regex)
     if len(count_list) == 1:
         return [terminal_list[count_list[0]]]
     else:
@@ -45,9 +45,19 @@ def apply_algo(temp_start, temp_end):
             e = start
     return s, e
 
+def get_nearest_start(starts_list,end):
+    starts_list = sorted(starts_list)
+    for i in range(len(start_list)-1,-1,-1):
+        if(start_list[i]<end)
+        return start_list[i]
 
-def choose_start_end():
-    extracted_text = getTextFromFile(pdf_file_path)
+def get_nearest_end(ends_list,start):
+    ends_list = sorted(ends_list)
+    for i in range(len(ends_list)):
+        if(ends_list[i]>start)
+        return ends_list[i]
+def choose_start_end(file_path):
+    extracted_text = getTextFromFile(file_path)
 
     regex_start = [
         r"Internship\s*performed\s*(?:task|activities)",
