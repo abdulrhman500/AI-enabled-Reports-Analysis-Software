@@ -13,6 +13,7 @@
 import pytesseract
 from PIL import Image
 from pdf2image import convert_from_path
+import re
 
 def pdf_to_text(pdf_path, start_page=1):
     # Convert PDF pages to images
@@ -29,13 +30,44 @@ def pdf_to_text(pdf_path, start_page=1):
 
     return text
 
-if __name__ == "__main__":
 
+def extract_section(text, section_title):
+    section_found = False
+    section_content = ""
+
+    # Split the OCR text into lines
+    lines = text.split('\n')
+
+    for line in lines:
+        # Check if the line contains the section title
+        if section_title.lower() in line.lower():
+            section_found = True
+
+            # Capture the text after the section title until the next section or end of the document
+            section_content += re.sub(rf'^.*{re.escape(section_title)}\s*:', '', line.strip()) + " "
+        elif section_found:
+            # Extract content until the next section or end of the document
+            if line.strip():
+                section_content += line.strip() + " "
+            else:
+                break
+
+    return section_content.strip()
+
+if __name__ == "__main__":
     ### Change these variables to point to your PDF file and the page number you want to start from
-    pdf_path = "path/to/pdf/file.pdf"
+    pdf_path = "C:/Users/maria/OneDrive/Desktop/Internship Project/scanned.pdf"
     start_page = 4  # Change this to the page number you want to start from
     extracted_text = pdf_to_text(pdf_path, start_page)
 
-    # Save the extracted text to a text file
-    with open("output_text.txt", "w", encoding="utf-8") as text_file:
-        text_file.write(extracted_text)
+    # Extract the specific section with the title "Internship Performed Tasks"
+    section_title = "Internship Performed Tasks"
+    section_content = extract_section(extracted_text, section_title)
+
+    print("Extracted Section Content:")
+    print(section_content)
+
+    # Save the extracted section to a text file
+    with open("output_section.txt", "w", encoding="utf-8") as section_file:
+        section_file.write(section_content)
+

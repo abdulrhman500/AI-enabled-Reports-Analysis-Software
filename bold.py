@@ -1,6 +1,21 @@
+#### Prerequisites:
+# pip install PyMuPDF
+# pip install pytesseract
+# pip install pdf2image
+
+# Install poppler:
+# 1. Download the latest version from: https://github.com/oschwartz10612/poppler-windows/releases 
+# 2. Extract the zip file to a folder
+# 3. Add the path to the /bin folder to the PATH environment variable
+# 4. Restart VS Code (or your IDE)
+
+
 import fitz
 import re
 import PyPDF2
+import pytesseract
+from PIL import Image
+from pdf2image import convert_from_path
 
 
 def is_bold(font_flags):
@@ -28,35 +43,114 @@ def extract_bold_text_with_regex(pdf_file_path, regex_pattern):
     doc.close()
     return bold_text_with_regex, count_list, count
 
+# Function to check if the PDF is scanned (contains images)
+def is_scanned_pdf(pdf_path, start_page, end_page=None, max_words_threshold=50):
+    try:
+        with fitz.open(pdf_path) as doc:
+            if end_page is None:
+                end_page = doc.page_count
 
+            for page_number in range(start_page, end_page):
+                page = doc.load_page(page_number)
+                text = page.get_text()
+
+                # Count the number of words in the page
+                num_words = len(text.split())
+
+                # If the number of words is below the threshold, consider it as a scanned page
+                if num_words <= max_words_threshold:
+                    return True
+
+            return False
+
+    except Exception as e:
+        print(f"Error checking if PDF is scanned: {e}")
+        return False
+
+def pdf_to_text(pdf_path, start_page=1):
+    # Convert PDF pages to images
+    images = convert_from_path(pdf_path)
+
+    text = ""
+    for page_num, image in enumerate(images, start=1):
+        if page_num < start_page:
+            continue
+
+        # Perform OCR on the image to extract text
+        extracted_text = pytesseract.image_to_string(image, lang='eng')
+        text += f"Page {page_num}:\n{extracted_text}\n"
+
+    return text
+
+# Function to extract a section from the OCR text
+def extract_section_ocr(text, section_title):
+    section_found = False
+    section_content = ""
+
+    # Split the OCR text into lines
+    lines = text.split('\n')
+
+    for line in lines:
+        # Check if the line contains the section title
+        if section_title.lower() in line.lower():
+            section_found = True
+
+            # Capture the text after the section title until the next section or end of the document
+            section_content += re.sub(rf'^.*{re.escape(section_title)}\s*:', '', line.strip()) + " "
+        elif section_found:
+            # Extract content until the next section or end of the document
+            if line.strip():
+                section_content += line.strip() + " "
+            else:
+                break
+
+    return section_content.strip()
+
+
+
+# Main Function
 if __name__ == "__main__":
-    pdf_file_path = "C:/Users/DELL/Desktop/AI Intern/Rawan Ashraf 43-2692 - Rawan Ashraf(1).pdf"
-    regex_pattern = "" 
-    bold_text_list_with_string, count_list, count = extract_bold_text_with_regex(pdf_file_path, regex_pattern)
-    print(count)
-    print(count_list)
+    pdf_file_path = "path/to/pdf.pdf"
 
-    boldd = None
-    bold2 = None
-    flag = False
-    for bold_text in bold_text_list_with_string:
-        print(f"Bold Text: {str(bold_text).strip()}")
-    
-    for bold_text in bold_text_list_with_string:
+    # Check if the PDF is scanned
+    start_page = 4 # Change this to the page number you want to start from
 
-        if flag and bold2 is None:
-            bold2 = str(bold_text).strip()
-            break
+    if is_scanned_pdf(pdf_file_path, start_page, end_page=None):
+        print("The PDF is scanned")
+        # Extract section from the OCR text
+        ocr_text = pdf_to_text(pdf_file_path, start_page)
+        section_title = "Internship Performed Tasks"
+        section_content = extract_section_ocr(ocr_text, section_title)
+        print(f"{section_title}:\n{section_content}")
 
-        if not flag:
-         bold_words = str(bold_text).strip().split()
-        if any(word.lower().startswith("task") for word in bold_words):
-            boldd = str(bold_text).strip()
-            flag = True
+    else:
+        print("The PDF is not scanned")
+        regex_pattern = "" 
+        bold_text_list_with_string, count_list, count = extract_bold_text_with_regex(pdf_file_path, regex_pattern)
+        print(count)
+        print(count_list)
+
+        boldd = None
+        bold2 = None
+        flag = False
+        for bold_text in bold_text_list_with_string:
+            print(f"Bold Text: {str(bold_text).strip()}")
+        
+        for bold_text in bold_text_list_with_string:
+
+            if flag and bold2 is None:
+                bold2 = str(bold_text).strip()
+                break
+
+            if not flag:
+                bold_words = str(bold_text).strip().split()
+            if any(word.lower().startswith("task") for word in bold_words):
+                boldd = str(bold_text).strip()
+                flag = True
 
 
-    print("Bold Text containing 'Tasks':", boldd)
-    print("Next Bold Text:", bold2)
+        print("Bold Text containing 'Tasks':", boldd)
+        print("Next Bold Text:", bold2)
 
 
         # print(str(bold_text).strip().split())
@@ -78,10 +172,11 @@ def extract_text_from_headline(pdf_path, boldd):
         else:
             return None
 
-pdf_path = "C:/Users/DELL/Desktop/AI Intern/Rawan Ashraf 43-2692 - Rawan Ashraf(1).pdf"
-
-extracted_text = extract_text_from_headline(pdf_path, boldd)
+extracted_text = extract_text_from_headline(pdf_file_path, boldd)
 if extracted_text:
     print(extracted_text)
 else:
     print("Headline not found in the PDF.")
+
+
+
