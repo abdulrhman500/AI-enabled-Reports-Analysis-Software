@@ -1,12 +1,14 @@
 from PyPDF2 import PdfReader
 import re
+import fitz
+
 start = -1
 # 'Internship\s[a-z]*[\s]*Tasks[:]*[\s]*[\(\sNot\sless\sthan\s100\s[a-z]*\)]*[\s]*[\n](?!Internship)|Internship\sactivities'
 
 def getStartPosition(extracted_text):
     start_position = -1
     tasks_pattern_1 = 'Internship[\s]*[a-z]*[\s]*Tasks'
-    tasks_pattern_2 = 'Internship[\s]*activities'
+    tasks_pattern_2 = 'Internship[\s]*[^\n]*activities'
     tasks_match_1 = re.finditer(
         tasks_pattern_1, extracted_text, re.IGNORECASE | re.DOTALL)
     tasks_match_2 = re.finditer(
@@ -110,6 +112,28 @@ def getEndPosition(extracted_text):
 
     return end_position
 
+def is_bold(font_flags):
+    return bool(font_flags & (1 << 4))
+
+def extract_bold_text(pdf_file_path, regex_pattern):
+    bold_text = []
+    bold_obj = []
+    doc = fitz.open(pdf_file_path)
+    for page_number in range(doc.page_count):
+        page = doc.load_page(page_number)
+        blocks = page.get_text("dict", flags=11)["blocks"]
+        for block in blocks:
+            for line in block["lines"]:
+                for span in line["spans"]:
+                    matches = re.finditer(regex_pattern, span["text"], re.IGNORECASE)
+                    for m in matches:
+                        # print(m)
+                        if is_bold(span["flags"]):
+                            bold_text.append(span["text"])
+                            bold_obj.append(m)
+
+    doc.close()
+    return bold_text, bold_obj
 
 def getTextFromFile(path):
     reader = PdfReader(path)
@@ -125,5 +149,7 @@ def getTextFromFile(path):
 
 
 pdf_file_path = '(A) Malik Sohile Ismail 43-12688 - Malik Ismail.pdf'
-extracted_text = getTextFromFile(pdf_file_path)
+# extracted_text = getTextFromFile(pdf_file_path)
+extracted_text, bold_obj = extract_bold_text(pdf_file_path,'internship[\s]*activities')
 print(extracted_text)
+print(bold_obj)
