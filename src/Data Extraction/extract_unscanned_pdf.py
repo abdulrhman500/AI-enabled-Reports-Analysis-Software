@@ -2,7 +2,7 @@ import re
 import string
 from PyPDF2 import PdfReader
 
-# The logic will be changed
+
 def getStartPosition(extracted_text):
     start_position = -1
     tasks_pattern = r'\bInternship\s+Performed\s+Tasks\b'
