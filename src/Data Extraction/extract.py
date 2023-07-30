@@ -15,9 +15,9 @@ def is_sccanned(file_path)-> bool:
 def extract_single_text(file_path)-> string:
     #function checks if the file is normal or scanned pdf  
     #then calls the appropriate function
-    if is_sccanned(file_path):
-        return extract_scanned_text(file_path)
-    else:
+    # if is_sccanned(file_path):
+    #     return extract_scanned_text(file_path)
+    # else:
         return extract_unscanned_text(file_path)
        
 
