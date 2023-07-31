@@ -1,0 +1,10 @@
+Tasks:
+    The main task is to develop an end-to-end neural network model for 3D planar reconstruction from single 
+RGB image in Pytorch. It was divided into three sub tasks / branches  (planar instance segmentation, Depth 
+prediction, Plane parameters estimation (normal, offset)). We started with segmentation and appended to it 
+depth and plane parameters. We conducted many difficult experiments for each task to get the highest accuracy 
+with the help of  a very great powerful cluster with huge GPUs and CPUs. This clusters saved a lot of time in 
+the experiments. For each sub task we had time to research to find the best approach and then followed by the 
+implementation. At the end of the internship We took some time to achieve best fusion between the three 
+branches.
+Internship 

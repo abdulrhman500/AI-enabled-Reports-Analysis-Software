@@ -1,0 +1,23 @@
+Tasks: 
+In this internship period I have managed to develop a new website for the company accompanied with a 
+small team . We have developed the new website from scratch without any help from inside the company 
+as the company does not have a web development department.
+Performed Tasks:
+A New Website For The Company:
+-A new Back End for the new website using the software of visual studio code , node.js and some 
+other libraries. 
+-A new Front End for the new website using the software of visual studio code. 
+-Managed a new design for the new website using the software of AdobeXD
+5
+Student Career & Alumni Development Office.
+scad@guc.edu.eg
+| German University in Cairo
+New Cairo Cit y - Main
+Entrance Al T agamoa Al Khames; Egypt
+High Level Languages Used: 
+-Java Script (node.js) 
+-HTML 
+-CSS
+-React Front End 
+- MongoDB
+Internship 
