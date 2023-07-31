@@ -35,7 +35,7 @@ def save_text_to_file(folder_name, file_name, text):
 def extract_samples(folder_path) -> None:
     files_paths = get_pdfs_paths_in_folder(folder_path)
     for file_path in files_paths:
-        # print(file_path,"*************")
+        print(file_path,"*************")
         text =  extract_single_text(file_path)
         file_name = file_path[:-3]
         file_name += "txt"
