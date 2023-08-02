@@ -1,0 +1,14 @@
+activities and performed tasked  
+At the start  of the internship, I have been assigned to some tasks in the project 
+Offersandonly(Online Store) where I have understood the scenarios for Online store creation and 
+design where we use various front -end and back -end tools and technologies like (HTML, CSS,  
+JAVASCRIPT) to do the implementation, handling all the scenarios in the application is mainly 
+what I learned from my work in that part of the internship.  
+And after that I was assigned an Online Exam application task which was really interesting as 
+there w ere supposed to be an application that had different rules like (student, teacher, admin, 
+etc.) with different permissions and access.  
+In that project I had a couple of tasks, the first one was adding more features to the application in 
+the analysis phase,  and the second one which was completing the ERD (Entity Relationship 
+Diagram) diagram for the Data Base relations.  
+ 
+4. Internship 

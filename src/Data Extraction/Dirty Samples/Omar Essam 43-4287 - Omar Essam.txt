@@ -1,0 +1,11 @@
+Tasks:  In the start of the internship there was a period of supervised 
+training on the technologies we used , like the concept of MERN stack JavaS cript and mo ngoDp  and for the 
+front end we  trained on bootstrap and react -js, we also trained on working in a professional work 
+environment . After the training phase me and my colleagues started to implement an E-commerce project 
+we worked on two  milestones first we started by making the backend I worked on the schemas  we used 
+mongoDb as our data base because it ’s fast and easy to use , and I also worked on a part  of the 
+authentication  and authoriz ation and the security  of the s erver, after that was the second milestone the 
+frontend , we started  by designing  the web pages on F igma, after which we started implementing  in which 
+I also worked with the authentication (sign in/login) and the user p age and I then worked on the API of 
+the components I built and other components  like the cart .  
+Internship 

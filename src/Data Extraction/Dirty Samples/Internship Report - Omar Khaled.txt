@@ -1,0 +1,19 @@
+Activities:  
+• The first month was a monitoring task of the company’s database. The company used 
+oracle database and by the help of the company’s specialists I was able to learn new SQ L 
+queries and publish reports using results of the required tasks from the acquired values 
+from the database.  
+• My tasks during this month were  to monitor the databases load and traffic and provide 
+constant feedback to supervisors. Moreover,  my supervisors gave me another task of 
+trying to code SQL queries in order to obtain results required for reporting and then my 
+supervisors would correct my mistakes if any.  
+• My task during the second month was to work  alongside a team of interns  for some 
+adjustments to the company’s website  in which is still under development and yet to be 
+launched. We worked under the supervisi on of a professional web developer who 
+instructed us in multiple fields including nodeJS and other engines. A step by step 
+sequence to work together in developing a well -constructed website by the end of the 
+internship period.  
+• First month software was main ly Visual studio  • Second Month was VsCode which was used as IDE for the website code Frontend and 
+backend.  
+ 
+Internship 

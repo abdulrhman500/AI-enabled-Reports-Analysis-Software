@@ -1,0 +1,17 @@
+Tasks:  
+             In this internship period, I was lucky to have been given the op portunity to train with an exceptional 
+team of IT members and data analysts. This has helped me grasp how companies technically handle and analyze 
+their data; which was tightly related to what I have learned in my Data Engineering course on campus.  
+I often  used to train from the IT department's office in the company, or else meetings were held online.  
+I was first introduced to how they collected data of previous, active, upcoming orders. This helps provide them 
+insights into what products are selling most a nd in which part of the country, which other products/meals are 
+barely selling relative to others, etc.  
+The point of sale (POS) system which is a reliable system for restaurants used to help us during our data 
+collecting phase.  
+I was introduced to POS whic h was used to present to us metrices like how often an extra product was 
+requested, most popular orders/dishes, and the average billing per customer.  
+I used to carry out some of the data visualization techniques I have learned in the DE course for both the  
+companys tier A customers(hotels) besides the most selling products using both line and pie charts.  
+This had been carried out to help us with quality control and customer segmentation for the company.  
+ 
+Internship 
