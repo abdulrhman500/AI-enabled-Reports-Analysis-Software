@@ -4,7 +4,7 @@ import PyPDF2
 import pytesseract
 from PIL import Image
 from pdf2image import convert_from_path
-
+import constants
 def pdf_to_text(pdf_path, start_page=1):
     # Convert PDF pages to images
     images = convert_from_path(pdf_path)
@@ -45,6 +45,6 @@ def extract_section_ocr(text, section_title):
 
 def get_text(pdf_file_path,start_page=4):
     ocr_text = pdf_to_text(pdf_file_path, start_page)
-    section_title = "Internship Performed Tasks"
+    section_title = constants.TASKS_SECTION_HEADLINE
     section_content = extract_section_ocr(ocr_text, section_title)
     # print(f"{section_title}:\n{section_content}")

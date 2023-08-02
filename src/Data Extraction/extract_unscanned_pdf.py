@@ -2,7 +2,7 @@ import re
 import string
 import fitz
 import PyPDF2
-
+import constants
 
 def is_bold(font_flags):
     return bool(font_flags & (1 << 4))
@@ -11,23 +11,23 @@ def is_bold(font_flags):
 def find_positions(regex_pattern, text):
     positions = []
     for match in re.finditer(regex_pattern, text, re.IGNORECASE):
-        print("MATCH####", match.group())
+        # print("MATCH####", match.group())
         positions.append(match.start())
     return positions
 
 
 def check(terminal_list, file_path, regex):
     bolds, count_list, count = extract_bold_text_with_regex(file_path, regex)
-    print(bolds, "---------------")
+    # print(bolds, "---------------")
     if len(count_list) == 1:
-        print("Terminal list", terminal_list)
-        print("count list", count_list)
-        print("RET", [terminal_list[count_list[0]-1]])
+        # print("Terminal list", terminal_list)
+        # print("count list", count_list)
+        # print("RET", [terminal_list[count_list[0]-1]])
         if(count_list[0]-1<len(terminal_list) and count_list[0]-1>=0 ):
             return [terminal_list[count_list[0]-1]]
     else:
-        print("Terminal list", terminal_list)
-        print("count list", count_list)
+        # print("Terminal list", terminal_list)
+        # print("count list", count_list)
         if (len(count_list) < 1):
             return []
         ret = []
@@ -35,7 +35,7 @@ def check(terminal_list, file_path, regex):
             if(idx - 1 < len(terminal_list)):
                 ret.append(terminal_list[idx-1])
         # ret = [terminal_list[idx - 1] for idx in count_list]
-        print("RET2", ret)
+        # print("RET2", ret)
         return ret
 
 
@@ -55,11 +55,11 @@ def extract_bold_text_with_regex(pdf_file_path, regex_pattern):
                         match = re.findall(regex_pattern, span["text"], re.IGNORECASE)
                         # print("MATCH LEN",len(match))
                         count += len(match)
-                        print("Count",count)
-                        print(span["text"])
+                        # print("Count",count)
+                        # print(span["text"])
                         if is_bold(span["flags"]):
                             count_list.append(count)
-                            print("count list", count_list)
+                            # print("count list", count_list)
                             bold_text_with_regex.append(span["text"])
 
 
@@ -78,23 +78,23 @@ def extract_text_from_PDF(pdf_path):
 
 
 def get_start_end(pdf_file_path):
-    regex_pattern_start1 = "task"
-    regex_pattern_start2 = "activities"
-    regex_pattern_end = "evaluation"
+    regex_pattern_start1 = constants.REGEX_PATTERN_START1
+    regex_pattern_start2 = constants.REGEX_PATTERN_START2
+    regex_pattern_end = constants.REGEX_PATTERN_END
 
     text = extract_text_from_PDF(pdf_file_path)
     pos_start1 = find_positions(regex_pattern_start1, text)
     pos_start2 = find_positions(regex_pattern_start2, text)
     pos_end = find_positions(regex_pattern_end, text)
-    print("pos_start1", pos_start1)
-    print("pos_start2", pos_start2)
-    print("pos_end ", pos_end)
+    # print("pos_start1", pos_start1)
+    # print("pos_start2", pos_start2)
+    # print("pos_end ", pos_end)
     start1 = check(pos_start1, pdf_file_path, regex_pattern_start1)
     start2 = check(pos_start2, pdf_file_path, regex_pattern_start2)
     end = check(pos_end, pdf_file_path, regex_pattern_end)
-    print("start1", start1)
-    print("start2 ", start2)
-    print("end ", end)
+    # print("start1", start1)
+    # print("start2 ", start2)
+    # print("end ", end)
 
     if (len(start2) > 0):
         s = start2[len(start2)-1]
@@ -106,8 +106,8 @@ def get_start_end(pdf_file_path):
         e = end[len(end)-1]
     else:
         e = -1
-    print(s)
-    print(e)
+    # print(s)
+    # print(e)
     return s,e
 
 
@@ -132,6 +132,5 @@ def get_text(file_path)->string:
     return tasks_text
 
 if __name__ == "__main__":
-    pdf_file_path = "C:\\Users\\hoda2\\Documents\\NLP Internship\\Dirty Files\\correct template\\TASKS PERFORMED (A) Maryam Khaled, 43-7239 - Maryam Amin.pdf"
-    print("\nTASKS:\n\n"+get_text(pdf_file_path))
+    print("\nTASKS:\n\n"+get_text(constants.TEST_PDF_FILE_PATH))
 
