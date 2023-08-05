@@ -1,0 +1,11 @@
+Tasks:   
+The first few days of the internship period I had to go through a training process of learning the new 
+technologies that I have not had background to. The very first task I had to do was to update the database in 
+order to add the parents' users to the website using Typescript that I had to learn before starting the task. One of 
+main task I had to do was to update some frontend pages of the websites. As well as, updating the backend in 
+order to limit the number of logins for each student to limit multiple students using the same account to prevent 
+students from attending a session they did not pay for. We implemented that using a QR code for each student 
+that he can scan only using his mobile phone after logging in, as each student has only one login chance from 
+his mobile phone.  
+ 
+Internship 
