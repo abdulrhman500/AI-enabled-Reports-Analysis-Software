@@ -1,3 +1,4 @@
+import fitz
 import string
 import re
 import extract_unscanned_pdf
