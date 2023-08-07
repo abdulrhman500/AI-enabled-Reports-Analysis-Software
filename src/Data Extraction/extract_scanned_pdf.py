@@ -5,7 +5,7 @@ import pytesseract
 from PIL import Image
 from pdf2image import convert_from_path
 
-def extract_section(pdf_path):
+def get_text(pdf_path):
     images = convert_from_path(pdf_path)
     # Specify the page number to start from
     start_page = 4  # Change this to the desired start page number
@@ -72,14 +72,7 @@ def extract_section(pdf_path):
             if "Internship Performed Tasks:" in target_section_content:
                 target_section_content = target_section_content.split("Internship Performed Tasks:")[1]
     
+    if not target_section_content:
+        raise Exception("No content found !!")
+
     return target_section_content
-
-# if __name__ == "__main__":
-#     ### Change these variables to point to your PDF file and the page number you want to start from
-#     pdf_path = "C:/Users/maria/OneDrive/Desktop/Internship Project/Dirty Reports/Dirty Files/OCR/working/(A) OmarHanyMohamed43_5802 - Omar Hany.pdf"
-    
-#     extracted_text = extract_section(pdf_path)
-
-#     # Save the extracted section to a text file
-#     with open("output_section.txt", "w", encoding="utf-8") as section_file:
-#         section_file.write(extracted_text)
