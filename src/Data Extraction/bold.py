@@ -1,6 +1,6 @@
 import fitz
 import re
-from src import constants
+import constants
 
 def is_bold(font_flags):
     return bool(font_flags & (1 << 4))
@@ -18,7 +18,7 @@ def extract_bold_text_with_regex(pdf_file_path, regex_pattern):
         for block in blocks:
             for line in block["lines"]:
                 for span in line["spans"]:
-                    if re.search(regex_pattern, span["text"]):
+                    if re.search(regex_pattern, span["text"],re.IGNORECASE):
                         count += 1
                         if is_bold(span["flags"]):
                             count_list.append(count)

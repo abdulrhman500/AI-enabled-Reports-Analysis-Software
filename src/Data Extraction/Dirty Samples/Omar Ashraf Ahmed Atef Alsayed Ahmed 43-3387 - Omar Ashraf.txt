@@ -1,0 +1,21 @@
+Tasks:  - 
+ The tasks I were assigned to do during my internship at Apex Media Services 
+included collecting, analyzing, and storing data to use in reports that recommend 
+improvement to existing systems or processes. I also helped with setting u p new 
+computers, develop and preserve local networks and software for employees to 
+optimize overall system performance. I provided some support to the IT staff by processing paperwork, answering phone calls, and responding to user requests. Moreover, I ins talled and maintained different types of operating systems on the new 
+computers. My tasks also included coordinating with other departments through 
+online meetings to suggest solutions for handling any discovered bugs in the system and ensure that any prob lems that may occur in the infrastructure are avoided. A core 
+part of my job was to maintain server stability and optimizing them to maintain the ease of application access. Furthermore, I assisted with the server security by 
+monitoring them, scanning for vulnerabilities and viruses, removing any infected 
+servers, and replacing them with new functioning ones. I needed to be well informed of system failures in order to provide the appropriate technical support for any 
+hardware and software issues.  
+Tools Used: -  
+ During my time at Apex Media Services, I got the opportunity to discover and 
+learn multiple new tools that provide the core for the IT industry. For example, I used 
+Zabbix for monitoring the servers since it always shows the server status and send s an 
+email alert if any error occurred. ConfigServer Security & Firewall (CSF) / Login 
+Failure Daemon (LFD) were also used for firewall management and blocking any unauthorized or suspicious IP addresses as well Maldet which was used to detect any 
+suspicio us files and move them to a specific junk folder.  Moreover, I used Rsync 
+protocol for backing up the data and Ansible for configuring and deploying the servers.  
+Internship 
