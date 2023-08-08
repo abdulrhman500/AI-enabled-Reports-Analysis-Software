@@ -5,46 +5,74 @@ import pytesseract
 from PIL import Image
 from pdf2image import convert_from_path
 
-def pdf_to_text(pdf_path, start_page=1):
-    # Convert PDF pages to images
+def get_text(pdf_path):
     images = convert_from_path(pdf_path)
+    # Specify the page number to start from
+    start_page = 4  # Change this to the desired start page number
 
-    text = ""
+    # Extract text from images
+    extracted_text = ""
     for page_num, image in enumerate(images, start=1):
         if page_num < start_page:
-            continue
+            continue  # Skip pages before the start page
 
-        # Perform OCR on the image to extract text
-        extracted_text = pytesseract.image_to_string(image, lang='eng')
-        text += f"Page {page_num}:\n{extracted_text}\n"
+        text = pytesseract.image_to_string(image, lang='eng')
+        extracted_text += text + "\n"
 
-    return text
+    # Specify a regular expression pattern to match bold titles
+    bold_title_pattern = r'^[A-Za-z\s]+:'  # Adjust this pattern as needed
 
-def extract_section_ocr(text, section_title):
-    section_found = False
-    section_content = ""
-
-    # Split the OCR text into lines
-    lines = text.split('\n')
-
+    # Process the extracted text to identify titles and paragraphs
+    lines = extracted_text.split('\n')
+    sections = []
+    current_section = {"title": "", "content": ""}
     for line in lines:
-        # Check if the line contains the section title
-        if section_title.lower() in line.lower():
-            section_found = True
-
-            # Capture the text after the section title until the next section or end of the document
-            section_content += re.sub(rf'^.*{re.escape(section_title)}\s*:', '', line.strip()) + " "
-        elif section_found:
-            # Extract content until the next section or end of the document
-            if line.strip():
-                section_content += line.strip() + " "
+        if re.match(bold_title_pattern, line.strip()):  # Use the new pattern
+            if current_section["title"]:
+                current_section["title"] = re.sub(r'\(.*?\)', '', current_section["title"]).strip()  # Remove text in parentheses
+                sections.append(current_section.copy())
+                current_section = {"title": line.strip(), "content": ""}
             else:
-                break
+                current_section["title"] = line.strip()
+                current_section["content"] += line.strip() + " "  # Add the line directly after the title
+        else:
+            current_section["content"] += line.strip() + " "
 
-    return section_content.strip()
+    # Search for a section title that contains "Internship Performed Tasks:" within its title
+    target_section_title = "Internship Performed Tasks:"
+    target_section_content = ""
+    max_content_length = 0
 
-def get_text(pdf_file_path,start_page=4):
-    ocr_text = pdf_to_text(pdf_file_path, start_page)
-    section_title = "Internship Performed Tasks"
-    section_content = extract_section_ocr(ocr_text, section_title)
-    # print(f"{section_title}:\n{section_content}")
+    for section in sections:
+        # check if the target section title is found within the section title
+        if target_section_title.lower() in section["title"].lower():
+            # calculate content length (excluding the title)
+            content_length = len(section["content"]) - len(target_section_title)
+            
+            # update if the current section has more content
+            if content_length > max_content_length:
+                max_content_length = content_length
+                target_section_content = section["content"]
+                target_section_title = section["title"]
+            #check if the "Internship Performed Tasks:" title contains more than 3 words and if it does: 
+            #add the extra words at the start of the content
+            #and remove them from the title and remove "Internship Performed Tasks:" from the start of the content
+            if len(target_section_title.split()) > 3:
+                target_section_content = target_section_title + " " + target_section_content
+                target_section_title = "Internship Performed Tasks:"
+                target_section_content = target_section_content.replace("Internship Performed Tasks:", "")
+            
+            #check if the content contains "Internship Evaluation" and if it does:
+            # remove it and everything after it from the content
+            if "Internship Evaluation" in target_section_content:
+                target_section_content = target_section_content.split("Internship Evaluation")[0]
+            
+            #check if if the content contains "Internship Performed Tasks:" and anything before it and if it does: 
+            #remove it and everything before it from the content
+            if "Internship Performed Tasks:" in target_section_content:
+                target_section_content = target_section_content.split("Internship Performed Tasks:")[1]
+    
+    if not target_section_content:
+        raise Exception("No content found !!")
+
+    return target_section_content

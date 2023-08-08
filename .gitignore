@@ -164,3 +164,6 @@ cython_debug/
 
 #add the name of the folder that contains all the pdfs on your machine
 Sample_PDFs/
+ve/
+src/Data Extraction/Clean Samples
+src/Data Extraction/Dirty Samples
