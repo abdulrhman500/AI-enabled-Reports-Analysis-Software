@@ -2,7 +2,13 @@ import re
 import string
 import fitz
 import PyPDF2
-import constants
+import os
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.feature_extraction.text import TfidfVectorizer
+from typing import List
+from sklearn.feature_extraction import text
+
 
 def is_bold(font_flags):
     return bool(font_flags & (1 << 4))
@@ -11,14 +17,14 @@ def is_bold(font_flags):
 def find_positions(regex_pattern, text):
     positions = []
     for match in re.finditer(regex_pattern, text, re.IGNORECASE):
-        # print("MATCH####", match.group())
+        #print("MATCH####", match.group())
         positions.append(match.start())
     return positions
 
 
 def check(terminal_list, file_path, regex):
     bolds, count_list, count = extract_bold_text_with_regex(file_path, regex)
-    # print(bolds, "---------------")
+    #print(bolds, "---------------")
     if len(count_list) == 1:
         # print("Terminal list", terminal_list)
         # print("count list", count_list)
@@ -128,9 +134,93 @@ def get_text(file_path)->string:
         tasks_text = extract_text_from_headline(file_path,start,end)
     except Exception as e:
         print("[ERROR] ",e)
+
+# def get_text(file_path) -> List[str]:
+#     start, end = 0, 0
+#     tasks_texts = []  # List to store multiple text documents
+#     try:
+#         start, end = get_start_end(file_path)
+#         tasks_text = extract_text_from_headline(file_path, start, end)
+#     except Exception as e:
+#         print("[ERROR] ", e)
+#     return tasks_texts
+
     
     return tasks_text
 
-if __name__ == "__main__":
-    print("\nTASKS:\n\n"+get_text(constants.TEST_PDF_FILE_PATH))
+custom_stop_words = list(text.ENGLISH_STOP_WORDS) + ["", " "]  # Add custom stop words
 
+def tf_idf(tasks):
+    #vectorizer = TfidfVectorizer()
+    #custom_stop_words = text.ENGLISH_STOP_WORDS.union([" ", "  "])  # Add custom stop words
+    vectorizer = TfidfVectorizer(stop_words=custom_stop_words)
+    X = vectorizer.fit_transform(tasks).toarray()
+    feature_names = vectorizer.get_feature_names_out()
+    # preprocessed_text = ' '.join([word for word in extracted_text.split() if word not in custom_stop_words])
+    # print("Preprocessed text: \n ", preprocessed_text)
+    print(X.shape)
+    print(X)
+    print("feature_names: + \n")
+    print(feature_names)
+    return X,feature_names
+
+#   *******MAINNNNNN*********
+if __name__ == "__main__":
+    pdf_file_path = "D:/AI-enabled-Reports-Analysis-Software internship/Dirty Files/correct template/(A) Ahmed Abdelazeem Omar 40-13742.pdf"
+    #print("\nTASKS:\n\n"+get_text(pdf_file_path))
+    extracted_text = get_text(pdf_file_path)
+    print("Extracted text: \n ", extracted_text)
+    tf_idf_result, feature_names = tf_idf([extracted_text])
+
+    df = pd.DataFrame(tf_idf_result, columns=feature_names)
+    
+    # Display the DataFrame
+    print(df)
+    
+    # Visualize the DataFrame using matplotlib
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.axis('off')  # Turn off axis
+    
+    # Display the DataFrame as a table
+    table = ax.table(cellText=df.values, colLabels=df.columns, cellLoc='center', loc='center')
+    
+    # Adjust table layout
+    table.auto_set_font_size(False)
+    table.set_fontsize(10)
+    table.scale(1.2, 1.2)  # Adjust table size
+    
+    plt.show()
+
+
+
+# if __name__ == "__main__":
+    pdf_directory = "D:/AI-enabled-Reports-Analysis-Software internship/Dirty Files/correct template/"
+    pdf_files = os.listdir(pdf_directory)
+    
+    data = []
+    document_names = []
+    
+    for pdf_file in pdf_files:
+        pdf_file_path = os.path.join(pdf_directory, pdf_file)
+        document_names.append(pdf_file)
+        
+        # Extract text and preprocess
+        start, end = get_start_end(pdf_file_path)
+        tasks_text = extract_text_from_headline(pdf_file_path, start, end)
+        preprocessed_text = ' '.join([word for word in tasks_text.split() if word not in custom_stop_words])
+        
+        data.append(preprocessed_text)
+    
+    # Apply TF-IDF on all documents
+    tf_idf_result, feature_names = tf_idf(data)
+    # Create a DataFrame for visualization
+    df = pd.DataFrame(tf_idf_result, columns=feature_names, index=document_names)
+    
+    # Display the DataFrame as a table
+    print(df)
+    
+    # Visualize the DataFrame using matplotlib
+    plt.figure(figsize=(10, 6))
+    plt.axis('off')  # Turn off axis labels
+    plt.table(cellText=df.values, colLabels=df.columns, cellLoc='center', loc='center')
+    plt.show()
