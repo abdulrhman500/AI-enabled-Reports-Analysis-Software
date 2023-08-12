@@ -91,7 +91,7 @@ def extract_text_from_headline(pdf_path, start, end):
 
 
 if __name__ == "__main__":
-    pdf_file_path = "C:\\Users\\hoda2\\Documents\\NLP Internship\\Dirty Files\\correct template\\TASKS PERFORMED (A) Maryam Khaled, 43-7239 - Maryam Amin.pdf"
+    pdf_file_path = "C:\\Users\\hoda2\\Documents\\NLP Internship\\Dirty Files\\correct template\\(A) Fadi Saber Gamil Asham  46-9988 - Fady Ashem.pdf"
     regex_pattern_start1 = "task"
     regex_pattern_start2 = "activities"
     regex_pattern_end = "evaluation"
