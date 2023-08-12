@@ -1,0 +1,23 @@
+activities:  
+We were divided into teams of 4 Students. An Egypt ian series was assigned to each team to 
+extract audio files from it. First, the Egyptian series “welad nas” was assigned for us, each 
+member has chosen 5 episodes. The supervisor provided a list of names for the actors that we 
+need to extract their voices.  I started extracting audio files from the episodes from 6 to 10 using 
+audacity software to record their emotions which varied between “happy – sad – neutral – angry 
+– fearful – surprised “. Using Eclipse IDE and Java Programming language I was able to bui ld 
+program that can provide me with statistics for my Dataset and decides for each record which 
+emotion gets the highest voting as for each record, as each member listens to the records of other 
+team members and writes the emotion he felt from the voice ba sed on his point of view, as a result we can reach to a more efficient result for each record  
+ 
+The previous snap shows some statistics for the first series. A new series was then assigned to us 
+– Al Zeybaq – and I kept extracting records until I reached the target set for me “ 500 records “ 
+and Also I listened to total of 1500 records which were extracted by my friends and I added my 
+suggestion for the emotion I heard from the actor voice. Then by applying the technique I 
+developed with Java. The program made a voting based on our suggestions and added the final 
+result with the most accurate emotion. We also attended a meeting with Prof. Mohamed Salem. 
+At which we saw the result of our hard working as our team along with other teams were able to 
+build a hu ge dataset for Egyptian speech (more than 15000 records ) from which 6000 records 
+were examined with All needed tests and it was valid and showing really good results for the 
+current machine learning project. 
+ 
+Internship 

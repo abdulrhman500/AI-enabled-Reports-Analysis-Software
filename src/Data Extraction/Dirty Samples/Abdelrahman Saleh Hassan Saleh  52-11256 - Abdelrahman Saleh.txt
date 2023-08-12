@@ -1,0 +1,73 @@
+Activities  
+• Tasks:  
+- Having  knowledge and doing practices with core Java programming  and software 
+engineering concepts  like: 
+1- Threading  and Concurrency in Java  
+2- Inner Classes  in Java  
+3- Version Control Systems (Git & Github)  
+- Getting started with the native android development world by:  
+1- Learning android studio environment  fundamentals in Java.  
+2- Android application lifecycles  
+3- User Interface elements in Android  
+4- Building, debugging and adding dependencies in Android  
+- Designing and Implementing the UI  and logic for User Authentication Android App   
+- Gaining core knowledge and practices in Android with:  
+1- Android App Architecture  
+2- Background tasks  
+3- App data and files  
+- Developing a backend for the  Authentication App by:  
+1- Storing input data locally in the Authentication App  
+2- Getting started with the Relational Database concepts and methods  
+3- Designing and implementing a database the Authentication App  
+4- Implementing security methods for data entered.  
+- Having Familiarity with software architecture and design patterns principles with 
+MVVM  and some Android jetpack components.  
+- Developing an Internet Movies Database Android App using advanced Android UI 
+components, relational database tools in android, APIs and applying design patterns 
+principles to it.   
+ 
+ • Working Conditions:  
+Working days were hybrid (3 days remotely and 2 days on -site), sometimes they 
+changed. My  normal day usually started from 10 am to 6 pm . 
+The software engineering group had 4 interns including myself (2 for software testing, 
+and one for web application development and finally me for Android mobile application 
+development).  
+ 
+• Software Tools  Used:   
+- Eclipse  (IDE for java)  
+- Git 
+- Android Studio  
+- MySQL Server  
+- POPSQL  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ • Conducted Work  
+ 
+- Registeration (Authentication) App  
+ 
+ 
+ 
+ 
+- Movies App (Internet Movies Database Application)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

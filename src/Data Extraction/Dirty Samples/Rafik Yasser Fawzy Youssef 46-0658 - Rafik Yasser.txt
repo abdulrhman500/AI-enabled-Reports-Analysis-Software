@@ -1,0 +1,65 @@
+Tasks:  (Not less than 100 words)  
+The task of this internship  was to extend the a functionality of the i -Core scheduler. First to have it implemented 
+with backward compatibili ty, then to have it able to cope with the recent developments of the i -Core 
+architecture. Moreover, it had to demonstrate its usefulness for the pipelined floating point special instructions. 
+Finally, it had as a goal to implement the dynamic control flow to the object detection special instruction. The 
+dynamic execution implements the concepts of conditional jumps, overhead -free loop support and 
+exceptions/interruptions. Conditional jumps from one microinstruction to another should be possible depending 
+on the intermediate results of the calculation of the reconfigurable accelerator. In addition, several internal 
+counters with e.g. auto -increment functionality should be provided to support loops with a statically known 
+number of iterations. And it should be  possible for special commands to return error messages in the form of 
+exceptions to the CPU. E.g. if the microcode reaches an unintended processing point. The soundness of the 
+implementations of the thesis had to be seen in both the simulation as well as on 
+The implementation presented by me solves the task presented in the introduction section completely. Various 
+tests and their performance  were created. Moreover , I was able to find all the critical bugs in the system and fix 
+them. I was also able to correctly add the dynamic execution functionality to the object detection special        
+5 
+Student Career & Alumni Development Office. scad@guc.edu.eg  | German University in Cairo New Cairo City - Main Entrance Al Tagamoa Al Khames; Egypt  
+instruction using conditional jump forms. I successfully implemented the backward compatibility and fixed the 
+in-house  assembler and assembler converter.  
+ 
+Internship Evaluation: (Not less than 100 words) (This section should answer the following questions in the form of a 
+paragraph)  
+During my interns hip I was exposed to t op notch German educatio nal and research  institution s. I was able to 
+learn man y important skills in t he field of embedded systems and processors . During my time at the internship, 
+I was able to gain many new skills however, the most important one was mastering python as a language to its 
+most advanced levels. Moreover, I gained a lot of experience in reconfigurable  processors and processors in 
+general . I was also well exposed to the emerging market of special ized processors  for much fas ter execution . 
+The expectations I had for this internship was successfully met as I not only learned a lot but also seen my 
+academic knowledge transferred to rea l life practical work that is useful for everyone. The exposer I received 
+from the internship has widen my horizon in terms of career opportunities as it has showed me two interesting 
+paths, the first is the research and development opportunities and possi bility an academic career and the second 
+is the hardware integrated with software (embedded systems) for new ideas in processors  world which  is 
+growing extremely fast. The GUC has provided courses such as introduction to programming, introduction to 
+networks, digital logic design, embed ded systems, computer programming lab , microprocessors,  and operating 
+systems .    
+ Did the internship meet your expectations? If not, please explain why? How do you think the internship will influence your fu ture 
+career plans? How do you think the internship activities th at you carried out are correlated with your studies? Which of the academic 
+courses that you have taken in GUC were the most related to your internship?  
+ 
+Conclusion: (Not less than 100 words)  (A summary of key conclusions derived from the internship experie nce. general 
+observations about the sector in which your internship company/institution operates)  
+In conclusion, this internship experience has provided me with the hands -on experience needed to qualify me 
+for the market in general. I have also gained the soft skills that is vital for an y job later, such as being punctual 
+and organized. I have also learned how to present my work in a professional way due to the various ways I was 
+asked to present my work. I learned a lot about networking and the importance of security in the field of 
+software and technology. I have also noticed the great performance the KIT and Germany  is doing to have its 
+weight in the development of an embedded  processors  world, and how the market is rapidly growing on a day -
+to-day basis.  
+ 
+Please rate your satisfaction with the internship experience.  
+☐ Very satisfied            Somehow satisfied             ☐ Neutral       ☐ Somehow dissatisfi ed        ☐ Very dissatisfied  
+Would you recommend this internship to other colleagues?  
+☐ Yes                         ☐ No                                     Maybe  
+ 
+Reference s: (If any external sources are used, provide references for any information quoted)  
+ 
+Appendices: (Upon availability, charts, pictures, etc.)  
+ 
+Disclosure / Confidentiality Agreement 
+ 
+This agreement is to acknowledge that the information provided by any company / organization during the internship is unique to 
+this business and confidential.  
+Therefore, anyone reading this agreement agrees not to disclose any of the information provided during the internship without  
+notifying & taking the employer’s / supervisor’s approval.  
+   

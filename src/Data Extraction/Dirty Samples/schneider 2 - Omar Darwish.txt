@@ -1,0 +1,10 @@
+Tasks: 
+ The Internship mainly consisted of two main tasks, the first of them was to learn the needed technologies 
+ by creating a mini project and the second task was to apply these learned skills on a real project. The first 
+ task was to learn to use Angular, Node js & Nest js and MongoDB to create a full stack app. While learning 
+ these technologies my task was to create a student/instructor application that makes use of all of these 
+ technologies. The second task which was the real project was an HR Tool that serves as a vacation 
+ request/response system for the company that connects the employees with their managers altogether 
+ with the admin of the system. The task was a full stack application that was made using the technologies 
+ mentioned above. 
+ Internship 

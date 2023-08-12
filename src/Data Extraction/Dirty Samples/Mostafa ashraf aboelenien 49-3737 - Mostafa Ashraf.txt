@@ -1,0 +1,25 @@
+Tasks: the internship was a backend development internship using C# and MySQL.  
+The first task I preformed was to write a creating the da tabase in MySQL and creating multiple procedures to 
+preform joining of tables and CRUD operation (create, delete, update, select (read)) and views to see the required 
+tables data then I created a win form application in visual studio C# and connected it to  the database and used 
+grids, text files and buttons to view my database using ad o.net framework. The second task I preformed was to 
+write  code first program in C# using Entity framework. First it was to research it. I checked the Entity framework 
+document ation while watching tutorial on YouTube while my supervisor and team helped me with problems as 
+they use Entity Framework for their work project . I also learned LINQ and implement it in Entity framework as it        
+2 
+Student Career & Alumni Development Office. scad@guc.edu.eg  | German University in Cairo New Cairo City - Main Entrance Al Tagamoa Al Khames; Egypt  
+allowed me to use and create SQL statement in  C# Then I was given a task to do the first task with Entity 
+framework and migrations to create the database, tables and views. I learned a new framework and why they use 
+entity framework as the controllers  and the contexts allow us to make the use the MV C design pattern and make 
+large project navigable as well as migrations being a way that we can trace back to old version of code if 
+something get deleted by mistake it is not lost. My third task was to use swagger and API instead of win form to 
+test my fu nctions and code and document it. I learned how to create rest APIs and how to document them and 
+using webapplication.my last task was to research about SignalR as it is very important in IOT as it allow code 
+to run real -time. I learned how to implement it  and how it and triggers in SQL may be used to make both code 
+in C# and database both real -time. Then I was given a task of creating a small chat room using signalR.I used 
+Microsoft MYSQL and Visual Studio Code for my internship. I spend my internship with  my the backend team 
+in the company where I obesevered them working in the companies projects as they were also explaining to me 
+the project and the tools they use and their code efficiency and how to improve mine then they gave me the 
+tasks mentioned abov e to test my understanding of the concepts.  
+ 
+Internship 

@@ -1,0 +1,73 @@
+Activities
+The internship at Crossworkers was a full-time hybrid internship where I worked 8 hours a day
+and went to the of fice twice a week. The day typically started with a daily standup meeting with
+the client in the morning where each of the team members mentioned what they did the previous
+day and what they would do today . I worked as a back-end intern in a team of four other
+members and reported directly to the senior back-end of the team. I also worked hand in hand
+with the other three members who worked as front-end developers to combine our work with
+each other .
+Throughout my internship, I used dif ferent software applications and frameworks. Coding was
+done on the Visual Studio Code IDE using Node.js, Typescript, and TypeORM for databases. I
+also worked with RabbitMQ for message queues and AWS S3 for cloud storage. Moreover , I
+used DBeaver to visualize the database, the data inside the dif ferent tables, and the relations
+between the tables. For validation, I used the JOI framework. We also used Slack and Microsoft
+Teams for communicating and ClickUp for assigning tasks, writing descriptions, and marking
+progress. For source control, we used Gitlab to ease versioning and pipeline written tests.
+Figur e 2:
+Example of the visualization of relationships
+DBeaver of fers. [
+2
+]
+Figur e 3:
+Example of the task or ganization on ClickUp.
+[
+3
+]
+For my first task, I was responsible for migrating the codebase from using SQL  to TypeORM. I
+did this by going through all the parts in the code where SQL  statements were used, and then
+executed those SQL  statements on DBeaver and recorded the output. Next, I converted those
+SQL statements to TypeORM then once again tested the new TypeORM implementation on
+DBeaver to make sure the previous and current results match. This was a good task to start with
+as it helped me learn both Typescript and TypeORM and get a grasp of the codebase. For the
+second task, I was asked to design several entities using TypeORM and to write corresponding
+API for them with validation using JOI. Together with the first task, this task allowed me to go
+through most of the TypeORM documentation and get a firm grasp of the framework. This task
+required a lot of close communication with the frontend team in order to properly design the
+API’ s. For the third task, I used AWS S3 with the help of the Multer -S3 [
+4
+] library in order to
+design API’ s that would store and retrieve pictures from dif ferent sources. I then tested my
+implementation by uploading and retrieving images through the API’ s that I designed and
+checking whether the API resonated on the AWS website or not. For my fourth task, I wrote unit
+and integration tests for API’ s that I developed and for already existing API’ s and functions
+using the JEST  framework. This was an interesting task as it exposed me to Test Driven
+Development, a software development process that depends on writing tests first before code,
+and its benefits, as I ended up changing parts of the code I wrote only to ease the writing of tests.
+For my fifth task, we had sensors which we needed to communicate with and process the data
+they sent us. For that, I made a message queue using RabbitMQ to allow us to retrieve the data
+from the dif ferent sensors and then process them while guaranteeing that the data would not be
+lost in case the server or the database fails. This task taught me a lot as it was somewhat geared
+towards DevOps and required extensive research to understand how message queues worked and
+how they were implemented through code. I was also able to suggest using various queue types
+and displayed their advantages and disadvantages to the client so they could choose the one they
+preferred the most.
+Figur e 4:
+General diagram for Message Queue Implementation
+Figur e 5:
+Flowchart showing brief flow of the message
+queue process
+Moreover , I was tasked with refactoring some code in order to make it more ef ficient. This
+resonated with the CS3 course that I had taken in college. For my seventh task, I was asked to
+apply the same linting rules to all of the dif ferent repositories we had. To do so, I made an npm
+package and installed it on all our dif ferent repositories. By doing that, we were able to centralize
+changing the lint rules and easily apply them to all our codebases. This task taught me how to
+create npm libraries and maintain them. On the eighth task, I changed the codebase to a module
+based codebase so that it’ s easier to navigate around the files and maintain it in the future.
+Finally , for my last task, I was told to investigate why users’  sessions were short and they would
+need to re-log in every short period of time. This was a challenging task as it required debugging
+a big chunk of the codebase but I was able to pinpoint and resolve the issue in the end, which
+was related to incorrect use of refresh tokens.
+Figur e 6:
+Diagram showing flow and importance of refresh
+tokens.
+Internship 

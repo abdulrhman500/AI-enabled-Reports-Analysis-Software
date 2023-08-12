@@ -1,0 +1,22 @@
+Activities : 
+Every day the working hours were from 9 AM to 5 PM and there was a dail y meeting with my 
+supervisor  and team  to check on the work that we have done so far and so that I would report 
+back on my progress  along with my team mates . I was part of a  team that was assigned to 
+improve,  upgrade  and add new features to a website that is created to be used by the company’s 
+managers and employees in order to make communications between them easier and to make 
+assigning tasks to employees much easier . I, along with other interns, had the task of 
+implementing both the backen d and frontend  of the website following The Agile Methodology  
+so I got to work as a full stack develop er. When my team and I were provided with the  business 
+requirements of the website,  we formulated  the user stories that were later  implemented and their 
+corresponding user points to create the back log that were also implemented , then I was assigned 
+a number of the user stories/methods to implement both the frontend and backend of  then our 
+work was integrated together to form the website as a whole. A fter implementing the  methods  in the backend , I would come up with different test cases for the unit testing of  the methods in order 
+to make sure that they are doing the desired job  with all possible cases  and I had to create a 
+mongoDB  database  for testing purposes  and fill it with test data to be able to test my user stories . 
+Furthermore, I took the task of assessing  my teammates’ implemented methods  and if they 
+worked properly , I would merge our work on Git  and I would deploy the website at the end of 
+every significant milestone . Moreover, the software s that  I used to finish  my tasks were 
+MongoDB , Postman.  Git and Visual Studio Code . Regarding the stack used, I also used  Express 
+for the backend and  React JS, which uses Javascript  as a programming language , for the 
+frontend . 
+Internship 

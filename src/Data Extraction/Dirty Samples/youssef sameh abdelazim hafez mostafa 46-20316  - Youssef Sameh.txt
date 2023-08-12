@@ -1,0 +1,9 @@
+Tasks:
+(Not less than 100 words)
+My main objective in the bachelor and internship was to build a working Machine learning model for the detection of multiple faces 
+and recognizing them and relating them to their original subject using the input of a thermal camera(Optris 3000) based on previous 
+researchers work in the field and on similar applications. I learned and applied Deep learning techniques in creating a model, training 
+it and optimizing it, I also gathered data from subjects, preprocessed them and built a pipeline for forwarding them to the models in 
+proper format and batches ready for immediate use. I also experienced working on real life models and fine tuning them to match 
+the behavior of a real life scenario.
+Internship 

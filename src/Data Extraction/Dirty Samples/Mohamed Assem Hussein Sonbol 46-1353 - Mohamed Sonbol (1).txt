@@ -1,0 +1,14 @@
+tasks:  
+The Internship was 2 months long starting with the first 2 weeks as training in  
+Flutter  before getting assigned to work on one of the ir apps that are available on 
+their app store  for the rest of the 2 months . The application is called conne ct it 
+offers crucial information for the employees working in orange ranging from  
+emergency co ntacts to emails and contact information of team heads and 
+differe nt benefits available to employees also links to reserve meeting room s 
+etc...  In the beginning we were introduced to Mohamed Sabry  who is  the team 
+lead in the cu stomer  Marketing and innovat ion department. He guided us 
+through the workplace , how  the company works, what kind of projects does the 
+team normally receive and job  hierarchy in the company. He also taught us a  
+lot about the other applications  the tea m is developing . 
+ 
+Internship 

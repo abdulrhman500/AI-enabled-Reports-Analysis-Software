@@ -1,0 +1,18 @@
+Tasks:  
+My task s included sitting with the consultant s to gather their requirements and determine if it 's feasible  or not . I 
+used ABAP code , which  is a high -level programming language create d by the German software company SAP 
+SE, to make some en hancements to the UI. The enhancements which  can be made to the sof tware using ABAP 
+are RICEF : Reports, Interface, Conver sions, Enhancements and Forms . The reports  and forms are creat ed by  
+first w riting my code fi le and then creati ng the in terface . The code file uses the ABAP s yntax which is similar 
+to SQL . I would start by defin ing my datatypes, variable s and parameters . The n I would select the fi elds I want 
+to acces s from my database table into an Internal Table that is local to m y file. This internal table would be like 
+a smaller version of the main database table with only the fields that I need in my report/form. At last, I would 
+perform any nee ded actions on the fields and show them in my report/form. Most of the reports  and forms that 
+need to be created would need to access field s from across multiple database tables and so the querying process 
+would get more complex depending on the requirements of the consul tant. After my code is done, I w ould 
+create the UI of the report /form. The reports and forms need to be customized for each company  by adding the 
+company logo and foll owing their requi red layouts.  
+My tasks sometimes included debuggi ng my colleagues ' work t o try and figure out where the error is  and to 
+solve it. 
+ 
+Internship 
