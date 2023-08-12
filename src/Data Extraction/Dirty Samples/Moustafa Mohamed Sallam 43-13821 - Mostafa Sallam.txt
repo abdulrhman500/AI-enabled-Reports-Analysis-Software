@@ -1,9 +1,0 @@
-Tasks:
-During the 2 weeks of the internship I took courses about database optimization and 
-implementing a database infrastructure using MongoDB. The choice for MongoDB was primarily for 
-the reason it is a relatively simple type of  database, non-relational, that would appeal to beginners.
-Optimizing the database infrastructure was performed by drawing the infrastructure as if it was a
-relational database and for every relation and entity was a table or cluster created. By creating more
-tables lookups would be much faster and relatively no joins in tables will be needed, which is
-computationally expensive. Hence better performance of the Database.
-Internship 

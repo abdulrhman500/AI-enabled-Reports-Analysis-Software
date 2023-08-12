@@ -5,8 +5,19 @@ import extract_unscanned_pdf
 import extract_scanned_pdf
 import constants
 import os
-def extract_unscanned_text(file_path)-> string :
-   return extract_unscanned_pdf.get_text(file_path) 
+
+# make an array of the files that has no text
+errorFiles = []
+scannedFiles = []
+
+def extract_text(file_path)-> string :
+   x = extract_unscanned_pdf.get_text(file_path)
+   if x == "" or x == None:
+       print("extracting scanned pdf")
+       return extract_scanned_pdf.get_text(file_path)
+   else:
+       print("extracting unscanned pdf")
+       return x
 
 def extract_scanned_text(file_path)-> string:
     extract_scanned_pdf.get_text(file_path)
@@ -26,6 +37,7 @@ def is_scanned_pdf(pdf_path, start_page=4, end_page=None, max_words_threshold=50
 
                 # If the number of words is below the threshold, consider it as a scanned page
                 if num_words <= max_words_threshold:
+                    scannedFiles.append(pdf_path)
                     return True
 
             return False
@@ -36,10 +48,7 @@ def is_scanned_pdf(pdf_path, start_page=4, end_page=None, max_words_threshold=50
 
 
 def extract_single_text(file_path)-> string:
-    if is_scanned_pdf(file_path):
-        return extract_scanned_text(file_path)
-    else:
-        return extract_unscanned_text(file_path)
+    return extract_text(file_path)
        
 def get_pdfs_paths_in_folder(folder_path):
     pdf_files = []
@@ -54,6 +63,10 @@ def save_text_to_file(folder_name, file_name, text):
         os.makedirs(folder_name)
     file_path = os.path.join(folder_name, file_name)
     with open(file_path, 'w',encoding='utf-8') as file:
+        if text is None:
+            # # add the file to the errorFiles array
+            # errorFiles.append(file_name)
+            text = ""
         file.write(text)
 
 def extract_samples(source_folder_path,destination_folder) -> None:
@@ -70,5 +83,12 @@ def extract_samples(source_folder_path,destination_folder) -> None:
         save_text_to_file(destination_folder,file_name,text)
 
         
-extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
+# extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
+extract_samples("C:/Users/maria/OneDrive/Desktop/Internship Project/MET Batch-1","src\Data Extraction\Dirty Samples")
+
+# print the files that has no text
+# print(errorFiles)
+# print("Scanned Files: ",scannedFiles)
+# print ("Number of scanned files: ",len(scannedFiles))
+
 

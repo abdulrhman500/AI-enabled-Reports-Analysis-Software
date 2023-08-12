@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfVectorizer
 from typing import List
 from sklearn.feature_extraction import text
+import constants
+
 
 
 def is_bold(font_flags):
@@ -25,12 +27,13 @@ def find_positions(regex_pattern, text):
 def check(terminal_list, file_path, regex):
     bolds, count_list, count = extract_bold_text_with_regex(file_path, regex)
     #print(bolds, "---------------")
+    ret=[]
     if len(count_list) == 1:
         # print("Terminal list", terminal_list)
         # print("count list", count_list)
         # print("RET", [terminal_list[count_list[0]-1]])
         if(count_list[0]-1<len(terminal_list) and count_list[0]-1>=0 ):
-            return [terminal_list[count_list[0]-1]]
+            ret= [terminal_list[count_list[0]-1]]
     else:
         # print("Terminal list", terminal_list)
         # print("count list", count_list)
@@ -42,7 +45,7 @@ def check(terminal_list, file_path, regex):
                 ret.append(terminal_list[idx-1])
         # ret = [terminal_list[idx - 1] for idx in count_list]
         # print("RET2", ret)
-        return ret
+    return ret
 
 
 def extract_bold_text_with_regex(pdf_file_path, regex_pattern):
@@ -150,10 +153,18 @@ def get_text(file_path)->string:
 
 custom_stop_words = list(text.ENGLISH_STOP_WORDS) + ["", " "]  # Add custom stop words
 
+# Words you want to exclude from the stop words list
+words_to_exclude = ["al"]
+
+# Filter out numeric values and combined stop words
+filtered_stop_words = [word for word in custom_stop_words if not (word.strip().replace('.', '', 1).isdigit() or word.strip().isdigit())]
+filtered_stop_words = [word for word in filtered_stop_words if word not in words_to_exclude]
+
 def tf_idf(tasks):
+    
     #vectorizer = TfidfVectorizer()
     #custom_stop_words = text.ENGLISH_STOP_WORDS.union([" ", "  "])  # Add custom stop words
-    vectorizer = TfidfVectorizer(stop_words=custom_stop_words)
+    vectorizer = TfidfVectorizer(stop_words=filtered_stop_words)
     X = vectorizer.fit_transform(tasks).toarray()
     feature_names = vectorizer.get_feature_names_out()
     # preprocessed_text = ' '.join([word for word in extracted_text.split() if word not in custom_stop_words])
@@ -166,7 +177,7 @@ def tf_idf(tasks):
 
 #   *******MAINNNNNN*********
 if __name__ == "__main__":
-    pdf_file_path = "D:/AI-enabled-Reports-Analysis-Software internship/Dirty Files/correct template/(A) Ahmed Abdelazeem Omar 40-13742.pdf"
+    pdf_file_path = "C:/Users/maria/OneDrive/Desktop/Internship Project/Dirty Reports/Dirty Files/correct template/(A) Ahmed Abdelazeem Omar 40-13742.pdf"
     #print("\nTASKS:\n\n"+get_text(pdf_file_path))
     extracted_text = get_text(pdf_file_path)
     print("Extracted text: \n ", extracted_text)
