@@ -1,13 +1,1 @@
-tasks to do.  I was assigned in the deve lopm ent team 
-which was responsible for b oth app d evelopment and web development . The tasks I preformed  were: 
-1. Developed a website fr om scratch  (Front end)  and improving  the visuals  of an ex isting website . 
-2. Helped to add new feature s in a websi te (Back end) . 
-3. Created a demo app for purchasing cloth and electr onics.  
-4. Helped with using Odoo in implementing  it for a compan y’s softw are management . 
-The internship was 2 -month  it was 5 days a wee k and 8 hours a day from 9 am to 5 pm . Throughout the day 
-there wo uld be meeting s discussing the updates on ou r task s and point ing to us wh ere we can improve our 
-work for more efficiency  and helping us  out through all of ou r tasks . 
-We used various tool visual studio code for web de veloping where we coded HTML, CSS,  JavaScript . Then 
-later on used WordPress  for web development . Also,  IntelliJ  was used for android app development  where 
-we coded using Java. Finally,  we u sed Odoo  software  for imple mentation in managing business es.  
-Internship 
+tasks: In the internship they taught us a lot before handing us tasks to do. I was assigned in the development team which was responsible for both app development and web development. The tasks I preformed were: 1. Developed a website from scratch (Front end) and improving the visuals of an existing website. 2. Helped to add new features in a website (Back end). 3. Created a demo app for purchasing cloth and electronics. 4. Helped with using Odoo in implementing it for a company’s software management. The internship was 2-month it was 5 days a week and 8 hours a day from 9 am to 5 pm. Throughout the day there would be meetings discussing the updates on our tasks and pointing to us where we can improve our work for more efficiency and helping us out through all of our tasks. We used various tool visual studio code for web developing where we coded HTML, CSS, JavaScript. Then later on used WordPress for web development. Also, IntelliJ was used for android app development where we coded using Java. Finally, we used Odoo software for implementation in managing businesses.  Internship 

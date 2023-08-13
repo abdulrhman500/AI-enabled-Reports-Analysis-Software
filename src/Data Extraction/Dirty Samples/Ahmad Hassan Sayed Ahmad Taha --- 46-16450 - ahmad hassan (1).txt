@@ -1,13 +1,1 @@
-activities :  
-  
-a. My first month task in the company is to add and modify some features in the 
-company website.  
-b. My second month task in the company is to migrate data and switch them to 
-Postgresql from MongoDB. 
-c. Regarding the first and second months, I used Visual studio code for text 
-editing and IDE like experience, Mongo Compass for Mongo database 
-viewing, Postman for handling/testing server responses and requests, 
-PGAdmin4 for viewing/controlling Postgresql in the migrating task. 
-     
-  
-3. 
+activities :    a. My first month task in the company is to add and modify some features in the company website.  b. My second month task in the company is to migrate data and switch them to Postgresql from MongoDB. c. Regarding the first and second months, I used Visual studio code for text editing and IDE like experience, Mongo Compass for Mongo database viewing, Postman for handling/testing server responses and requests, PGAdmin4 for viewing/controlling Postgresql in the migrating task.        3. 

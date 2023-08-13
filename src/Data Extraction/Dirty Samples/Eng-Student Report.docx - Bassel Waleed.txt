@@ -1,14 +1,1 @@
-Tasks:
-(Not less than 100 words) 
-The internship was decided into two parts: Artificial intelligence and software development. During the first 
-month we learned about Artificial intelligence through a series of lessons each followed by a task. First we 
-learned about computer vision, a field of artificial intelligence that trains computers to interpret and understand
-the visual world. After understanding what it is we were asked to do a task which was to write a python code 
-using OpenCV  library to detect the lanes in a picture of a road. The goal was to understand the way self driving 
-cars detect road lanes. Task 2 was basically an enhancement of task 1 in which the results were more detailed 
-and accurate. After computer vision we shifted our focus to machine learning and deep neural networks. We 
-were asked to create a neural network which detects handwriting and another that detects road signs. Finally we
-created a self-driving car that detects people and moves away from them. In the second part of the internship we
-created a system to manage the company's resources. In the process of building this system I had two roles: a
-backend developer and a scrum master , a manager right under the project manager in an agile environment.
-Internship 
+Tasks: (Not less than 100 words)The internship was decided into two parts: Artificial intelligence and software development. During the firstmonth we learned about Artificial intelligence through a series of lessons each followed by a task. First welearned about computer vision, a field of artificial intelligence that trains computers to interpret and understandthe visual world. After understanding what it is we were asked to do a task which was to write a python codeusing OpenCV library to detect the lanes in a picture of a road. The goal was to understand the way self drivingcars detect road lanes. Task 2 was basically an enhancement of task 1 in which the results were more detailedand accurate. After computer vision we shifted our focus to machine learning and deep neural networks. Wewere asked to create a neural network which detects handwriting and another that detects road signs. Finally wecreated a self-driving car that detects people and moves away from them. In the second part of the internship wecreated a system to manage the company's resources. In the process of building this system I had two roles: abackend developer and a scrum master, a manager right under the project manager in an agile environment.Internship 

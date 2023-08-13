@@ -1,18 +1,1 @@
-Tasks:  
-Initially , I had to read some papers to have enough knowledge to be able to help in building the 
-Egyptian chatbot and then I  started  learning Linux , downloading Visual Studio Code, setting  up 
-a virtual environment, installing  and learning about Rasa framework  (the chatbot  library), setting 
-up GitHub SSH and cloning the  existing  code . After that , I needed to c ollect some online data,  
-such as  the names of all Egyptian cities  and crops with the correct Arabic spelling  and then 
-writing a python script that produces other versi ons of these data with common spelling 
-mistakes, so that the bot could recognize  and classify them correctly . Moreover, I had to d esign 
-and creat e a simple  webchat  (see fig.1 ) that takes a text input from user, or alternatively the user 
-can record a voice note instead which would be processed into text, and then send an API request 
-to the bot to get the appropriate response. I used HTML , CSS and JavaScript for the webchat and 
-a JavaScript library (recoder.j s) for the recording feature.  Also,  I had to m ake a decision  tree on 
-Rasa where I wrote a python script for each question  so that the bot  could extract the answer 
-from the text and  for every  answer a unique  series of questions will be asked  and then based on 
-all the answers, the plant’s diagnosis will be figured and there will be suggestions on how to fix 
-it. Finally, I had to p redict different ways the user can ask for something  and then talk  with the 
-chatbot to test  all possible paths to make sure it ’s working as predicted.   
-Internship 
+Tasks: Initially, I had to read some papers to have enough knowledge to be able to help in building the Egyptian chatbot and then I started learning Linux, downloading Visual Studio Code, setting up a virtual environment, installing and learning about Rasa framework (the chatbot library), setting up GitHub SSH and cloning the existing code. After that, I needed to collect some online data, such as the names of all Egyptian cities and crops with the correct Arabic spelling and then writing a python script that produces other versions of these data with common spelling mistakes, so that the bot could recognize and classify them correctly. Moreover, I had to design and create a simple webchat (see fig.1) that takes a text input from user, or alternatively the user can record a voice note instead which would be processed into text, and then send an API request to the bot to get the appropriate response. I used HTML, CSS and JavaScript for the webchat and a JavaScript library (recoder.js) for the recording feature. Also, I had to make a decision tree on Rasa where I wrote a python script for each question so that the bot could extract the answer from the text and for every answer a unique series of questions will be asked and then based on all the answers, the plant’s diagnosis will be figured and there will be suggestions on how to fix it. Finally, I had to predict different ways the user can ask for something and then talk with the chatbot to test all possible paths to make sure it’s working as predicted.  Internship 

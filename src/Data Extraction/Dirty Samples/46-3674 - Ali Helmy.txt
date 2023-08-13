@@ -1,10 +1,1 @@
-Tasks: 
-The internship programme has three primary components. The initial step was to connect the laptop that uses 
-VR to the car , such as by receiving sensor and video feeds from the vehicle. The second method involved giving 
-the car commands like steer , accelerate, and brake via a cloud. The VR controllers, which were programmed to 
-communicate with the car , are what send these commands. 
-The final component of the haptic gloves is what simulates driving an automobile. The gloves received specific 
-information from the car via a cloud and translated it to various vibration levels depending on the road
-conditions and the motion of the car . 
-The interns were given dif ferent parts to work on, and we all collaborated because each aspect is interconnected.
-Internship 
+Tasks:The internship programme has three primary components. The initial step was to connect the laptop that usesVR to the car, such as by receiving sensor and video feeds from the vehicle. The second method involved givingthe car commands like steer, accelerate, and brake via a cloud. The VR controllers, which were programmed tocommunicate with the car, are what send these commands.The final component of the haptic gloves is what simulates driving an automobile. The gloves received specificinformation from the car via a cloud and translated it to various vibration levels depending on the roadconditions and the motion of the car.The interns were given different parts to work on, and we all collaborated because each aspect is interconnected.Internship 

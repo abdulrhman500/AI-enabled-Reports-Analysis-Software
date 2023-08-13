@@ -1,14 +1,1 @@
-tasks:  
-The Internship  was 2 months long starting with the first 2 weeks as training  in 
-Angular  before  getting assigned a  web portal project to manage the team's working 
-hours and overtime calculation and managing other important data such as their 
-testing sim cards for the rest of the 2 months.  In 
-the beginning we were introduced to Mohamed Osman who is  one of  the team lead 
-in the customer experience department.  He guided us through the work place , how 
-the company works, what kind of  projects does the team  normally receive and job 
-hierarchy in the company. Then we  
-were introduced to Tarek  el Shafaey   (customer experience head ) who taught us a 
-lot about  How testing their mobile networks and all about the  test data generated in 
-tests that we're supposed to handle in our projec t which we worked with for the rest 
-of the 2 months as creating our web portal .  
-Internship 
+tasks: The Internship was 2 months long starting with the first 2 weeks as training in Angular before getting assigned a web portal project to manage the team's working hours and overtime calculation and managing other important data such as their testing sim cards for the rest of the 2 months. In the beginning we were introduced to Mohamed Osman who is one of the team lead in the customer experience department. He guided us through the work place , how the company works, what kind of projects does the team normally receive and job hierarchy in the company. Then we were introduced to Tarek el Shafaey  (customer experience head) who taught us a lot about How testing their mobile networks and all about the test data generated in tests that we're supposed to handle in our project which we worked with for the rest of the 2 months as creating our web portal.  Internship 

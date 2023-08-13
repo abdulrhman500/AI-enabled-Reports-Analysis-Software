@@ -1,12 +1,1 @@
-Tasks:  (Not less than 100 words)  
-During my internship at Advanced Computer Technology  my task was Integrating Hospitality Systems and 
-adjusting the applications and systems parameters to work smoothly into the clients' servers. First, I was able to 
-perform the t asks I was asked for on a VM server for 2 weeks. Until  I was able to work with a  real server. 
-Performed tasks that I was asked to do creating, updating, and deleting in SQL and creating backup plans to 
-clients so we can implement FATORTY (E -Invoice) softwa re on servers.  Also, installation and setup of the        
-2 
-Student Career & Alumni Development Office. scad@guc.edu.eg  | German University in Cairo New Cairo City - Main Entrance Al Tagamoa Al Khames; Egypt  
-Infor SunSystems from to A -Z. Also, I was able to use TeamViewer and Anydesk as a remote desktop apps to 
-perform actions in the client's servers.  
- 
-Internship 
+Tasks: (Not less than 100 words)  During my internship at Advanced Computer Technology my task was Integrating Hospitality Systems and adjusting the applications and systems parameters to work smoothly into the clients' servers. First, I was able to perform the tasks I was asked for on a VM server for 2 weeks. Until I was able to work with a real server. Performed tasks that I was asked to do creating, updating, and deleting in SQL and creating backup plans to clients so we can implement FATORTY (E-Invoice) software on servers. Also, installation and setup of the 1 Student Career & Alumni Development Office. scad@guc.edu.eg | German University in Cairo New Cairo City - Main Entrance Al Tagamoa Al Khames; Egypt        Infor SunSystems from to A-Z. Also, I was able to use TeamViewer and Anydesk as a remote desktop apps to perform actions in the client's servers.  Internship 

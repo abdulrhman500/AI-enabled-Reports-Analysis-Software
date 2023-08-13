@@ -1,16 +1,1 @@
-Tasks:  
-I worked as a developer  in the bank. I was assigned to some tasks to solve some bugs that emerges in the 
-applications  and make new features in some ap plications  like Al A hly Net such as  making  Biometric 
-authentication (F ace ID - Touch ID) to sign in  feature and also  Multiple Transfer service, which allows 
-customers to make more than one (internal/domestic) transfer in one step and more rapidly . make some 
-modification  in the application  UI. Also I work in some tasks on applications  that is still under production that I 
-can’t reveal about it until it is published.  One of my days is that we start our day by making meeting with the 
-scrum master and he discuss with u s the progress every o ne made  yesterday  and also the problems that fa ces us 
-and then he begins to assign tasks to every one of the team then after the meeting every one begins t o work in 
-his tasks and search in the internet for any task  he can ’t do or he can ask anyone in his team.  In some days we 
-go on meeting with some clients to take their requirements  and discu ss with  them  our progress . The 
-technologies  and software s that I used were java, SQL , HTML , CSS, JavaScript and  Http requests . 
-Unfortunately , I can’t give more examples because most of the tasks we were  work on was on applications that 
-is still under production.  
- 
-Internship 
+Tasks: I worked as a developer in the bank. I was assigned to some tasks to solve some bugs that emerges in the applications and make new features in some applications like Al Ahly Net such as making Biometric authentication (Face ID - Touch ID) to sign in feature and also Multiple Transfer service, which allows customers to make more than one (internal/domestic) transfer in one step and more rapidly. make some modification in the application UI. Also I work in some tasks on applications that is still under production that I can’t reveal about it until it is published. One of my days is that we start our day by making meeting with the scrum master and he discuss with us the progress every one made yesterday and also the problems that faces us and then he begins to assign tasks to every one of the team then after the meeting every one begins to work in his tasks and search in the internet for any task he can’t do or he can ask anyone in his team. In some days we go on meeting with some clients to take their requirements and discuss with them our progress. The technologies and softwares that I used were java, SQL, HTML, CSS, JavaScript and Http requests. Unfortunately, I can’t give more examples because most of the tasks we were work on was on applications that is still under production.  Internship 

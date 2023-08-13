@@ -1,14 +1,1 @@
-Tasks:    
-CRM (Customer Relation Management Tool) using retool:  
- SQL Queries  
- JS Queries  
- UX Design  
-Service tracking app using bubble:  
- SQL Queries  
- UI Implementation referencing Figma designs  
-Tool that assess offers using retool:  
- SQL Queries  
- JS Queries  
- 
- 
-Internship 
+Tasks:   CRM (Customer Relation Management Tool) using retool:  SQL Queries  JS Queries  UX Design Service tracking app using bubble:  SQL Queries  UI Implementation referencing Figma designs Tool that assess offers using retool:  SQL Queries  JS Queries   Internship 

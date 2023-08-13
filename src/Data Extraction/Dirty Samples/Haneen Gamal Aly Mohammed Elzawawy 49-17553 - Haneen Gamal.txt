@@ -1,13 +1,1 @@
-Tasks:  I was assigned to 4 tasks, the first Task is developing a GUI for an. EXEC 
-Application for the employees, it was developed using Python PyQt5 on PyCharm Idle, then I got assigned 
-doing an API to retrieve data for another project using JavaScript on VSC Id le and Writing SQL Code for the 
-database, then I got assigned a project working on data processing of a retrieved data from an API using 
-Python's Pandas, and finally I solved an issue in an already existed code. I did research on how to work on 
-BIDS it is the Huawei’s MongoDB and it was on Chinese and I have no idea of it before then I begin to 
-translate it and asking my supervisors for references on how to work on it. The Typical working day starts at 
-8:30 up until 4:30, we would have a sprint meeting ever y Sunday, Tuesday and Thursday., The break starts 
-from 12 till 2 every day, I had a supervisor and Mentor for every task and in some tasks I had a fellow intern 
-working on it with me.  
- 
- 
-Internship 
+Tasks: I was assigned to 4 tasks, the first Task is developing a GUI for an. EXEC Application for the employees, it was developed using Python PyQt5 on PyCharm Idle, then I got assigned doing an API to retrieve data for another project using JavaScript on VSC Idle and Writing SQL Code for the database, then I got assigned a project working on data processing of a retrieved data from an API using Python's Pandas, and finally I solved an issue in an already existed code. I did research on how to work on BIDS it is the Huawei’s MongoDB and it was on Chinese and I have no idea of it before then I begin to translate it and asking my supervisors for references on how to work on it. The Typical working day starts at 8:30 up until 4:30, we would have a sprint meeting every Sunday, Tuesday and Thursday., The break starts from 12 till 2 every day, I had a supervisor and Mentor for every task and in some tasks I had a fellow intern working on it with me.   Internship 

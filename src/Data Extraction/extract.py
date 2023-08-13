@@ -62,12 +62,14 @@ def save_text_to_file(folder_name, file_name, text):
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
     file_path = os.path.join(folder_name, file_name)
+    delete = False
     with open(file_path, 'w',encoding='utf-8') as file:
         if text is None:
-            # # add the file to the errorFiles array
-            # errorFiles.append(file_name)
-            text = ""
-        file.write(text)
+            delete = True
+        else:   
+            file.write(text)
+    if(delete):
+        os.remove(file_path)
 
 def extract_samples(source_folder_path,destination_folder) -> None:
     files_paths = get_pdfs_paths_in_folder(source_folder_path)
@@ -84,7 +86,7 @@ def extract_samples(source_folder_path,destination_folder) -> None:
 
         
 # extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
-extract_samples("C:/Users/maria/OneDrive/Desktop/Internship Project/MET Batch-1","src\Data Extraction\Dirty Samples")
+extract_samples("C:\\Users\\hoda2\\Downloads\\drive-download-20230812T135954Z-001","src\Data Extraction\Clean Samples")
 
 # print the files that has no text
 # print(errorFiles)

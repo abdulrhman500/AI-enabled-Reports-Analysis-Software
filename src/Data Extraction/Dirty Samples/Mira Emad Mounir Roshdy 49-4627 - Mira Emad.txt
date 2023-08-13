@@ -1,14 +1,1 @@
-Activities  
- For the first 2 weeks, I started to know more about the company and its services and 
-products, and which systems and programs do they use. I have been assigned to many different 
-tasks, for example I was given some websites to analyze  their performance and UX/UI design 
-and to report any positive and negative  things, started testing their purple bureau website, 
-designing websites and front end,  learned how search engine works and how optimization and 
-SEO’s work in general, and working on COP27 project website  starting from managing their 
-database, designing the website, connecting the database with all the methods and functions of 
-the website. Generally, we used languages such as C#, HTML, CSS  and SQL server. My typical 
-working day was 8 hours a day, excluding  the 1-hour break, 5 days a week.  Every day  I am 
-assigned to a different task. All employees were helpful and offered me help, they all taught me 
-how to efficiently search what I need and to work efficiently in general. Usually, my supervisor 
-assigns me to  a task or multiple tasks per week and to a specific team or a co -worker and the 
-team helps me to efficiently do the task and understand everything.  
+Activities  For the first 2 weeks, I started to know more about the company and its services and products, and which systems and programs do they use. I have been assigned to many different tasks, for example I was given some websites to analyze their performance and UX/UI design and to report any positive and negative things, started testing their purple bureau website, designing websites and front end, learned how search engine works and how optimization and SEO’s work in general, and working on COP27 project website starting from managing their database, designing the website, connecting the database with all the methods and functions of the website. Generally, we used languages such as C#, HTML, CSS and SQL server. My typical working day was 8 hours a day, excluding the 1-hour break, 5 days a week. Every day I am assigned to a different task. All employees were helpful and offered me help, they all taught me how to efficiently search what I need and to work efficiently in general. Usually, my supervisor assigns me to a task or multiple tasks per week and to a specific team or a co-worker and the team helps me to efficiently do the task and understand everything. 

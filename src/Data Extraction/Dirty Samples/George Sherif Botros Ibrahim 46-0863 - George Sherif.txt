@@ -1,13 +1,1 @@
-Tasks:  (Not less than 100 words)  
- 
-During the project, I was working on figuring out guidelines for stationary and moving vibrations on the palm, 
-which helps in better perception of the vibrations applied from the 15 motors attached to the p alm. The project 
-was divided into 2 necessary modules and 1 additional part, which I proposed to apply along with my 
-supervisor. The first module dealt with stationary vibrations on the palm, where I carried out a user study with 
-16 participants, who were mainly students from the university. I investigated moving vibrations on the palm and 
-how people perceived them during the second module. This was achieved  by carrying out another user study 
-with 20 participants. These 2 modules resulted in the design guid elines for the vibrotactile display on the palm. 
-The additional part was concerned with machine learning, where I implemented models to improve the 
-localization equation used in parts 1 and 2. This resulted in a 30% improvement to the original equation.  
- 
-Internship 
+Tasks: (Not less than 100 words)   During the project, I was working on figuring out guidelines for stationary and moving vibrations on the palm, which helps in better perception of the vibrations applied from the 15 motors attached to the palm. The project was divided into 2 necessary modules and 1 additional part, which I proposed to apply along with my supervisor. The first module dealt with stationary vibrations on the palm, where I carried out a user study with 16 participants, who were mainly students from the university. I investigated moving vibrations on the palm and how people perceived them during the second module. This was achieved by carrying out another user study with 20 participants. These 2 modules resulted in the design guidelines for the vibrotactile display on the palm. The additional part was concerned with machine learning, where I implemented models to improve the localization equation used in parts 1 and 2. This resulted in a 30% improvement to the original equation.  Internship 

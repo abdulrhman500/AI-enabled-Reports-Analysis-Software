@@ -1,10 +1,1 @@
-Tasks:
-In this internship, I was working on a project called “The Pivot Project” which was intended to
-come up with an automation solution to control the pivot in the smart farm, in order to be fullyautomated remotely . I was in char ge of developing a prototype for an automation website for the
-smart farm. I was working solo on this project, reporting directly to the technical director of the
-company , which gave me a sense of responsibility and really made me experience the working
-environment dif ferently . As a result, I had conducted lots of research in-order to achieve my
-weekly tasks. I was working with visual studio code in order to build the mock up of the website
-and used APIs to integrate the backend with the frontend. Moreover , I was discovering how to
-send data via cell phone sim cards.
-Internship 
+Tasks:In this internship, I was working on a project called “The Pivot Project” which was intended tocome up with an automation solution to control the pivot in the smart farm, in order to be fullyautomated remotely. I was in charge of developing a prototype for an automation website for thesmart farm. I was working solo on this project, reporting directly to the technical director of thecompany, which gave me a sense of responsibility and really made me experience the workingenvironment differently. As a result, I had conducted lots of research in-order to achieve myweekly tasks. I was working with visual studio code in order to build the mock up of the websiteand used APIs to integrate the backend with the frontend. Moreover, I was discovering how tosend data via cell phone sim cards.Internship 

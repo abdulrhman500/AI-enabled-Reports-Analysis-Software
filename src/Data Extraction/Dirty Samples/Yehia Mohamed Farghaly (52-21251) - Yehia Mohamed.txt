@@ -1,16 +1,1 @@
-Tasks:  (Not less than 100 words)  
-We created business reports using IBM Cognos 11 to help the customer view the report data  using prompt 
-variables to help key decision makers to take their decisions. Queries were created by us, the developers, using 
-SQL an d IBM Frame work manager. Relationships between database tables and entities to retrieve the data from 
-the database IBM DB2. After  that, the SQL  packages gets imported on IBM Cognos then using the tools in IBM 
-Cognos the reports are created. Used IBM Maximo suite to get relations between tables to write the SQL code        
-5 
-Student Career & Alumni Development Office. scad@guc.edu.eg  | German University in Cairo New Cairo City - Main Entrance Al Tagamoa Al Khames; Egypt  
-and IBM Framework manager. Used IBM Maximo to create workorders and maintenance  plane  to test the 
-reports. Used Python to write automation scripts for IBM Maximo suite.  
- 
- 
- 
- 
- 
-Internship 
+Tasks: (Not less than 100 words)  We created business reports using IBM Cognos 11 to help the customer view the report data using prompt variables to help key decision makers to take their decisions. Queries were created by us, the developers, using SQL and IBM Framework manager. Relationships between database tables and entities to retrieve the data from the database IBM DB2. After that, the SQL packages gets imported on IBM Cognos then using the tools in IBM Cognos the reports are created. Used IBM Maximo suite to get relations between tables to write the SQL code 4 Student Career & Alumni Development Office. scad@guc.edu.eg | German University in Cairo New Cairo City - Main Entrance Al Tagamoa Al Khames; Egypt        and IBM Framework manager. Used IBM Maximo to create workorders and maintenance plane to test the reports. Used Python to write automation scripts for IBM Maximo suite.      Internship 

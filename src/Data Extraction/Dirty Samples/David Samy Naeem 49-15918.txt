@@ -1,16 +1,1 @@
-Tasks:  Firstly , we the backend internship team was assigned to design a code-first  
- database schema by ASP .net Core,EntityFramework handled by a Unit of work Repository pattern that would  
- serve 2 dif ferent applications(Android & IOS) one for doctors and the other for pet owners to give them one  
- place to manage all the details of their pets. The app should include services like:  
- ●  Teleconsultation(Online Appointments with doctors according to their available schedule slots)  
- ●  Articles & V ideos with beneficial content for pet owners  
- ●  A channel where pet owners can find mating matches for their pets  
- 4 
- Student Career & Alumni Development Office.   scad@guc.edu.eg   | German University in Cairo   New Cairo Cit y - Main   Entrance Al T agamoa Al Khames; Egypt  
- ●  E-commerce channel where pet owners can find products for their pets (food, medicines, toys, ..)  
- Moreover an admin web tool to   manage the operations of all these services.Then we started coding all dif ferent  
- APIs,Controllers and routes needed to fulfill all the requirements for the 3 dif ferent stakeholders(roles) securing  
- the app with Microsoft identity authentication along W ith JWT bearer tokens in the login process,then tested all  
- APIs on Postman before deploying them along with the database on Azure online hosting service to ensure that  
- all the responses match what Android,Ios and Frontend need.  
- Internship 
+Tasks:  Firstly, we the backend internship team was assigned to design a code-first  database schema by ASP.net Core,EntityFramework handled by a Unit of work Repository pattern that would  serve 2 different applications(Android & IOS) one for doctors and the other for pet owners to give them one  place to manage all the details of their pets. The app should include services like:  ●  Teleconsultation(Online Appointments with doctors according to their available schedule slots)  ●  Articles & Videos with beneficial content for pet owners  ●  A channel where pet owners can find mating matches for their pets  4  Student Career & Alumni Development Office.  scad@guc.edu.eg  | German University in Cairo  New Cairo City - Main  Entrance Al Tagamoa Al Khames; Egypt  ●  E-commerce channel where pet owners can find products for their pets (food, medicines, toys, ..)  Moreover an admin web tool to  manage the operations of all these services.Then we started coding all different  APIs,Controllers and routes needed to fulfill all the requirements for the 3 different stakeholders(roles) securing  the app with Microsoft identity authentication along With JWT bearer tokens in the login process,then tested all  APIs on Postman before deploying them along with the database on Azure online hosting service to ensure that  all the responses match what Android,Ios and Frontend need.  Internship 

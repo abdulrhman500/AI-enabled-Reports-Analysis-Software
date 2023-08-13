@@ -1,13 +1,1 @@
-Tasks : 
-Conducting my internship at the IT department, I was assigned to 3 main tasks. The first task 
-was to take raw data from different sources(SQL queries to capture data from the database of the 
-company, Excel spread sheets and web sources) and construct the d ashboard of the IT 
-department. This task was all about taking cleaning the data to help us better visualize the various big data using PowerBI and present them to the Chief Information Officer. The second 
-task was to complete the requests of the guarantee system to take the portfolios from the different 
-shareholders like the Central Bank of Egypt, which is the main shareholder of the company and 
-other minimal shareholders like different banks such as CIB. The portfolios  system was divided  
-into 2 types, the  VR portfolios and the SME portfolios. This task was mainly conducted using 
-Oracle Databases. The last task was to develop a web application using Apex to better organize 
-and automate the requests of the guarantees of the company.   
- 
-Internship 
+Tasks: Conducting my internship at the IT department, I was assigned to 3 main tasks. The first task was to take raw data from different sources(SQL queries to capture data from the database of the company, Excel spread sheets and web sources) and construct the dashboard of the IT department. This task was all about taking cleaning the data to help us better visualize the various big data using PowerBI and present them to the Chief Information Officer. The second task was to complete the requests of the guarantee system to take the portfolios from the different shareholders like the Central Bank of Egypt, which is the main shareholder of the company and other minimal shareholders like different banks such as CIB. The portfolios system was divided into 2 types, the VR portfolios and the SME portfolios. This task was mainly conducted using Oracle Databases. The last task was to develop a web application using Apex to better organize and automate the requests of the guarantees of the company.   Internship 
