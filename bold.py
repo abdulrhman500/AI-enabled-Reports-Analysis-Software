@@ -46,16 +46,20 @@ def extract_bold_text_with_regex(pdf_file_path, regex_pattern):
 
     for page_number in range(doc.page_count):
         page = doc.load_page(page_number)
-        blocks = page.get_text("dict", flags=11)["blocks"]
+        blocks = page.get_text("dict", flags=fitz.TEXT_PRESERVE_WHITESPACE, sort ='true')["blocks"]
         for block in blocks:
             for line in block["lines"]:
                 for span in line["spans"]:
+                    # font_name = fitz.Font(span["font"]).name
+                    # print("FONT   ",font_name)
                     if re.findall(regex_pattern, span["text"], re.IGNORECASE):
                         match = re.findall(regex_pattern, span["text"], re.IGNORECASE)
                         # print("MATCH LEN",len(match))
                         count += len(match)
                         print("Count",count)
                         print(span["text"])
+                        print("FLAGS*** ",span["flags"])
+                        # print(is_bold(span["flags"]))
                         if is_bold(span["flags"]):
                             count_list.append(count)
                             print("count list", count_list)
@@ -67,21 +71,28 @@ def extract_bold_text_with_regex(pdf_file_path, regex_pattern):
 
 
 def extract_text_from_PDF(pdf_path):
-    with open(pdf_path, 'rb') as file:
-        pdf_reader = PyPDF2.PdfReader(file)
-        full_text = ""
-        for page in pdf_reader.pages:
-            full_text += page.extract_text()
+    # with open(pdf_path, 'rb') as file:
+    #     pdf_reader = PyPDF2.PdfReader(file)
+    #     full_text = ""
+    #     for page in pdf_reader.pages:
+    #         full_text += page.extract_text()
+    doc = fitz.open(pdf_path)
+    full_text  = ""
+    for page in doc:
+        full_text += page.get_text(sort ="true")
     return full_text
 
 
 def extract_text_from_headline(pdf_path, start, end):
-    with open(pdf_path, 'rb') as file:
-        pdf_reader = PyPDF2.PdfReader(file)
-        full_text = ""
-        for page in pdf_reader.pages:
-            full_text += page.extract_text()
-
+    # with open(pdf_path, 'rb') as file:
+    #     pdf_reader = PyPDF2.PdfReader(file)
+    #     full_text = ""
+    #     for page in pdf_reader.pages:
+    #         full_text += page.extract_text()
+    doc = fitz.open(pdf_path)
+    full_text  = ""
+    for page in doc:
+        full_text += page.get_text(sort ="true")
         # if len(start)!=0:
             # extracted_text = full_text[start[len(start)-1]:end[len(end)-1]
     extracted_text = full_text[start:end]
@@ -91,12 +102,15 @@ def extract_text_from_headline(pdf_path, start, end):
 
 
 if __name__ == "__main__":
-    pdf_file_path = "C:\\Users\\hoda2\\Documents\\NLP Internship\\Dirty Files\\correct template\\(A) Fadi Saber Gamil Asham  46-9988 - Fady Ashem.pdf"
+    pdf_file_path = "C:\\Users\\hoda2\\Downloads\\Not Bold but following template\\Yousef Walaaeldin Korayem 49-5052 - Yousef Korayem.pdf"
     regex_pattern_start1 = "task"
     regex_pattern_start2 = "activities"
     regex_pattern_end = "evaluation"
 
     text = extract_text_from_PDF(pdf_file_path)
+    print("--------------------------------")
+    print(text)
+    print("--------------------------------")
     pos_start1 = find_positions(regex_pattern_start1, text)
     pos_start2 = find_positions(regex_pattern_start2, text)
     pos_end = find_positions(regex_pattern_end, text)
@@ -110,20 +124,75 @@ if __name__ == "__main__":
     print("start2 ", start2)
     print("end ", end)
 
+    not_bold_regex_start1 = "Internship[\s]*[a-z | A-Z]*task"
+    not_bold_pos_start1 = find_positions(not_bold_regex_start1, text)
     if (len(start2) > 0):
         s = start2[len(start2)-1]
     elif (len(start1) > 0):
         s = start1[len(start1)-1]
+    elif(len(pos_start2)> 0):
+        s = pos_start2[len(pos_start2)-1]
+    elif(len(not_bold_pos_start1) >0):
+        s = not_bold_pos_start1[len(not_bold_pos_start1)-1]
     else:
         s = -1
     if (len(end) > 0):
         e = end[len(end)-1]
+    elif(len(pos_end) > 0):
+        e = pos_end[len(pos_end)-1]
     else:
         e = -1
     print(s)
     print(e)
+    print("1111111111")
     extracted_text = extract_text_from_headline(pdf_file_path, s, e)
-    if extracted_text:
+    extracted_text = re.sub('\n', '', extracted_text)
+    if len(extracted_text) >48:
         print(extracted_text)
     else:
-        print("Headline not found in the PDF.")
+        if(len(pos_start2)> 0):
+            s = pos_start2[len(pos_start2)-1]
+        elif(len(not_bold_pos_start1) >0):
+            s = not_bold_pos_start1[len(not_bold_pos_start1)-1]
+        else:
+            s =-1
+        if(len(pos_end) > 0):
+           print("POS_END", pos_end)
+           e = pos_end[len(pos_end)-1]
+        else:
+           e = -1
+        print(s)
+        print(e)
+        print("22222222222")
+
+        extracted_text = extract_text_from_headline(pdf_file_path, s, e)
+        if(extracted_text):
+            print(extracted_text)
+        else:
+            i = 1
+            while(s>e):
+                print("YARAB   ",len(pos_start2)-i )
+                if(len(pos_start2)-i >= 0):
+                    s = pos_start2[len(pos_start2)-i]
+                    i+=1
+                else:
+                    print("Break1")
+                    break
+                print(s)
+                print(e)
+            i = 1
+            while(s>e):
+                print("Yarab  ", len(not_bold_pos_start1)-i )
+                if(len(not_bold_pos_start1)-i >= 0):
+                    s = not_bold_pos_start1[len(not_bold_pos_start1)-i]
+                    i+=1
+                else:
+                    print("HEadline not found")
+                    break
+                print(s)
+                print(e)
+            extracted_text = extract_text_from_headline(pdf_file_path, s, e)
+            if(extracted_text):
+                print(extracted_text)
+            else:
+                print("3333333333")
