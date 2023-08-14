@@ -1,0 +1,9 @@
+The performed tasks for this report are:
+
+1. Research on hexagonal architecture and its application.
+2. Creating an ERD for a new web application and converting it to an actual database using PostgreSQL on pgAdmin.
+3. Working on the API of the web application using Node.js, JavaScript, and Sequelize to link it to the database.
+4. Research on normalization and denormalization and presenting on that topic.
+5. Adding a specific feature to an existing API using JavaScript.
+6. Replacing part of an existing API from Go language to TypeScript with the same logic, architecture, and responses.
+7. Researching and presenting the topic of serverless computing.

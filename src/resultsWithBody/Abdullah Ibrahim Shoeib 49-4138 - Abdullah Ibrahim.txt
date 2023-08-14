@@ -1,0 +1,76 @@
+extracted data:
+Ultimate Solution Experts 
+ 
+This report will be about my experience performing an internship in Ultimate solution Experts for ( 6 weeks  ) month. 
+I trained in the manufacture supply chain and the developing department as I am really curios about how does this filed 
+is projected to the market and within this high market competitions how do each company gives it self the edge above 
+all other companies. I was also really interested on how does programming is implemented under the name of business. 
+The main reason of the internship is to polish my communication abilities and gain experiences that will help me stand 
+out in the job market with the aid of professional working conditions. I wanted the opportunity to learn from and acquire 
+confidence from corporate workers in the process. This report includes information about the business I worked for, the 
+resources it offers, the duties I was given to perform, my impression of the internship, and how it helped me determine 
+out what I'd like to do when I finish my college years. 
+ 
+A team of specialists founded Ultimate Solutions Experts Consulting with the goal of offering top-notch business 
+solutions to clients in a variety of industries. Business Solutions Implementation, Business Solutions Health Check, 
+Systems Support, Business Solutions Upgrade, Business Solutions Training, and Business Process Automation are 
+just a few of the services the company offer. Finance, Supply Chain Management, developing teams, Customer 
+Relationship Management, Human Capital Management, Production, Planning & Maintenance, Supply Chain 
+Management, and other divisions make up an organization. The company is licensed to implement Oracle Solutions 
+and improve them with our sector-specific solutions in order to meet the needs of the customers because it is a 
+platinum Oracle Fusion Partner. The headquarters of Ultimate Solutions Experts are located in Cairo, Egypt, at 274 St. 
+New Maadi 14. The income of Ultimate Solutions Experts exceeds $5 Million. The Co-Founder & Business Solution 
+Manager at Ultimate Solutions Experts (USE) currently is Khaled Kamel. 
+ 
+The internship was for about a month and half period. The internship was every day from Sunday through Thursday 
+from 8:AM to 4:00 PM. The first day in the company I had an individual meeting with the current manager of the 
+company, Mr. Khaled Kamel. The manager firstly gave me descriptive explanations of the companies aim and the 
+current mission. Afterward, he introduced me to all departments in the company and explained briefly the designed 
+tasks for each of them. After I observed all the functioning departments in the company the manager proceeded to 
+explained and assign me the task, I would perform in the whole training period. I trained in the developing and the 
+supply chain departments. In the supply chain it was a new career for me and actually a new field that I was really 
+interested in getting the user requirements of customer and applying this in a full supply chain cycle .in the department 
+we were responsible on the whole cycle from having a meeting with the customer then checking out his requirements 
+and how does he want his oracle fusion cloud works and how to implement his requirements to meet the user 
+experience his system need. We encountered many issues regarding some user requirements so we took advantage of 
+the developing team as to help code and integrate extra extensions for their oracle subscription.  
+ 
+ 
+ 
+ 
+The internship was my first experience in a professional atmosphere that was very different from undergraduate life, 
+therefore I was first nervous about it. I've been able to apply what I've learned in school to issues in the real world 
+thanks to this chance. Working as a team has improved my confidence, time management, and practical skills in 
+addition to my communication, interpersonal, and problem-solving capabilities. By meeting deadlines and completing 
+duties in a professional manner, I improved my feeling of responsibility and acquired the timeliness of professional 
+work. This will eventually be useful to me when I'm working with senior bosses. During the internship, I also 
+developed a number of soft skills, such as communication abilities and the ability to convey important information to 
+supervisors. The internship was very related with my studies in my university (German University in Cairo). For 
+example, we used java Ede in the developing department while coding extra integrated functionalities to add on the 
+oracle system. We were experienced in this coding activities in csen301 course and the network course. One of the 
+most beneficial courses that upgraded my abilities is the software course that helped get used to studying user 
+requirements and designing a prototype frontend application for customer to have a look before implementing the 
+oracle application 
+In conclusion, I had a fruitful and instructive experience throughout my internship. I have learned knowledge and 
+skills from this internship that will be very helpful in my future profession. My understanding of the work that needs 
+to be done, my talents and skills, and the areas I wish to focus on has improved. I had the chance to meet a lot of 
+lovely people, in addition to developing useful skills. I felt at ease at work because of the generally kind and 
+welcoming atmosphere. I learned a lot about how my university's degree is actually offered to the market and broken 
+down into clear departments that are all clearly tied to one another. I'm incredibly thankful to have had such a positive 
+experience overall working with this reputable organisation and my supervisor, Mr. Khaled Kamel. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+response result:
+The intern trained in the manufacture supply chain and developing departments at Ultimate Solutions Experts. They were interested in understanding how the field is projected to the market and how programming is implemented in business. The purpose of the internship was to improve communication abilities and gain professional working experiences. The intern observed all the functioning departments in the company and was assigned tasks in the developing and supply chain departments. In the supply chain department, they were responsible for gathering user requirements, implementing them in Oracle Fusion Cloud, and addressing any issues. The internship helped the intern apply what they learned in school to real-world problems and improved their confidence, time management, and problem-solving skills. They also developed soft skills such as communication and conveying important information to supervisors. The internship was related to their studies at the German University in Cairo, particularly courses on coding and software development. Overall, the intern had a fruitful and instructive experience and gained knowledge and skills that will be beneficial for their future profession.

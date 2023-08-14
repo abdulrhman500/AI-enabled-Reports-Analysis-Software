@@ -1,0 +1,16 @@
+extracted data:
+b"\x0cADES Group is a leading oil & gas drilling and production services provider in the Middle East \n\x0c \n \n \n\x0c \nADES Group is a leading oil & gas drilling and production services provider in the \nMiddle East and Africa, offering offshore and onshore contract drilling, workover and \noffshore production services. Since its establishment in 2002, ADES has grown to \nbecome Egypt's largest offshore drilling operator by number of rigs, with a growing \npresence in the Kingdom of Saudi Arabia, Kuwait and Algeria and ongoing penetration \ninto new MENA markets. \nDuring my time at ADES, I worked on multiple projects that had different requirements \nand tasks. The tasks were mainly software development, some were web development, \ndepending on the project. I arrive at 9:00 at the company\xe2\x80\x99s HQ in Zayed, and begin \ndiscussing with my supervisor the daily tasks and urgent requirements that I could help \nwith during the day after setting everything up. One day there was an upgrade happening \nto the data center which I followed and learned how everything worked in there. I worked \ndirectly and was supervised by the company\xe2\x80\x99s system admin Fady Emad. Also, for the \nfirst month I worked with another IT intern in a couple of the projects. Mainly I used my \nlaptop in everything using a couple of softwares. Softwares such as, MS Sharepoint and \nMS Power Automate that I used to do some web development, Oracle APEX that I used \nto fully build a database that tracked IT assets and managed them in an organized \nmanner. There was also MobaXterm that managed the server and the Virtual machine. \nThese are the main programs. I did a lot of research to be able to work with the all the \nnew softwares that I never used before. And a lot of research to trouble shoot issues that I \nfaced throughout the projects.  \n \n \n\x0c \nIn the internship, I gained new skills and developed old skills that I already had. I learned \nto how in a hierarchal manner which meant that I needed to constantly report to my \nsupervisor. I developed my team working and people skills. I learned how to work and \nadapt to new softwares and rapidly learn from my environment. In the future I will be \nable to make more informed decisions concerning my career based on what I have \nexperienced in the work field. \n \n"
+ response result:
+ The performed tasks mentioned in the report are:
+
+- Software development
+- Web development
+- Upgrade to the data center
+- Learning how the data center works
+- Working directly with and being supervised by the company's system admin
+- Collaborating with another IT intern on some projects
+- Using various software programs such as MS Sharepoint, MS Power Automate, Oracle APEX, and MobaXterm
+- Researching and troubleshooting issues faced throughout the projects
+- Reporting to the supervisor in a hierarchal manner
+- Developing team working and people skills
+- Adapting to and learning from new software and environment.

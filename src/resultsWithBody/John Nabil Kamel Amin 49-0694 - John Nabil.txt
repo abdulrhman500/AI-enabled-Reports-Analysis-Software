@@ -1,0 +1,59 @@
+extracted data:
+Internship Report 
+ 
+           Being a computer engineer gives you the confidence to address a wide range of talents, from building 
+a simple database to developing real websites with a backend and front end that users can interact with. I 
+applied for this internship because it would help my career, allow me to transition into a new period, let me 
+understand and analyze market demands, and teach me how large corporations operate. This report will 
+include a brief summary of Orascom Construction PLC, my role on their team, the duties I was assigned, 
+and the learnings I made from the experience. 
+ 
+           Orascom Construction PLC (OC) is an engineering, procurement, and construction (EPC) contractor 
+based in Cairo, Egypt. The company was Egypt's first multinational corporation and stands at the core of the 
+Orascom Group companies. OC is active in more than 25 countries. OC was established in Egypt in 1950 
+and owned by Onsi Sawiris. It owned and operated cement plants in Egypt, Algeria, Turkey, Pakistan, Iraq, 
+North Korea, and Spain, which had a combined annual production capacity of 21 million tons. Orascom 
+Services grew to serve many vital sectors in the Egyptian market through its wide portfolio covering 
+multiple industries including construction, infrastructure, industrial manufacturing, and agriculture. 
+ 
+My colleagues and I began the internship by studying the principles of object-oriented programming 
+(OOP). Then we were given the task of creating a completely functional website for a To-do list utilizing a 
+database-first approach and Model-View-Controller principles. We utilized ASP.Net C# as our backend to 
+create our models for our books, with the author and user establishing database schemas and producing them 
+using code rather than manually writing SQL. Furthermore, we developed APIs for every function required 
+for the website's control. Following that, we began using Express-Node.js for the website's backend, linking 
+the website to our APIs. Finally, for the website's frontend, we used HTML and CSS. Our supervisor was 
+extremely satisfied of our To-do list because it achieved all CRUD operations. 
+ 
+This internship has provided me with a wealth of fresh experiences. First and foremost, working in a 
+new team with fresh faces and being collaborative with one another with the same goal in mind, which is to 
+get the finest result that satisfies our customer. Second, having to investigate everything was a bit difficult 
+since it was difficult to describe what you truly wanted in Google's search box, but I learned how to search 
+with the proper terms and not constantly rely on our supervisor because he had work to do. This internship 
+exceeded my expectations since it provided me with fresh contacts and hands-on experience in real-world 
+job circumstances. Although we are utilizing multiple programming languages, the ACL course is the most 
+relevant to our internship. 
+Finally, I'd want to thank Orascom Construction PLC for this wonderful chance and experience. I 
+think I have reached a new turning point in my life. I've learnt a lot of useful stuff, both technical and 
+personal. I was able to extend my network and witness how a large team works effectively to produce 
+consistently and successfully in order to revolutionize the construction industry in Egypt and around the 
+world. 
+ 
+References:  
+https://orascom.com/  
+
+response result:
+Performed tasks for this report:
+- Studied principles of object-oriented programming (OOP)
+- Created a completely functional website for a To-do list using a database-first approach and Model-View-Controller principles
+- Utilized ASP.Net C# as backend to create models for books and establish database schemas
+- Produced database schemas using code instead of manually writing SQL
+- Developed APIs for website's control functions
+- Used Express-Node.js for website's backend and linked it to APIs
+- Used HTML and CSS for website's frontend
+- Achieved all CRUD operations for the To-do list
+- Conducted research to investigate and find solutions independently
+- Learned how to search with proper terms and not solely rely on supervisor
+- Gained hands-on experience in real-world job circumstances
+- Expanded network and made new contacts
+- Thanked Orascom Construction PLC for the opportunity and experience

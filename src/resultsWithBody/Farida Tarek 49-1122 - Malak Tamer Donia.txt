@@ -1,0 +1,80 @@
+extracted data:
+Internship Report  
+ 
+The major cause of this report is to explain the internship I participated in at some 
+stage in summertime season July 2022. This file will deliver an in-depth 
+description of the employer relative to the internship, responsibilities preformed at 
+some stage in the internship and my private assessment of the internship. The 
+major cause of this internship become to reveal the interns to the special 
+components of the computer engineering industries. The internship additionally 
+uncovered us to the fields and regions which can be complementary to the skills 
+acquired from college and the sphere of work. The file will first describe the 
+employer then the responsibilities completed and ultimately an assessment of the 
+internship and finishing with a conclusion. 
+ 
+Orion360 is a Global IT Services, Data & Analytics, Consulting and Outsourcing 
+company established in 2010. Their mission was to work with companies in the 
+region to help them with their digital transformation journeys using the best 
+practices and standards found in global companies. It helps deliver to client’s 
+digital transformation agenda through digital services and solutions as well as 
+through digital transformation consulting practice.  They are focused on Data & 
+Analytics, Intelligent Automation and Digital Transformation Consultancy and 
+Project Management. In October 2020, Orion360 became the 1st local Silver 
+Certified Delivery Partner for Blue Prism in the MENA region. 
+ 
+The internship started by a 3-day training about different softwares and tools. The 
+first day we learned how to use Knime, a tool that allows users to visually create 
+data flows, selectively execute analysis steps and inspect results using interactive 
+widgets and views. The second day, we learned how to clean, transform, load and 
+structure data and design data models using PowerBI (an interactive data 
+visualization software product). The third day was all about using SQL database. 
+Throughout the rest of the two months, we created a MVP (minimum viable 
+product) of the Digital Shelf tool; this tool is aiming to build a working solution 
+that collects data of different products across various online stores using Web 
+scraping and RPA (Robotic Process Automation) and provide it to interested 
+retailers and brands in a simplified format. We also chose the database design 
+then created it with Microsoft SQL server management. We used the web scraper 
+tool daily for manual data extraction and inserted these files into excel sheets. 
+This made us able to update the database with these data. We also created tool’s 
+MD (Master Data) and used PowerBI for data visualization. Finally, we created 
+dashboards and charts to clearly represent data to the client.  
+ 
+Throughout the internship, I have received a great set of abilities due to the 
+excessive tools and technologies used. I have discovered that excelling in some 
+subjects is depending on how often I practice these tools and software 
+technologies, which I have practiced a lot of in GUC prior to this internship but in 
+a different way. I have discovered an exquisite deal of new and developed 
+technology used there that now I know how to use, and it was clear how these 
+methods can be used to benefit my career later. The internship will assist me in 
+my choice making system concerning my master’s topic in the future and could 
+aid me make a bought choice primarily based on experience. Almost all my 
+courses had been associated with the internship. Some of them include database, 
+computer science (CS), and operating systems (OS). Honestly, the internship 
+passed my expectations, and I might truly advocate it.             
+ 
+All in all, I solemnly trust that the internship became an exquisite use of my time, 
+and I might truly assist me out withinside the destiny concerning my career. The 
+employer is one of the main digital transformation companies withinside the 
+EMEA area that provides digital solutions to clients and that reality brings a huge 
+deal of significance to the internship. This made me gain insights on different 
+pathways that I can take later in my career and all of which is related to my major. 
+Overall, the internship exceeded my expectations; the management was very 
+supportive and encouraging and I would highly recommend it. 
+ 
+
+response result:
+Performed tasks in the internship:
+
+1. Participated in a 3-day training on different software and tools including Knime, PowerBI, and SQL database.
+2. Worked on creating a MVP of the Digital Shelf tool, which involved collecting data from various online stores using web scraping and RPA.
+3. Designed and implemented a database using Microsoft SQL Server management.
+4. Used a web scraper tool for manual data extraction and updated the database with the extracted data.
+5. Created MD (Master Data) for the tool and used PowerBI for data visualization.
+6. Created dashboards and charts to represent data to the client.
+7. Received training on various tools and technologies used in the internship.
+8. Gained insights on different pathways related to the computer engineering industry.
+9. Developed skills in using software technologies.
+10. Applied knowledge gained from courses such as database, computer science, and operating systems to the internship tasks.
+11. Received support and encouragement from the internship management.
+
+Overall, the performed tasks included training, data collection and manipulation, database design and implementation, data visualization, and using various software and tools.

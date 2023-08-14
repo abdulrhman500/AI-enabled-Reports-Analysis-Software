@@ -1,0 +1,83 @@
+extracted data:
+INTERNSHIP REPORT 
+Orange is one of the world’s leading telecommunications operators with sales of 42.5 billion 
+euros in 2021 and 140,000 employees worldwide at 31 December 2021, including 78,000 
+employees in France. The mission of Orange is to accelerate the digital development of the 
+Egyptian society by providing innovative solutions & unmatched customer experience. 
+Orange aims to provide all kinds of engineering, training, administrative, production, marketing, 
+consultation services and technical experience and technicians in all aspects especially in 
+communication and information technology aspect in Egypt and abroad. 
+I was part of the data platform team in Orange Egypt.  
+Specifically, I contributed to the architecture of the data pipeline. This data pipeline is crucial to 
+enabling Orange to be data driven and harness the abundance of data that is generated on a 
+daily basis. 
+ For the first 2 weeks I learned all about the architectures/model used for the data platform and 
+the different batch and real time processing applied to the data.  
+ 
+After familiarizing myself with the system and the practices of the team, I was assigned a 
+challenging task, that would contribute greatly to minimizing errors in the different used 
+processes when accessing data from the data lake of the organization.  
+ 
+I worked on developing a distributed application that validates HDFS files on a Hadoop cluster. 
+This challenging task helped me gain a lot of knowledge about distributed systems and big data 
+processing frameworks in a production environment. 
+ I spent a lot of time researching Hadoop and HDFS which is a distributed file system and going 
+over the documentation which was quite dense and unmaintained. 
+ This is essentially due to the unorthodox nature of the task I was given. 
+ I was aiming to validate different segments of the same file in parallel, as the files are 
+distributed, to speed up the validation process. 
+ 
+I learned all about distributed systems in a real-life application, which is a quite complex topic. I 
+also learned several useful tools and frameworks along the way such as docker and Hadoop. 
+ And I also learned how to navigate a complex topic and communicate complex proposed 
+solutions with my colleagues/supervisor.  
+ 
+ The internship did indeed meet my expectations as I was targeting internship positions that 
+deal with the big data and distributed systems in general. Moreover, my supervisor was very 
+helpful and passionate about software engineering.  In fact, he was interested in the topic 
+himself such that he was invested in my progress. 
+ 
+How do you think the internship activities that you carried out are correlated with your studies? 
+ Which of the academic courses that you have taken in GUC were the most related to your 
+internship?  
+The activities are correlated to my studies and one can argue that is an extension to the theory I 
+learn in lectures at the GUC. The internship offers insight about how multi-national companies 
+actually work with big data and at a very large data generation rate. Some courses that helped 
+are Software Engineering and Databases 2.  
+ 
+I would recommend Orange to engineering students as my to my personal experience was very 
+positive. However, the satisfaction can vary from team to team and depends a lot about the 
+supervisor you are paired with.  
+ 
+In conclusion, my internship at Orange Egypt was very beneficial from a technical standpoint, as 
+well as the non-technical side of things. I was given the opportunity to work in a very 
+interesting task to me that was quite challenging and that I enjoyed. The telecommunication 
+industry is a great industry for engineers who are interesting about big data, data analysis and 
+machine learning. 
+ 
+ 
+ 
+EVALUATION FORM 
+ 
+ 
+ 
+CERTIFICATE 
+ 
+ 
+
+response result:
+- The intern was part of the data platform team in Orange Egypt.
+- The intern contributed to the architecture of the data pipeline.
+- The intern learned about the architectures/model used for the data platform and different batch and real-time processing.
+- The intern was assigned a task to minimize errors in accessing data from the data lake of the organization.
+- The intern worked on developing a distributed application to validate HDFS files on a Hadoop cluster.
+- The intern spent time researching Hadoop and HDFS to understand the task.
+- The intern learned about distributed systems and big data processing frameworks.
+- The intern learned about tools and frameworks such as Docker and Hadoop.
+- The intern had a supervisor who was helpful and passionate about software engineering.
+- The activities carried out during the internship are correlated with the intern's studies.
+- The internship provided insight into how multinational companies work with big data.
+- Courses in Software Engineering and Databases 2 at GUC were related to the internship.
+- The intern had a positive experience at Orange Egypt but recommends considering the team and supervisor pairing.
+- The internship was beneficial both technically and non-technically.
+- The telecommunication industry is recommended for engineers interested in big data, data analysis, and machine learning.

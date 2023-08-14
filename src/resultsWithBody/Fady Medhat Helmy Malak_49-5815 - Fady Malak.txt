@@ -1,0 +1,87 @@
+extracted data:
+Internship Report
+A working career is something that sits at the pinnacle of a person’s life choices. It is
+widely considered as the most vital step in a person's life and requires too much
+consideration and looking. Just like everyone, I take my career very seriously and in order to
+follow my career choice of becoming a software engineer, I chose to gain experience in my
+field to gain real world experience working in a worldwide company like TPAY MOBILE and
+interacting with professionals to gain knowledge from them. In this report, I will go on to talk
+about the company and what it does and stands for, about what I learned, gained, and
+performed in the company during my internship period, and lastly about my assessment of
+the internship program and how my experience was in the internship and my interactions
+with my mentors.
+For local and global digital service providers, accepting cross-border digital payments
+across MEA and Turkey has been complex, involving multiple service providers – until now.
+By acting as an acquirer and payment processor, TPAY MOBILE provides the only full
+service, end to end mobile payments platform in the region. Even better, this is achieved
+through a simple integration with a single API. Put simply, TPAY MOBILE makes it easy for
+global digital service providers to leverage our local expertise, access customers and accept
+payments in emerging markets, enabling rapid business growth and improving financial
+inclusion. TPAY MOBILE strives to ease the process of payment in the region. TPAY
+MOBILE interacts with large enterprises and charities in Egypt and the Middle East region.
+This is a Product-House company.
+The main objective of this internship was to gain experience in the real work
+environment and see how things are run in a company. While in the GUC, we are given
+multiple team projects to work on, it was to no surprise that there was still a large learning
+curve to deal with and adapt to by working in a large company even though the projects
+provided in GUC help somewhat ease the adaptation process. The main end task was to
+learn how to make a website, specifically an Online Payment website. The first that comes to
+mind is to make a User Interface and some methods and functions that do certain stuff;
+however, in actuality, it is quite different since there are a lot of details to consider in making
+an online payment website. It is not only what the website should enable a user to do but
+how it does so, how the interface looks in order to be understandable and easily navigable
+and provide all required and comforting options and settings. First off, I learned how to
+interact and use github since it is a vital tool to use in the life of software engineering in order
+to ease merging codes and working agile in teams. I then used my knowledge of SQL
+gained from the GUC in order to create a Database for the website. With a few modifications
+and new information from my mentor, the Database was normalised and consistent. After
+doing so, I had to connect the database to the ASP.Net, the technology the company uses. It
+was kind of confusing but after watching a few tutorial videos online, I finished the task. I was
+given the task of starting to create APIs for the website that I started to work on and
+researched a bit about it to figure it out and took some hints from my mentor. I started testing
+my APIs and created a simple frontend design for my website and kept learning how to fix it
+and created more APIs. As I progress in the program, I realise more things to consider while
+making a website.  I would try to handle everything I learned and that came to mind while
+planning and working.
+In this program, I gained so much knowledge in the real work experience and how
+things actually work. I learned how people creating a website actually think and what they
+take into consideration and handle in order to improve the user experience on the website. I
+learned how to divide and conquer my work and tasks which is something I struggled with at
+the beginning massively. I also learned a new technology. This knowledge and much more
+would have never come across me this early in my life if it wasn’t for this internship program.
+The internship met my expectations and brightened my mind towards many things I didn’t
+have the slightest knowledge about. I wanted to be a backend software engineer, and I was
+given a task to see how a website is created. The internship showed me that I am extremely
+interested in backend development and I wish to pursue such a career and maybe even
+expand my knowledge and expertise by becoming a full stack software developer. Most of
+the tasks and knowledge was correlated to my studies and major. It focused on a life
+example of how projects created are handled and how they should be tackled. All academic
+courses in the GUC that require working in a project show a sample of how a work team
+operates and all of the Computer Science courses are very related to the work I did in TPAY
+MOBILE. Even if sometimes the technology is different, the idea is consistent and stays the
+same across the University and work.
+I fortunately interacted with really professional and respectful people. All my mentors
+and coworkers were very respectful, polite and humble people that were very welcoming and
+made me feel at home. Due to my mentor being busy as he is a Senior software developer
+in a large company, interaction and communication was slightly delayed and help wasn’t
+always available for me when I was stuck in problem; however, help will never be always
+available in work and self study is a must in every company since bosses and mentors also
+have work to do, I just wish I had more time with my mentor as spending time with him would
+undoubtedly make me gain even more knowledge. But overall, it was a fun, knowledgeable
+and fulfilling experience that I truly enjoyed.
+
+response result:
+The performed tasks during the internship at TPAY MOBILE involved:
+
+1. Learning how to interact and use Github for code merging and agile teamwork.
+2. Creating a Database for the website using SQL, with guidance from the mentor.
+3. Connecting the database to the ASP.Net technology used by the company.
+4. Starting to create APIs for the website and researching how to do it.
+5. Testing the created APIs and making necessary improvements.
+6. Designing a frontend for the website and continuously learning and fixing any issues.
+7. Gaining knowledge and understanding of the considerations and processes involved in creating a user-friendly website.
+8. Learning how to divide and conquer tasks and work efficiently.
+9. Gaining exposure to backend development and discovering a strong interest in pursuing a career in this field.
+10. Interacting with professional and respectful mentors and coworkers.
+11. Overcoming challenges and finding solutions through self-study and independent problem-solving.
+12. Overall, gaining valuable real-world work experience and knowledge that aligned with academic courses and studies at GUC.

@@ -1,0 +1,20 @@
+The performed tasks for this report include:
+
+1. Learning about different technologies and concepts related to web development.
+2. Fixing bugs and adding new features to the company's code.
+3. Analyzing and implementing user stories.
+4. Participating in standup meetings and providing updates on tasks.
+5. Conducting research on helpful technologies for the company.
+6. Collaborating with team members to solve urgent problems.
+7. Working with Spring Boot as the backend technology for the web-based application.
+8. Using MYSQL for the database and Postman and Swagger for testing endpoints.
+9. Researching topics such as SOLID principles, design patterns, microservice architecture, caching, setting up config servers and eureka servers, REST, DTOs, OOP, TDD, and other backend concepts.
+10. Writing clean and structured readable code.
+11. Working with a large-scale team and integrating work with them.
+12. Acquiring skills in researching and gathering information from various sources.
+13. Gaining experience and knowledge in backend development.
+14. Applying concepts learned in courses such as Software Engineering, Databases 1 and 2, Data Structures and Algorithms, and OS.
+15. Recommending others to join the company.
+16. Improving coding and problem-solving skills.
+17. Understanding how the market operates and the importance of flexibility and acceptance of new technologies.
+18. Learning about company management and the roles and responsibilities of different team members.

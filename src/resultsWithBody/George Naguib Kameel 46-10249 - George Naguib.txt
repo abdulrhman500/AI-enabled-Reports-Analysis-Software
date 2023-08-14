@@ -1,0 +1,73 @@
+extracted data:
+Sarana Jewelry Internship
+This internship was conducted at Sarana Jewelry in Cairo, Egypt. In Cairo, Egypt. There
+were two key goals for the internship. One goal was to learn and explore how to integrate
+a 3D model into an application and how to use Xamarin forms or Flutter to construct an
+application. Implementing the internship's major project had another purpose.
+Implementing a cross-platform mobile application for Sarana Jewelry was the project's
+challenge. The purpose of the application was to market Sarana's jewelry. The mobile app
+shows the pieces of jewelry as a 3D model rather than simply a normal 2D image, which
+is the major premium feature that sets it apart from other jewelry digital marketing
+applications. This report demonstrates a brief description of Cloudastick systems, then
+the nature of tasks performed during the period of the internship,then my own evaluation
+of the internship, and finally a conclusion to summarize my overall experience in the
+internship.
+One of the biggest jewelry manufacturers and retailers, Sarana Jewelry, was founded in
+the early 2000s. Additionally, Sarana jewelry maintains a strong presence at international
+trade shows and serves clients from all over the world. Additionally, Sarana Jewelry is a
+part of the renowned HRD club. Additionally, several members of Sarana's family have
+worked in the industry for over 35 years, and other people are qualified diamond graders
+by internationally renowned organizations like HRD & GIA. Rings, twins, bracelets,
+pendants, and earrings are a few examples of products.
+There were three interns altogether on the project, including me, plus an IT department
+supervisor. The Flutter open-source UI software development kit and the Dart
+object-oriented programming language were used to construct the application. The three
+interns conducted research on how to create an application using Flutter and Dart as well
+as how to render 3D models into that application. Additionally, Xamarin, C#, XML was
+initially studied and investigated; however, Xamarin had no effective libraries that
+effectively imported 3D models, thus Flutter was chosen. Three pages make up the final
+application: the home page, the page for the chosen product, and the page for the 3D
+model. The customer may locate all the items on the home page and choose one of them.
+The product page then shows a 2D representation of the item, its color (rose gold, gold, or
+silver), and several other attributes. The user may access the 3D page by clicking the 3D
+button on the product page. The user may freely move around the model on the 3D page,
+which presents the product in 3D. (rotating and zooming).
+I've gained a lot of worthwhile skills through my internship. Technical abilities include
+understanding how to show a 3D model using the Babylon library, how to create a
+cross-platform mobile application using Xamarin Forms, and how to implement a
+cross-platform mobile application using Flutter and Dart. Working in a team, reporting to
+our supervisor in a timely way, and studying on our own are all examples of soft skills
+(research skills). My expectations were satisfied by this internship since I learned how to
+make cross-platform mobile applications. Additionally, this will have a significant impact
+on my future career because this is a field I'd like to work in. There are similarities
+between Java and the Dart programming language. The GUC courses I took that are most
+relevant to the internship are Introduction to Computer Programming, Data Structures and
+Algorithms,Object-oriented Programming, Databases I, Web Technologies and Usability
+and Advanced Media Lab (MERN stack).
+To summarize all that has been said thus far, my internship at Sarana Jewelry has given
+me a great deal of information and experience. Learning more about mobile applications
+and improving my research abilities were wonderful experiences.
+The project was completed by two interns and myself, thus I was also able to develop my
+cooperation abilities. Additionally, working remotely was quite beneficial for me since it
+gave me an idea of what an engineer's typical day might be like. These greatly motivated
+me and provided me with fresh job ideas.
+
+response result:
+The tasks performed during the internship at Sarana Jewelry include:
+
+1. Learning and exploring how to integrate a 3D model into an application.
+2. Learning how to use Xamarin forms or Flutter to construct a mobile application.
+3. Implementing a cross-platform mobile application for Sarana Jewelry to market their jewelry.
+4. Researching and studying Flutter and Dart to create the application.
+5. Researching and investigating Xamarin, C#, and XML initially, but ultimately choosing Flutter due to its more effective libraries for importing 3D models.
+6. Creating three pages for the mobile application: the home page, the product page, and the 3D model page.
+7. Showing a 2D representation of the chosen product on the product page, including its color and other attributes.
+8. Allowing the user to access the 3D page by clicking a button on the product page.
+9. Implementing the 3D page to allow the user to freely move around and interact with the 3D model of the product.
+10. Developing technical skills in using the Babylon library, Xamarin Forms, and Flutter and Dart.
+11. Working in a team and reporting to a supervisor in a timely manner.
+12. Developing soft skills such as research skills and self-study.
+13. Gaining knowledge and experience in mobile application development and improving research abilities.
+14. Developing cooperation abilities by completing the project with two other interns.
+15. Gaining insight into the daily routine of an engineer through remote work.
+16. Finding motivation and generating new ideas for future career opportunities.

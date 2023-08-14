@@ -1,0 +1,103 @@
+extracted data:
+Internship Report
+This report shows and includes all activities and duties done in my summer internship at
+Valeo as a software engineer intern specifically in (THS) Thermal and Heat System department.
+My internship duration was from 5th of September 2021 to 11th of November 2021. The main
+purpose of this report is to deliver some info about the company, what are the departments
+included in it, and what kind of projects I am working on during my internship at Valeo. I had a
+defined plan and passion to know about all the technologies that could be used in all domains
+such as embedded systems, electronics, networks, software applications, etc. and to see how I
+could apply what I’ve learnt on my own and in the GUC (MET). However, in order to get
+exposure in all domains, I have chosen to join valeo in summer of 2021 to learn and seek more
+about embedded systems and how a software engineer works in such a corporate environment.
+Valeo is an automotive supplier and partner to automakers worldwide.They provide
+cutting-edge solutions for smart mobility as a technology firm, with an emphasis on CO2
+emissions reduction and intuitive driving in particular. Valeo concerns about 4 main technical
+areas, which are efficiency of internal combustion and energy, which concerns with thermal
+management, Air intake module, and e-supercharger, electrification, which concerns with
+energy management, inverters, and chargers, downspeeding and automation, which focuses on
+torque converter and dual clutch transmission, Efficiency of Auxiliary systems, which concern
+with LED, wiper systems, and HVAC (Heating and Ventilation and air conditioning). For me I
+have worked on 2 projects in 2 different areas which are efficiency of internal combustion and
+energy and Efficiency of Auxiliary systems.
+The 2 projects ,that I have mentioned their technical areas, were under the supervision of
+the tooling team in THS department. What the tooling team does is create software tools and
+utilities that could be used by other teams in the department to facilitate processes and testing.
+The first project was concerned with a sensor that is used for control and diagnostics of emission
+systems utilizing diesel particulate filters (DPF) and it’s called PM sensor (particulate matter
+sensor). I was prompted to add a new feature to ensure the calculation of multiple sensors instead
+of one and to be done in a timeline with a delay in microseconds and display it in desktop
+application. In order to execute and to make a progress to implement this feature I have to know
+how I will communicate with the sensor using the LIN (local interconnect network) protocol and
+read the documentation of a library that is called BabyLIN (that was used to ensure that I can
+communicate with the sensor chip).
+The second project, which concerns HVAC (Heating, Ventilation , and Air Conditioning),
+focuses on implementing a new tool which concerns calculating new values added in HVAC but
+in an external application.
+The skills that I have gained through this internship are how to design a system and put
+system requirements that a client has described to me in order to implement such features in the
+right way. Furthermore, I have learnt a lot about embedded systems and how I could implement a
+lot of features and projects in a systematic way (for example I have gone through the projects
+using V cycle methodology to meet deadlines and troubleshooting issues). Valeo internship was
+an exceptional internship as I have not learnt a lot of knowledge about all these technologies
+from day zero till the last day. I think this internship will affect my career as it made me know
+more about how a corporate company deals with mega projects and it gives me a great exposure
+of the domain of embedded systems which can help me one day in other rival companies.
+Moreover, I have learnt additional material on top of what I have learnt in the GUC (MET)
+which was focused on OOP (CSEN401) and DSD and also DLD.
+In conclusion, my experience at valeo was very crucial in my career and I know one day I
+will thank all my colleagues that I have met there at valeo to let me know how things work there
+and how I can deal with their projects. I have gone through  2 projects that could be a golden step
+in my computer engineering knowledge and also a nice gain to know more about embedded
+systems and their protocols from professionals and engineers. I have gained a great skill of how
+to operate meetings and conduct them in a professional way and to handle all the points that have
+been discussed, especially if this meeting is with a client.
+TOP SERVICE 
+Human Resources Consultant 
+Cairo in March 06, 2022 
+TO WHOM IT MAY CONCERN 
+Experience Certificate 
+This is to certify that Mr. Aly Hassan Abdelrahman Hassan Abdelmaguid Elsokkary 
+has joined Top Service Company under a project term contract with Valeo Egypt 
+since September 2021 till November 2021. 
+He completed his internship in Valeo Egypt from September 2021 to November 
+2021. 
+Aly is a sincere, honest, hardworking, dedicated employee with a 
+professional attitude and very respectable job knowledge. 
+Aly has always rendered his services with the highest degree of responsibility 
+and Professionalism and we wish Aly all the best in his future endeavors. 
+This certificate was given to him at his request without any liability on the company 
+Yours sincerely, respect, 
+General Manager 
+Ashraf Nofal 
+Commercial Register: 414387 
+Tax Card: 5-571-530-01-24 
+)hr8 8e 
+Ts 
+hraft !of 
+Chairmwe 
+199 St., Building 3A, Degla - Maadi,Cairo - Egypt 
+E-mail : info@top-egypt.com 
+Web : top-egypt.com 
+Tel : +202 225198945 - 27545948 - 27545936 - 27545937 
+Fax: +202 25198765 
+Mob: +2 01066603830-01050484443 
+
+response result:
+The performed tasks during the internship at Valeo as a software engineer intern in the THS (Thermal and Heat System) department included:
+
+1. Working on a project related to a sensor for control and diagnostics of emission systems utilizing diesel particulate filters (DPF) called PM sensor. The task was to add a new feature to ensure the calculation of multiple sensors instead of one and display it in a desktop application.
+
+2. Communicating with the sensor using the LIN (Local Interconnect Network) protocol and using the BabyLIN library for communication with the sensor chip.
+
+3. Implementing a new tool in the HVAC (Heating, Ventilation, and Air Conditioning) project that involved calculating new values added to the HVAC system in an external application.
+
+4. Designing a system and implementing system requirements based on client descriptions.
+
+5. Implementing projects using the V cycle methodology to meet deadlines and troubleshoot issues.
+
+6. Gaining knowledge about embedded systems and their protocols.
+
+7. Learning additional material on top of what was learned in the GUC (MET) related to Object-Oriented Programming (CSEN401), Digital System Design (DSD), and Digital Logic Design (DLD).
+
+Overall, the internship provided exposure to corporate project management, embedded systems, and various technologies. It enhanced the skills of system design, implementation, and communication.

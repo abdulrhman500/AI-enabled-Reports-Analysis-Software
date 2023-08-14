@@ -1,0 +1,21 @@
+The information about the performed tasks in this report includes:
+
+- The main goal of the internship was to develop a functional web application using SSMS, .NET Core Entity Framework, and Angular.
+- The web application developed was a Café/Cyber reservation system, where users can reserve rooms or devices online and the cyber manager can accept or reject the reservation.
+- The interns had to learn how to use the languages mentioned above and apply them to develop the application.
+- The interns worked in sprints to manage their work ethic.
+- The interns worked from 8 AM to 4 PM, sometimes even later, following the company rules of dressing in a suit and tie.
+- The interns used tools such as SSMS, .NET Core Entity Framework, and Angular for development.
+- The interns performed weekly tasks to test their learning and skills.
+- The most challenging part of the internship was the Angular part, especially the HTML CSS design and routing between modules.
+- Work samples of the project, including an API version and pictures of a beta front end, are available.
+- The internship helped the intern gain confidence in development skills, learn new technologies, and lead a team.
+- The internship was highly intense and condensed, with a lot of new knowledge being learned and applied to build a real-life app.
+- The internship was highly related to the intern's major, focusing on web development and core topics such as object-oriented features, database management, and software development.
+- The intern recommends the internship experience at AUB to CSEN GUCians who are interested in software and web development.
+- The intern was paid for the work done during the internship.
+- The intern learned core concepts and technologies such as SQL Server Management System, Angular, .NET Core Entity Framework, and C#.
+- The intern highly values the experience, as it shaped the way of thinking moving forward.
+- AUB is seen as doing a good job in putting technology forward in the world of finance and banking in regards to the development sector.
+
+References are provided for the main AUB page, AUB mission, vision, strategic objectives, reports, and an API/backend version of the project.

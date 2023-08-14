@@ -1,0 +1,17 @@
+The performed tasks during the internship at Flextock can be summarized as follows:
+
+1. Learning tasks: The intern was assigned learning tasks to gain practical skills in full-stack software engineering, web app development, testing, and deployment. They learned and applied their knowledge by creating simple components and APIs.
+
+2. Testing implemented features: The intern worked on testing various features, such as cart behavior when switching marketplaces, synchronization between e-commerce websites, and address validation.
+
+3. Adding a field for order status: The intern was tasked with adding a field that showed the reason for order statuses (e.g., canceled, not verified) in the Alkaseba website. This required creating a new table in the database and modifying the front-end and back-end accordingly.
+
+4. Alkaseba Content Change: The intern worked on a front-end task to make the Alkaseba website more accessible for Saudi Arabian users. They added text in the Saudi dialect using localization.
+
+5. Whatsapp confirmation project: The intern created an API that sends confirmation messages to customers via WhatsApp, reducing the workload on the confirmation team.
+
+6. Adding a new field to the order form: The intern added a "secondary phone number" field to the order form, requiring changes in the back-end, validation, and the bulk order upload module.
+
+7. Viewing tracking number field: The intern added functionality to display the tracking number field in the Alkaseba front-end.
+
+Throughout the internship, the intern worked with the Tech department, used Jira for task management, and collaborated with their squad. They also participated in daily stand-up meetings and received guidance and feedback from the team. The internship provided valuable learning experiences, practical application of knowledge, and exposure to the startup environment.

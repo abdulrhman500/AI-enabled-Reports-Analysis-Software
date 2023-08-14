@@ -1,0 +1,48 @@
+extracted data:
+During the summer I had my internship in Sana Soft company that offers a wide range of 
+services and solutions in computer systems hardware and computer systems. SANA 
+Technology, founded in 2002, is a leading Systems Integrator with a proven record of 
+accomplishments and successful customers. Its mission is to provide the customers with the 
+latest technology solutions that allows them grow their business, increase productivity, and 
+focus on innovation while we manage their systems integration. SANA Technology 
+specializes in bringing together your component subsystems into a whole and ensuring that 
+those subsystems function together.  
+I worked during the summer full time, 5 days a week, 8 hours per day and although this 
+consumed a lot of energy, but at the end I enjoyed it to the max as I learned a lot of things. 
+My work was mainly software in app development and i avoided most hardware tasks. I 
+worked with my colleagues in the internship in like a demo website and app for the company. 
+At the beginning i got a brief review on python and java but my main work was with java and 
+I needed a bit sql to deal with the databases.  
+The staff was really friendly with me and tried to help me in every possible way. They knew 
+that this was my first internship so they showed support and made me feel comfortable and 
+explained to me anything that was new to me. Off course somethings I had to self learn but 
+this wasn’t a problem because at the end i don’t have to be spoon fed everything.  
+I learned a lot from this internship both academically and personally. Academically I learned 
+what an actual job in a company will look like and how things work and not just sitting at 
+home doing projects like in school or even university. I also learned to do research to 
+understand anything that is new to me instead of just taking the easy way and asking my 
+friend or the TA. Personally I met new people that some of them are now my friends. They 
+taught me to motivate people that are shy and make them feel home like they did to me. I’am 
+now excited to finish university and work as the working environment can be fun.  
+I worked with engineer Mohamed Talaat who was really friendly with me and treated my like 
+a family member not an employee, but he didn’t allow me to share any of the information 
+related to the company or tasks as this is related to the security of the company as he stated, 
+but he told me that anyone who need further information about my internship could contact 
+him and he will tell them all what they need.  
+Company Link: shttps://sanasofteg.com/ 
+
+response result:
+Performed tasks:
+- Full-time internship for the summer
+- Worked 5 days a week, 8 hours per day
+- Mainly focused on software development and app development
+- Worked on a demo website and app for the company
+- Initial review on Python and Java, but mainly worked with Java
+- Required some knowledge of SQL for dealing with databases
+- Received support and guidance from friendly staff
+- Learned about the working environment in a company
+- Developed research skills to understand new concepts
+- Met new people and made friends
+- Worked with engineer Mohamed Talaat
+- Not allowed to share company information or tasks for security reasons
+- Contact information for further information about the internship: engineer Mohamed Talaat

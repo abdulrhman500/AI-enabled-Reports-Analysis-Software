@@ -1,0 +1,15 @@
+Performed tasks in the internship:
+
+1. Participated in a 3-day training on different software and tools including Knime, PowerBI, and SQL database.
+2. Worked on creating a MVP of the Digital Shelf tool, which involved collecting data from various online stores using web scraping and RPA.
+3. Designed and implemented a database using Microsoft SQL Server management.
+4. Used a web scraper tool for manual data extraction and updated the database with the extracted data.
+5. Created MD (Master Data) for the tool and used PowerBI for data visualization.
+6. Created dashboards and charts to represent data to the client.
+7. Received training on various tools and technologies used in the internship.
+8. Gained insights on different pathways related to the computer engineering industry.
+9. Developed skills in using software technologies.
+10. Applied knowledge gained from courses such as database, computer science, and operating systems to the internship tasks.
+11. Received support and encouragement from the internship management.
+
+Overall, the performed tasks included training, data collection and manipulation, database design and implementation, data visualization, and using various software and tools.

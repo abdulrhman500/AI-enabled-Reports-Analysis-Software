@@ -1,0 +1,47 @@
+Performed tasks during the internship:
+1. Gathering a dataset for training a machine learning model for emotional Egyptian speech recognition.
+2. Recording audio files using Audacity software.
+3. Recording a total of 500 audio files ranging from 1 second to 9 seconds from 3 different Egyptian series.
+4. Recording 6 different emotions: sad, happy, angry, surprised, fearful, and neutral.
+5. Balancing the audio files for accuracy.
+6. Filling an excel sheet with the names of the audio files, gender of the speaker, age group of the speaker, and emotion of the speaker.
+7. Data analysis using Python and pandas library on Google Colab.
+8. Calculating the total number of males and females in the audios.
+9. Finding the total number of each emotion.
+10. Listening to teammates' audio files (1500 audio files) and voting on the emotion present in each audio.
+11. Writing a code to change the emotion of the audio according to the emotion with the most votes.
+12. Coding task to remove silence or noise in the audio files using the noisereduce library in Python.
+
+Tools used during the internship:
+1. Audacity software for recording audio files.
+2. Python for data analysis and coding tasks.
+3. Pandas library for data analysis.
+4. Google Colab for data analysis.
+5. VS Code for writing Python code.
+
+Skills gained during the internship:
+1. Data analysis skills.
+2. Data science skills.
+3. Coding and debugging skills.
+4. Problem-solving skills.
+
+Relevance to studies:
+1. Related to studies in computer science and signal and system theory.
+2. Used Python and ran code on data to gain insights.
+3. Debugged errors in the code.
+4. Improved understanding of machine learning and artificial intelligence.
+
+Benefit of the internship:
+1. Improved data analysis and data science skills.
+2. Enhanced coding and debugging skills.
+3. Increased interest in machine learning and artificial intelligence.
+4. Explored career opportunities in data engineering and data science.
+
+Recommendation:
+1. Would recommend similar internships to fellow GUC students.
+
+Overall experience:
+1. Challenging yet eye-opening experience.
+2. Learned about different computer science fields and career options.
+3. Developed problem-solving skills.
+4. Contributed to improving the accuracy of the machine learning model by increasing the dataset.
