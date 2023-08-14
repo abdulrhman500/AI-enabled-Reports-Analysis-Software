@@ -84,7 +84,8 @@ def extract_samples(source_folder_path,destination_folder) -> None:
 
         
 # extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
-extract_samples("C:/Users/maria/OneDrive/Desktop/Internship Project/MET Batch-1","src\Data Extraction\Dirty Samples")
+print("hi there!")
+extract_samples("D:/A-erasi/MET Batch1","src\Data Extraction\Dirty Samples2")
 
 # print the files that has no text
 # print(errorFiles)

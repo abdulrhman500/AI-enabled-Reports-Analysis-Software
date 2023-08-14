@@ -6,7 +6,7 @@ from PIL import Image
 from pdf2image import convert_from_path
 
 def get_text(pdf_path):
-    images = convert_from_path(pdf_path)
+    images = convert_from_path(pdf_path, poppler_path="C:/Users/Ahmed Hatem/poppler-23.08.0/Library/bin")
     # Specify the page number to start from
     start_page = 4  # Change this to the desired start page number
 
@@ -15,7 +15,7 @@ def get_text(pdf_path):
     for page_num, image in enumerate(images, start=1):
         if page_num < start_page:
             continue  # Skip pages before the start page
-
+        pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
         text = pytesseract.image_to_string(image, lang='eng')
         extracted_text += text + "\n"
 
