@@ -33,9 +33,9 @@ for pdf_file in os.listdir(pdf_directory):
         prompt = f"Extract the information about the performed tasks for this report:\n{pdf_content}"
 
         # Make an API call to GPT-3
-        response = openai.Completion.create(
-            engine="davinci",
-            prompt=prompt,
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages = [{"role":"user","content":prompt}],
             max_tokens=600
         )
 
@@ -64,7 +64,7 @@ for pdf_file in os.listdir(pdf_directory):
         # print("response saved for "+"result")
 
         # Extracted response
-        extracted_information = response.choices[0].text
+        extracted_information = response.choices[0].message.content
         print(extracted_information)
         # Save the response to a text file
         output_filename = os.path.splitext(pdf_file)[0] + ".txt"
