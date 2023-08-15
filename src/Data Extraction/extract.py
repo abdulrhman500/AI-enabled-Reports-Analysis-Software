@@ -21,34 +21,6 @@ def extract_text(file_path)-> string :
 
 def extract_scanned_text(file_path)-> string:
     extract_scanned_pdf.get_text(file_path)
-
-def is_scanned_pdf(pdf_path, start_page=4, end_page=None, max_words_threshold=50):
-    try:
-        with fitz.open(pdf_path) as doc:
-            if end_page is None:
-                end_page = doc.page_count
-
-            for page_number in range(start_page, end_page):
-                page = doc.load_page(page_number)
-                text = page.get_text()
-
-                # Count the number of words in the page
-                num_words = len(text.split())
-
-                # If the number of words is below the threshold, consider it as a scanned page
-                if num_words <= max_words_threshold:
-                    scannedFiles.append(pdf_path)
-                    return True
-
-            return False
-
-    except Exception as e:
-        print(f"Error checking if PDF is scanned: {e}")
-        return False
-
-
-def extract_single_text(file_path)-> string:
-    return extract_text(file_path)
        
 def get_pdfs_paths_in_folder(folder_path):
     pdf_files = []
@@ -75,7 +47,7 @@ def extract_samples(source_folder_path,destination_folder) -> None:
     files_paths = get_pdfs_paths_in_folder(source_folder_path)
     for file_path in files_paths:
         # print(file_path,"*************")
-        text =  extract_single_text(file_path)
+        text =  extract_text(file_path)
         file_name = file_path[:-3]
         arr = file_name.split('\\')
         file_name = arr[len(arr)-1]
@@ -88,9 +60,5 @@ def extract_samples(source_folder_path,destination_folder) -> None:
 # extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
 extract_samples("C:\\Users\\hoda2\\Downloads\\drive-download-20230812T135954Z-001","src\Data Extraction\Clean Samples")
 
-# print the files that has no text
-# print(errorFiles)
-# print("Scanned Files: ",scannedFiles)
-# print ("Number of scanned files: ",len(scannedFiles))
 
 
