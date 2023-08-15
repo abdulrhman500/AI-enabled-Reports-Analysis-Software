@@ -39,13 +39,16 @@ def get_text(pdf_path):
             current_section["content"] += line.strip() + " "
 
     # Search for a section title that contains "Internship Performed Tasks:" within its title
-    target_section_title = "Internship Performed Tasks:"
+    target_section_title = "Internship Performed Tasks"
+    target_section_title2 = "Internship Activities"
     target_section_content = ""
     max_content_length = 0
 
     for section in sections:
+        
         # check if the target section title is found within the section title
-        if target_section_title.lower() in section["title"].lower():
+        if target_section_title.lower() in section["title"].lower() or target_section_title2.lower() in section["title"].lower():
+
             # calculate content length (excluding the title)
             content_length = len(section["content"]) - len(target_section_title)
             
@@ -54,12 +57,12 @@ def get_text(pdf_path):
                 max_content_length = content_length
                 target_section_content = section["content"]
                 target_section_title = section["title"]
+                
             #check if the "Internship Performed Tasks:" title contains more than 3 words and if it does: 
             #add the extra words at the start of the content
             #and remove them from the title and remove "Internship Performed Tasks:" from the start of the content
             if len(target_section_title.split()) > 3:
                 target_section_content = target_section_title + " " + target_section_content
-                target_section_title = "Internship Performed Tasks:"
                 target_section_content = target_section_content.replace("Internship Performed Tasks:", "")
             
             #check if the content contains "Internship Evaluation" and if it does:
@@ -71,8 +74,29 @@ def get_text(pdf_path):
             #remove it and everything before it from the content
             if "Internship Performed Tasks:" in target_section_content:
                 target_section_content = target_section_content.split("Internship Performed Tasks:")[1]
-    
+
     if not target_section_content:
+<<<<<<< HEAD
         raise Exception("No content found !!")
 
     return target_section_content
+=======
+            #get the content with the highest length that contains "Internship Performed Tasks:" or "Internship Activities" in its content
+            maxLength=0
+            for section in sections:
+                if target_section_title.lower() in section["content"].lower() or target_section_title2.lower() in section["content"].lower():
+                    if len(section["content"]) > maxLength:
+                        maxLength=len(section["content"])
+                        target_section_content=section["content"]
+
+            undesired="How do you think the internship activities that you carried out are correlated with your studies?"
+            if undesired.lower() in target_section_content.lower():
+                target_section_content=None
+
+            if not target_section_content:
+                target_section_content=None
+
+
+    return target_section_content
+
+>>>>>>> 9bdb623 (Merge branch 'hoda_Extraction' of https://github.com/abdulrhman500/AI-enabled-Reports-Analysis-Software into hoda_Extraction)
