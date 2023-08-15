@@ -1,0 +1,30 @@
+Tasks:
+To develop smart contracts,
+Solidity , a programming language akin to
+JavaScript, is employed. The code of the smart contract is completely immutable, or unchangeable. This assures
+that all network nodes ensure the data's safety and immutability . Using Ganache as our own blockchain for
+Ethereum development. It is a distributed network, which means that all participants are responsible for the
+network's operation. We also utilised the Truffle Framework, which provides a set of tools for constructing
+Ethereum smart contracts in Solidity . We also utilised the Truffle Framework, which provides a set of tools for
+constructing Ethereum smart contracts in Solidity and providing a client side application built using The Truffle
+framework and React js. here are the task performed throughout the internship process:
+●
+Smart Contract Management which entails creating smart contracts in the Solidity programming
+language and compiling them into bytecode for execution on the Ethereum Virtual Machine (EVM).
+●
+Automated Testing which entails writing tests against your smart contracts to guarantee that they
+function as expected. These tests may be written in JavaScript or Solidity and executed on the
+Truffle-configured network.
+1
+Student Career & Alumni Development Office.
+scad@guc.edu.eg
+| German University in Cairo
+New Cairo Cit y - Main
+Entrance Al T agamoa Al Khames; Egypt
+●
+Deployment and migrations which entails writing scripts that migrate and deploy smart contracts to the
+company's Ethereum blockchain network.
+●
+Client Side Development which utilizes Configuring the truf fle project to host client side applications
+built with react js that communicate with the blockchain-deployed smart contracts.
+Internship 

@@ -5,9 +5,11 @@ import pytesseract
 from PIL import Image
 from pdf2image import convert_from_path
 import constants
+pytesseract.pytesseract.tesseract_cmd = r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 def pdf_to_text(pdf_path, start_page=1):
+    print("aa")
     # Convert PDF pages to images
-    images = convert_from_path(pdf_path)
+    images = convert_from_path(pdf_path,poppler_path="C://Users//legionDownload//spoppler-23.08.0//Library//bin")
 
     text = ""
     for page_num, image in enumerate(images, start=1):

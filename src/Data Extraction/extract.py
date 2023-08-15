@@ -4,6 +4,7 @@ import extract_unscanned_pdf
 import extract_scanned_pdf
 import constants
 import os
+import fitz
 def extract_unscanned_text(file_path)-> string :
    return extract_unscanned_pdf.get_text(file_path) 
 
@@ -70,4 +71,3 @@ def extract_samples(source_folder_path,destination_folder) -> None:
 
         
 extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
-
