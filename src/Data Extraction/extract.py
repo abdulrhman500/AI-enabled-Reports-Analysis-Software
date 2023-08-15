@@ -10,7 +10,6 @@ def extract_unscanned_text(file_path)-> string :
 
 def extract_scanned_text(file_path)-> string:
     extract_scanned_pdf.get_text(file_path)
-<<<<<<< HEAD
 
 def is_scanned_pdf(pdf_path, start_page=4, end_page=None, max_words_threshold=50):
     try:
@@ -41,8 +40,6 @@ def extract_single_text(file_path)-> string:
         return extract_scanned_text(file_path)
     else:
         return extract_unscanned_text(file_path)
-=======
->>>>>>> 9bdb623 (Merge branch 'hoda_Extraction' of https://github.com/abdulrhman500/AI-enabled-Reports-Analysis-Software into hoda_Extraction)
        
 def get_pdfs_paths_in_folder(folder_path):
     pdf_files = []
@@ -73,12 +70,8 @@ def extract_samples(source_folder_path,destination_folder) -> None:
         save_text_to_file(destination_folder,file_name,text)
 
         
-<<<<<<< HEAD
-extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
-=======
 # extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
 extract_samples("C:\\Users\\hoda2\\Downloads\\drive-download-20230812T135954Z-001","src\Data Extraction\Clean Samples")
 
 
->>>>>>> 9bdb623 (Merge branch 'hoda_Extraction' of https://github.com/abdulrhman500/AI-enabled-Reports-Analysis-Software into hoda_Extraction)
 

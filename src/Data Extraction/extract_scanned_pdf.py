@@ -76,11 +76,6 @@ def get_text(pdf_path):
                 target_section_content = target_section_content.split("Internship Performed Tasks:")[1]
 
     if not target_section_content:
-<<<<<<< HEAD
-        raise Exception("No content found !!")
-
-    return target_section_content
-=======
             #get the content with the highest length that contains "Internship Performed Tasks:" or "Internship Activities" in its content
             maxLength=0
             for section in sections:
@@ -99,4 +94,3 @@ def get_text(pdf_path):
 
     return target_section_content
 
->>>>>>> 9bdb623 (Merge branch 'hoda_Extraction' of https://github.com/abdulrhman500/AI-enabled-Reports-Analysis-Software into hoda_Extraction)
