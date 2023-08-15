@@ -166,3 +166,4 @@ cython_debug/
 Sample_PDFs/
 ve/
 src/Data Extraction/Clean Samples
+src/Data Extraction/Dirty Samples
