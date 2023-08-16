@@ -167,3 +167,6 @@ Sample_PDFs/
 ve/
 src/Data Extraction/Clean Samples
 src/Data Extraction/Dirty Samples
+src/Data Extraction/Scanned
+src/Data Extraction/getScanned.py
+src/Data Extraction/testScanned.py

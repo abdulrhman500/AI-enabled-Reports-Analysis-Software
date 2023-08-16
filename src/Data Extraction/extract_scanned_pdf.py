@@ -84,7 +84,7 @@ def get_text(pdf_path):
                         maxLength=len(section["content"])
                         target_section_content=section["content"]
 
-            undesired="How do you think the internship activities that you carried out are correlated with your studies?"
+            undesired="your future career"
             if undesired.lower() in target_section_content.lower():
                 target_section_content=None
 
