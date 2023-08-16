@@ -1,0 +1,24 @@
+The performed tasks for this report are as follows:
+
+1. Watched edx cs50 Harvard course to refresh coding aspects and implement search problems and optimization problems.
+2. Solved problems on HackerRank to acquire the problem-solving basic level certificate.
+3. Solved challenges of different difficulty levels using Java.
+4. Learned PHP basics and how to define code in PHP.
+5. Learned about PHP's differences from other programming languages and viewed code samples for the company's work.
+6. Installed and set up Xampp, created a database, created tables, and added entries.
+7. Researched the Apache server for more information.
+8. Researched ways to connect to the Mysql database using PHP and successfully connected to a demo database.
+9. Started and completed a ToDo list using PHP (CRUD exercise).
+10. Learned about object-oriented programming (OOP) in PHP and re-implemented the ToDo list using OOP.
+11. Implemented a Mini basic school functionalities website using PHP, HTML, and Bootstrap (CRUD exercise).
+12. Started working on a food ordering website using PHP, HTML, and CSS, but could not complete it due to time constraints.
+13. Learned about Laravel framework and did all the work on the company's computer using Laravel.
+14. Re-implemented the ToDo list and implemented a student management system task using Laravel.
+15. Enhanced skills and gained knowledge in web development, becoming more confident, active, and less shy.
+16. Developed problem-solving skills through independent research and debugging.
+17. Learned time management skills from the team at SeoEra.
+18. Internship program met expectations and exceeded them, leading to a potential career change to web development.
+19. Applied knowledge gained from the program to what was learned in the GUC, relating it to Advanced Computer Lab (ACL) course.
+20. Would recommend the internship program to other candidates.
+
+Additionally, the report mentions that there are photos of the performed tasks in the appendix, including screenshots of the HackerRank certificate, ToDo list, Mini-School task, and the food ordering website.

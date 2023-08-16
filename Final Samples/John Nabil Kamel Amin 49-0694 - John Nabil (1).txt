@@ -1,0 +1,9 @@
+The performed tasks mentioned in the report are as follows:
+
+- Learning the fundamentals of OOP and famous code architecture patterns like the Model-View-Controller, Master-Slave, Peer-to-peer pattern, and briefs of many other patterns.
+- Building a fully functioning website for a library using the code-first approach in Model-View-Controller patterns.
+- Using ASP.Net C# as the backend language for creating models for books, authors, and users, and generating database schemas using code without manually writing SQL.
+- Creating APIs for every function needed for the website in the controlling.
+- Using Ajax JavaScript for the backend of the website, connecting the website with the APIs.
+- Building the frontend of the website using HTML and Bootstrap.
+- Completing the project in four weeks, achieving all CRUD operations, search, login, security, log sheet, using tokens, and different levels of authority with different actions.

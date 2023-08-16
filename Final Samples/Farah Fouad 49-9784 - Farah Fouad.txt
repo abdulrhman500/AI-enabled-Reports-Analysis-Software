@@ -1,0 +1,9 @@
+The report mentions the various tasks that were performed during the internship at Talaat Moustafa Group's Technical Support Department. These tasks include:
+
+1. Troubleshooting technical problems using the Active Directory.
+2. Installing and configuring hardware and software, such as Windows 10 and Linux, along with various applications.
+3. Diagnosing and fixing faults and identifying necessary hardware, software, and network solutions by researching the faults.
+4. Presenting identified faults and proposed solutions to the manager.
+5. Handling multiple cases simultaneously due to a busy work environment.
+
+Additionally, the report states that the internship provided the opportunity to learn new skills such as troubleshooting hardware and software problems and formulating workable solutions. The tasks performed during the internship were closely tied to academic courses in operating systems, computer system architecture, and introduction to communication networks. Overall, the internship experience was described as fantastic, providing a glimpse into a professional workspace and allowing for the application of academic knowledge in a real-world setting.

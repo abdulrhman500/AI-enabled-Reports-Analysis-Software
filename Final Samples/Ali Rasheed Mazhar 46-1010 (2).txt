@@ -1,0 +1,11 @@
+The performed tasks mentioned in the report include:
+
+1. Familiarization with IBM BPM (Business Process Management) and ODM (Operational Design Management)
+2. Development of automated testing for testing processes using RPA (Robotic Process Automation) tools such as Power Automate, UIPath, and Selenium
+3. Working in an agile framework with two-week sprints
+4. Taking initiatives and leading a team to deliver the best possible output
+5. Learning how real-world businesses want a product to be built and understanding customer needs
+6. Developing teamwork skills and effective communication with team members
+7. Gaining experiences in the software industry and working with a team of professionals
+8. Building complex products and delivering high-quality output
+9. Recognizing the competitive nature of the software industry in the Middle East and the potential for digitalization and automation.

@@ -1,0 +1,8 @@
+The performed tasks for this internship report are as follows:
+
+1. Study a data science with python course and research topics such as unsupervised machine learning and clustering models.
+2. Clean, explore, preprocess, and use different clustering algorithms on a given dataset to segment customers and provide insights about each cluster.
+3. Apply different clustering algorithms on a dataset to determine the socioeconomic class per location and provide insights about the customers in each class.
+4. Prepare a presentation about the work and present it to the data science team.
+
+Additionally, the intern mentioned acquiring teamwork, networking, and self-learning skills during the internship. They also mentioned using their knowledge from courses in programming and mathematics to perform the tasks.

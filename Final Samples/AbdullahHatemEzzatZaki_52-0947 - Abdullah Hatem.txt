@@ -1,0 +1,11 @@
+The performed tasks during the internship period at Aman E-Payments include:
+
+1. Building an end-to-end web application for merchants using Aman POS. This included creating a login and registration system, displaying transaction data and statistics for merchants, and generating reports.
+
+2. Developing a web application to automate bill payments for small medium enterprises. This involved building a user registration system, allowing users to upload excel files with bill information, and integrating with the Aman system for bank transfers and payments.
+
+3. Utilizing MERN stack (MongoDB, Express, React, Node) for both projects, including database management, backend development, and frontend design.
+
+4. Conducting research and learning about various technologies and techniques, such as RESTful API design, testing software like Postman, and software development best practices.
+
+In addition to the specific tasks, the intern also gained soft skills such as teamwork, communication, leadership, problem-solving, and time management. They also developed technical skills in software development and testing, as well as gaining knowledge in their field of study (computer science and engineering). The internship allowed them to apply what they learned in their major and will benefit their future career plans. Overall, the internship provided valuable experience, observation of industry practices, and the opportunity to develop a wide range of skills.
