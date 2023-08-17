@@ -78,4 +78,4 @@ with open(csv_file, "w", newline="", encoding="utf-8") as file:
     for file_name, embedding, decision in zip(file_names, embeddings, decisions):
         writer.writerow([file_name, embedding, decision])
 
-print(f"Data saved to {csv_file}")
+# print(f"Data saved to {csv_file}")
