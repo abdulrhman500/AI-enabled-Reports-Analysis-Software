@@ -1,0 +1,17 @@
+The performed tasks for this report include:
+
+1. Implementing a RESTful API with Golang and a full functional front-end.
+2. Hosting the website on Docker.
+3. Participating in introductory talks about software testing and quality assurance frameworks.
+4. Using Cypress and Selenium frameworks for manual and unit testing.
+5. Finding bugs and issues with the product and attempting to solve them.
+6. Gaining practical knowledge on implementing software testing methodologies.
+7. Communicating with the team in Scrum meetings to identify issues in code.
+8. Reviewing code using GitHub and GitHub actions.
+9. Gaining hands-on experience in software quality assurance and testing methodologies.
+10. Learning to code in Golang.
+11. Exploring new programming languages and frameworks.
+12. Applying knowledge from university courses in Agile Workflow, Web development, software testing, problem solving, and version control software.
+13. Considering a career in quality assurance after experiencing it practically.
+14. Rating satisfaction with the internship experience.
+15. Recommending the internship to other colleagues.

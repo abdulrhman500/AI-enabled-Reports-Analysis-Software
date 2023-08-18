@@ -1,0 +1,23 @@
+The performed tasks for this internship report included:
+
+1. Learning and familiarizing oneself with the company's different departments and their collaboration.
+2. Meeting the supervisor and the head of the Technology department.
+3. Working flexible hours, typically from 9 AM to 5 PM.
+4. Weekly introduction to a different topic of Backend development.
+5. Working on a core banking system project that simulates the company's actual system.
+6. Creating a RESTful API using Spring Boot and connecting it to a PostgreSQL database server using JPA.
+7. Testing the API using Postman and presenting the results.
+8. Implementing authentication using JWT.
+9. Implementing authorization to protect the API from unauthorized access.
+10. Validating all data entries to ensure accuracy.
+11. Collaborating with the team using Github.
+12. Developing communication skills.
+13. Developing networking skills and creating connections.
+14. Utilizing problem-solving skills in various tasks.
+15. Working under pressure and adapting to new information.
+16. Gaining knowledge and experience in the Fintech field.
+17. Relating internship tasks to database and web development courses.
+18. Receiving positive feedback on the project from the supervisor and colleagues.
+19. Gaining self-confidence and recognizing potential in Backend development.
+20. Contributing to the company's ongoing digital transformation.
+21. High satisfaction with the internship experience and a recommendation for others.

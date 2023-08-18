@@ -1,0 +1,16 @@
+activities  
+I have been assigned several tasks to do at Perfect Tech, at first my supervisor asked me to watch 
+a youtube playlist “odoo mates” to learn how to install odoo on my computer and how to make it 
+function properly, t hen I learned to link odoo and python”pycharm” locally on my computer,after linking them together I was asked to add custom Modules and custom addons in 
+odoo ,create new models to use in the database which was “postgres”, I also learned to create 
+menues and  action buttons in odoo,and also changing the access rights and the views from tree 
+view to form view or vice versa. I was asked to override methods in odoo as the clients would 
+like there ERP system to function that way.  I was asked to add a feature to ar chive or unarchive,  
+I also implemented a search feature to find wanted products or models ,after I was experienced a 
+bit my supervisor asked me to implement a small but a complete part of an ERP system for a 
+company.  I used to work 5 days a week starting at 9 am,the company was generous enough to 
+give me my own desk, the team was really helpfu l and they all kept trying to help me with the 
+code whenever I faced any struggle, also MR Mahmoud, my supervisor, kept briefing me about 
+what an ERP means and how I could benefit from it if I choose this career . I also talked a lot 
+with their sales team t o gain knowledge on how to reach more customers and how to make a 
+company more well known.   I worked with odoo ERP v.14 , Postgres , Pycharm  

@@ -1,0 +1,21 @@
+The performed tasks mentioned in the report are:
+
+1. Creating a fully functional employee management system web application.
+2. Agreeing on a suitable software architecture for the project.
+3. Developing a database using MSSQL and SQL Server Management Studio.
+4. Creating views and stored procedures for the database.
+5. Setting up a backend controller to manage data requests.
+6. Creating case-specific CRUD APIs for each database entity.
+7. Debugging and problem-solving for API publishing.
+8. Designing and implementing a front-end user interface using TypeScript and Angular libraries.
+9. Testing the functionality of the site using mock data.
+10. Adding database connections to the user interface.
+11. Applying principles of User Experience to optimize user interaction.
+12. Developing an abstract understanding of web development.
+13. Acquiring analytical, reporting, time management, and interpersonal skills.
+14. Networking and making contacts within the company.
+15. Applying knowledge learned in database, networks, and software engineering courses to the internship tasks.
+16. Determining a suitable career path after graduation.
+17. Building aspects of professional life in terms of communication, practicality, punctuality, responsibility, and work-life balance.
+18. Impressing supervisors with skills obtained during study time.
+19. Expressing satisfaction with the internship experience at Giza Systems.

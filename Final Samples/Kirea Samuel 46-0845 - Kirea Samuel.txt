@@ -1,0 +1,16 @@
+The performed tasks for this report include:
+
+1. Training in Orange Egypt, a telecommunications company.
+2. Being assigned to the team in the Technology Department responsible for the management and maintenance of various Orange sites across Egypt.
+3. Working on the creation of a database for easier access to data.
+4. Handling and organizing data from excel sheets.
+5. Working on the schema for the DB.
+6. Working on queries for the DB.
+7. Preparing a 5 mins presentation on the internship experience.
+8. Improving self-learning skills by learning about Pandas.
+9. Learning about management decisions based on analyzed data.
+10. Using knowledge from university courses such as Data Base I, Data Bases II, Software Engineering, Introduction to Communication Networks, and Operating Systems.
+11. Recommending the internship experience to other GUC students.
+12. Designing a product and feeling genuinely engaged in the workplace.
+13. Gaining further knowledge about day-to-day operations in the office.
+14. Appreciating the dedication and helpfulness of everyone in Orange Egypt.

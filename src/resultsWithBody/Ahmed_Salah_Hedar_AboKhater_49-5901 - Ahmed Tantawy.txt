@@ -1,0 +1,53 @@
+extracted data:
+CamScanner
+CamScanner
+CamScanner
+CamScanner
+CamScanner
+Internship Student Report 
+This report aims to clarify my journey through this internship and what I have gained 
+during this period of time I have spent in this program and whether I was satisfied or not and 
+whether the outcome have met my desired technical and non-technical expectations or not. The 
+main reason behind choosing Banque-Misr Digital Factory specifically was due to their 
+optimistic vision and their well-known reputation. On the other hand, the main reason behind me 
+choosing to spend my internship in the Back-End field was due to my previous interest in the 
+Back-End field. This report will cover a description about Banque-Misr Digital Factory, the 
+performed tasks, internship evaluation and finally a conclusion. 
+ 
+Banque-Misr is one of the most well-known banks in the Middle East. The bank is always 
+seeking to be in the top list of the leading banks in the business area, therefore they have recently 
+established their Digital Factory in order to keep updated with the latest technologies and to allow 
+the digital transformation of their branches. The Digital Factory stands as their current premise 
+that fosters experienced professionals to work together, stipulating the importance of how Banque-
+Misr prioritizes its client’s financial wellbeing as the corner stone of our practice. Apart from this, 
+working in the digital factory was really fun as it was designed to be a modern comfy building 
+unlike all other traditional institutions. 
+  
+During this internship I have learned many useful outcomes, even more than was expected. 
+This internship was provided by Banque-Misr with collaboration with NTG-Clarity. The 
+Internship Objectives were as follows, first understanding Basic concepts of software development 
+with Java, then moving to getting experienced on how to use basic and advanced features of 
+Spring Boot. Then hands-on training on different problems with levels of difficulties. Then bein g 
+able to develop a complete end-to-end application. And finally developing skills to acquire 
+knowledge of advanced topics that are not touch in the training course. In addition to our final 
+project. 
+ 
+During the internship program I have gained many skills, technical and non-technical. 
+From the non-technical skill I have gained more communication and team-work skills as it was 
+mandatory in order to communicate with our fellow colleagues who from different departments 
+such as front-end and IOS in order to come out with the final product. As for the technical skills I 
+have learned many important aspects about the backend area such as connecting to the database 
+and creating APIs and authentication. This internship have met my expectations as at the end of 
+the program was fully able to create a complete backed project alone. So basically this outcome 
+will push me forward to many other opportunities in the future. As learning how to develop a 
+backend application was related to my studies as a software engineer. One of the most similar 
+courses to this internship was the CSEN 503 – Introduction to Communication Networks. 
+ 
+In conclusion, this internship have met my expected outcome, I have learned many aspects 
+about the backend development, I have gained many skills such as team-work and communication 
+skills, and I have experienced working in a completely different environment than other traditional 
+institutions. At the end of the internship I would say that working in Banque-Misr Digital Factory 
+and learning about Backend was a good experience. 
+
+response result:
+The performed tasks during the internship at Banque-Misr Digital Factory were not explicitly stated in the report.

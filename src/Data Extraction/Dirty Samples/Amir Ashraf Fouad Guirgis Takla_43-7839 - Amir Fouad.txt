@@ -1,9 +1,0 @@
-Tasks:  
-The t asks were to help in developing new user -facing  desktop  GUI features . In a typical working 
-day I would receive a task from my supervisor, for example  an assigned task was to assure that 
-all user input is validated before submitting to back -end. I had to w rite clean, reusable, 
-understandable, and maintainable code . I worked with the development team.  During the tasks  I 
-was also supported by senior developers  whenever I needed help . The tools used were  JavaFX,  
-visual studio code as the editor for writing the code. Git and Github were also used  for version control and for mergi ng the code.  I had to do some research  about JavaFX syntax and whenever 
-errors occurred . 
-Internship 

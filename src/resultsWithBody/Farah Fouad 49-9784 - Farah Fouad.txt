@@ -1,0 +1,54 @@
+extracted data:
+ 
+The sole reason I am writing this report is to discuss each and every detail of the fruitful internship I have done 
+during this summer vacation in Talaat Moustafa Group, while going over various information surrounding the 
+company such as its long-standing history and the services it offers. In addition, this report will be covering the 
+various tasks I was asked to perform throughout the duration of my internship. I specifically opted for TMG for 
+this year’s internship due to its untethered reputation in being one of the biggest and most innovative 
+conglomerates in in the middle east which made me curious about getting to know how a business like this 
+operatesand integrates its huge system of applications and websites all together to help in meeting all its goals. 
+The Talaat Moustafa Group was founded by the late Talaat Moustafa and is headed by his son, Hisham Talaat 
+Moustafa in the year 1974.The group is known for the development of integrated communities, including 
+mixed-use real estate and hospitality projects across Egypt. Comprising 23 companies, the group is estimated to 
+be worth LE 26.7 billion at the current market capitalization and employs more than 12,000 people along with 
+60,000 additional workers at its various project sites. TMG is behind some of Egypt's largest community 
+developments, including the New Cairo cities of Madinaty, El Rehab, Celia, and the recently launched, Noor. 
+Other developments include May Fair in El Sherouq City, El Rabwa in Sheikh Zayed City, Virginia Beach in 
+the North Coast of Alexandria, and El Radwa El Khadraa in El Agamy. In all, TMG boasts a population of over 
+1 million residents across its projects, ranking it the highest in the world for a private developer. 
+I had a worthwhile time at the Talaat Moustafa Group’s Technical Support Department which was the core IT 
+department that helped resolve any technical issue. The department supports managing, repairing, and 
+maintaining IT systems. They are in charge of troubleshooting network problems, installing and configuring 
+hardware and software, and identifying and fixing malfunctions. There, I was given a variety of tasks, including 
+troubleshooting technical problems with the help of the Active Directory, installing and configuring hardware 
+and software such as Windows 10 and sometimes Linux along with various applications, diagnosing and fixing 
+faults and then identifying the necessary hardware, software and network solutions on my own by researching 
+the faults I have found, presenting them to my manager and then implementing them. Throughout the day, 
+things got quite busy that occasionally I had to handle several cases all at once.  
+My internship with the Talaat Moustafa Group has given me a great deal of experience and a peek into the field 
+of work, along with the opportunity to learn new skills like how to instantly troubleshoot hardware and software 
+problems and how to formulate and come up with workable solutions for every issue. I would say that the 
+internship has lived up to my expectations, extended my perspective, and motivated me to seek a future job in 
+the TMG IT Departments. Additionally, because the internship revolved around the aspects of information 
+technology, it was generally closely tied to my academic work. The internship was specifically relevant to the 
+courses CSEN602: Operating Systems, CSEN601: Computer System Architecture and CSEN503: Introduction 
+to Communication Networks. 
+In conclusion, I would like to say that my internship with the Talaat Moustafa Group was a fantastic experience 
+that helped me with learning and understanding what to expect in a professional workspace, as well as helping 
+me to gain new skills that would help me with my future studies and as well as helping me to relate my 
+academics with the real and professional work life. The Talaat Moustafa Group's overall IT department lived up 
+to my expectations in terms of being well-organized and extremely professional, with every employee 
+collaborating to find solutions and provide a reliable malware-free system for a company as large and well-
+known as TMG to be able to work with. 
+ 
+
+response result:
+The report mentions the various tasks that were performed during the internship at Talaat Moustafa Group's Technical Support Department. These tasks include:
+
+1. Troubleshooting technical problems using the Active Directory.
+2. Installing and configuring hardware and software, such as Windows 10 and Linux, along with various applications.
+3. Diagnosing and fixing faults and identifying necessary hardware, software, and network solutions by researching the faults.
+4. Presenting identified faults and proposed solutions to the manager.
+5. Handling multiple cases simultaneously due to a busy work environment.
+
+Additionally, the report states that the internship provided the opportunity to learn new skills such as troubleshooting hardware and software problems and formulating workable solutions. The tasks performed during the internship were closely tied to academic courses in operating systems, computer system architecture, and introduction to communication networks. Overall, the internship experience was described as fantastic, providing a glimpse into a professional workspace and allowing for the application of academic knowledge in a real-world setting.

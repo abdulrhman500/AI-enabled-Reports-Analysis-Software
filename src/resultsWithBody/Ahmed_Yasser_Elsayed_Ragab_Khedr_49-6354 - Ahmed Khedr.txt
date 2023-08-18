@@ -1,0 +1,78 @@
+extracted data:
+Part III. - Internship Report 
+Internship Title: Backend Developer Intern 
+Company / Organization Name: Tanmeyah Microenterprise Services 
+                       Over the summer vacation, I have been an intern at Tanmeyah for Microenterprise 
+Services which is a leading company in providing a wide range of microfinance solutions in Egypt. 
+Since 2009, the company has gained rapid growth to become one of the leading entities in financing 
+low-income generating projects thus provide opportunities for ambitious and hardworking lower-
+income business owners; consequently, contribute to the economic growth. The company has 
+recently acquired B2B e-commerce marketplace Fatura which helped in the digital transformation 
+of the company and gave me even a bigger chance to explore the Fintech field as it is vastly 
+growing and have huge potential benefits for all businesses. Throughout the four weeks, I had the 
+opportunity to witness the working conditions of working in a company and as a part of a team, in 
+addition to understanding the process of Microenterprise loans. 
+                       My first day was an overview tour through the company’s different departments to 
+grasp the concept of how every department collaborate with others to provide output to the 
+company, moreover I was introduced to my supervisor and to the head of the Technology 
+department. The company had flexible working hours of 8 hours per day that you should arrive at 
+the company from 8 Am and maximum by 10 Am, so usually my typical working hours were from 
+9 Am to 5 Pm. Every week, I was introduced to a different topic of Backend development that the 
+developers apply in the company's core banking system and I was assigned tasks accordingly. 
+                       In my opinion, the first week was the hardest as I was introduced to a new framework 
+(Java Spring Boot) which I have no experience with however, luckily I had perfect knowledge of 
+Java in general as it is the main programming language that we use in the GUC; therefore, this 
+helped me with learning the most of the things about the framework extremely fast as our 
+supervisor provided us with online courses access and material for Spring Boot. After that, my team 
+and I were introduced to the project that we were going to work on throughout our internship period 
+which was a core banking system similar to the actual system the company is working with, but on 
+a smaller scale yet concluded all stages of providing microenterprise loans from entering the 
+customers data up to confirming the loan and creating a loan schedule. There were several tasks that 
+we had to finish every week and then report to our supervisor, the first task was creating a RESTful 
+API using Spring Boot that serves the client side by connecting it to a PostgreSQL database server 
+using JPA and then do a presentation and test the API using Postman. Moreover, another task was to 
+implement authentication using JWT and authorization to protect the API from any forbidden 
+access from a different role, in addition to validating all data entries to avoid any false information 
+stored in the database. Furthermore, I had to learn more about Github to collaborate professionally 
+with my team to fulfill the tasks assigned to us by our supervisor. 
+                       I gained various skills throughout the internship period as it was my first work field 
+experience for instance, it boosted my communication skills and the most crucial skill that I have 
+gained in my point of view is networking as I created a lot of connections which would provide a 
+great help in my future career. The internship really did meet my expectations as I had the chance to 
+use my problem-solving skills a lot in any issues that faced me also, I proved to myself that I can 
+work under pressure as I was exposed to a lot of new information and then I had to progress with 
+these new information to conduct tasks right away. Even though the Fintech field is extremely 
+beneficial and bright, I want to explore different fields in my next internships such as data science 
+and cyber security, but I would sure love to pursue a career in the Fintech field. The internship was 
+correlated to my studies as it required good database knowledge so, Database courses (I and II) 
+provided a great help. Moreover, web development knowledge was required too so, Introduction to 
+networks course was related as I already knew the different HTTP protocols. 
+To conclude, the internship was a great success in my opinion as it gave me the opportunity to 
+widen my knowledge in the Backend development, also the friendly environment of the company to 
+network with different people and connect with them and they were extremely supportive and 
+encouraging. The feedback on the project I got from my supervisor and other Technology 
+department co-workers boosted my self confidence also showed that I have great potential and that I 
+have a huge chance to be successful in the Backend development field. Given the great success of 
+the company, but surely the company will grow even more after completing its digital 
+transformation as it will facilitate a lot of the processes of microenterprise loans. Overall, I was very 
+satisfied with the internship and I would definitely recommend it to other colleagues.
+
+response result:
+The performed tasks for this internship report include:
+
+- Creating a RESTful API using Spring Boot
+- Connecting the API to a PostgreSQL database server using JPA
+- Testing the API using Postman
+- Implementing authentication using JWT
+- Implementing authorization to protect the API from forbidden access
+- Validating all data entries to avoid false information in the database
+- Collaborating with the team using Github
+- Gaining communication skills
+- Networking and creating connections
+- Problem-solving skills
+- Working under pressure
+- Database knowledge
+- Web development knowledge
+- Receiving feedback on the project
+- Contributing to the company's digital transformation process
+- Overall satisfaction with the internship experience.

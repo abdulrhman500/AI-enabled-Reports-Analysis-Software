@@ -1,0 +1,16 @@
+The performed tasks in this internship report include:
+
+1. Researching and learning about backend engineering and new technologies.
+2. Implementing endpoints and handling APIs using Java Spring Boot.
+3. Developing a core-banking system that simulates the actual system of the company.
+4. Working on user sign-up and transaction handling functionalities.
+5. Studying and implementing Spring Security for application security using JSON WEB TOKEN (JWT).
+6. Collaborating with a senior backend engineer and asking questions for guidance.
+7. Researching, studying, and watching courses related to Spring Boot and JPA.
+8. Using JPA to design the database structure using only Java code.
+9. Learning how to work with and report to other team members.
+10. Acquiring new skills and knowledge in new technologies.
+11. Gaining experience in working with different people and effectively communicating ideas.
+12. Applying knowledge and skills from the Networks course project (developing an eCommerce website).
+
+Note: The report also mentions other information about the company, its mission and vision, as well as personal reflections on the internship experience.

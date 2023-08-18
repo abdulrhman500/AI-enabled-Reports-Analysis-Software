@@ -1,0 +1,11 @@
+Tasks:   
+ 
+I was an intern Back -End developer using Java's Spring  Boot. Initially, I delved deeper into Java's complex 
+concepts like collection framework, memory management, serialization, and build tools (Maven and Gradle). 
+Then I studied Spring Boot, a new framework for creating controller s with endpoints, services, and models. 
+Following that, I began receiving tasks such as internal or customer bug fixes, and product enhancement 
+through the implementation of a new feature. Developing a new feature entailed working with the Front -End 
+team a nd the UI/UX team to find the best possible solution for this enhancement. In addition, I documented 
+everything I worked on and pointed out some bugs to other teams.  
+ 
+Internship 

@@ -1,0 +1,10 @@
+The performed tasks during this internship at Marakez Company for Real Estate as an Application Team Intern at the Information Technology Department are as follows:
+1. Updating prices for products in a cafe called Villa M using SQL queries.
+2. Working on a Local Full Stack Application using C# programming language on Visual Studio's Windows Forms App.
+3. Creating documentation explaining how to access specific information on the website.
+4. Developing skills in problem solving, punctuality, and teamwork.
+5. Applying technical skills and knowledge from university courses.
+6. Working on a real existing database and a real local application.
+7. Finding the tasks in the development industry to be similar to university assignments and projects.
+8. Observing the exceptional work of the application team in the Information Technology department.
+9. Being satisfied with the internship experience and recommending it to others.

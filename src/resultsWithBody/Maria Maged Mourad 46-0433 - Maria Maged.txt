@@ -1,0 +1,4 @@
+extracted data:
+b'\x0c\x0c\x0c\x0c\x0c\x0c'
+ response result:
+ The provided information is in a format that cannot be understood or processed. Please provide the information in a different format or clarify the context in which the information is presented.

@@ -1,0 +1,3 @@
+The performed tasks for this report are as follows:
+- Pitching a creative idea for a smart biometric system to supervisors at Nokia's development labs
+- Preparing a presentation on applying concepts learned during the internship to Nokia's Cloud services

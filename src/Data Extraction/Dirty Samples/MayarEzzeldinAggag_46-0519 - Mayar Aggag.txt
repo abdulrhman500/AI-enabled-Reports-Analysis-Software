@@ -1,0 +1,34 @@
+Tasks
+As a data analyst (customer experience) intern, the company provides us with laptops.
+Then, I was assigned a task to work on during the month of August. The task assigned by my
+mentor “May Okba” was full stack development of a web page using Node Js, SQL, and
+Angular , that shows the user feedback in the form of graphs. The SQL  databases created by the
+neighboring teams included:
+IMSI (
+International Mobile
+Subscriber  Identifier
+), MSISDN
+(
+Mobile Station Integrated Services Digital Network
+),
+Call drop rates, etc.. The frontend
+consisted of 2 search bars one for the IMSI and the other for MSISDN to find each user ’s info.
+Following that, graphs or trends appear to show rates of several conditions the users get
+encountered with, like call drops, the device has no signal (in this case the device details are
+displayed), or  data service drops. Using specific calculations, a feedback alert will get displayed
+showing the state of each customer based on the trends shown. This web page is created for other
+teams to easily visualize problems faced by customers and try to trace where the technical issues
+arose from. This is important for the loyalty of customers and to avoid unsatisfiable service.
+PS. THE DA TA USED AND WEB P AGE (CODE SNIPPETS) CREA TED IS HIGHL Y
+CONFIDENTIAL
+A typical example of a working day as a full stack developer intern at Vodafone consists
+of arriving at work at 9 am. I start by giving a brief to my mentor and teammates of the work
+done and work left to do. Then I proceed by continuing the task and communicating with the rest
+of the team during the day to keep up with each other . Then I check the outlook mail for online
+courses provided for all the employees to improve our knowledge and skills in various topics.
+Following that,  HR or ganizes daily events for all the interns to attend and socialize such as
+“Chat with the CEO”,  “CV  Writing and Interview Tips”,  and “Mental Wellbeing Sessions”.
+There was also a field trip for all the VodaNation members which was a Cycling and joggingevent at Cairo University . Moreover ,  HR or ganizes events such as “Bring your kids to work” for
+the employees and allow the interns to volunteer in them and provide certificates for that at the
+end.
+Internship 

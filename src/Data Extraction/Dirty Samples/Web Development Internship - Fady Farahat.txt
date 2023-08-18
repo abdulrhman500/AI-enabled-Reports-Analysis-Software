@@ -1,0 +1,23 @@
+tasks:  
+I was assigned to 3 main tasks during my internship at  Farahat Co. For Cooling & Air 
+conditioners . Firstly, to attend live discussions with the instructor (Eng.Mostafa Mohamed). 
+During the live discussions each day the instructor starts to explain the tasks will be implemented during the day. Secondly, I start  to integrate the material we took by code using (HTML,  CSS,  
+javascript,  Bootstrap,Vue js) .Thirdly , Eng.  Mostafa Mohamed starts  to evaluate the code made 
+by me .The working conditions were as follows; 5 days per week completing 6 hours per day for 
+a whole month.  
+The main target of this internship was to create a website that  allows potential customers to 
+easily select the refrigeration  equipment they are interested in and within the chosen product 
+category  customer can sort and filter on brand, refrig erant, capacity , etc. 
+ 
+We used HTML,  CSS,   javascript,  Bootstrap,  Vue js via  Visual Studio Code and Atom in the 
+whole internship.  
+I was assigned to make a project which is to make an online shopping website  using  Vue js  that 
+can be used by the company by just importing the product’s  images,  descriptions  and prices . Also, 
+the big project included a shopping cart that adds up all the selected products and gives  the user 
+the total price and if the user wants  to edit anything in the shopping cart t hey can.  
+-Here are some screenshots of the code that I created:  
+ 
+ 
+ 
+ 
+Internship 

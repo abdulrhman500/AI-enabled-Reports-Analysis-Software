@@ -1,0 +1,10 @@
+Tasks:  My internship was a full - 
+time internship, working 5 days per week, 8 hours per day. My job title 
+was Software Engineer. I went through everything regarding CV 
+(Computer Vision) with their huge Radar Camera project for Military to 
+detect object till a 5 km range wide. I  monitored faults through codes in 
+systems and support all functions 24/7 for fast resolution. I understood 
+the code and helped coding any CV part especially detecting and 
+observing objects using the camera in it using Python programming  
+ language.   
+Internship 

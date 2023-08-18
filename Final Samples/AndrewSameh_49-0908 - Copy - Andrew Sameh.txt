@@ -1,0 +1,9 @@
+The tasks performed by the intern at TEA Computers as a Web development intern were:
+
+1. Attending a course in Hyper Text Markup Language (HTML) language, Cascading Style Sheets (CSS), and JavaScript programming language to learn how to build an interactive website from scratch.
+2. Using Cascading Style Sheets to change the look and layout of a website.
+3. Learning the basics of computer programming and using JavaScript to add interactivity to a website.
+4. Attending a course in React to build user interfaces based on UI components.
+5. Attending a course in jQuery and C# focused on the backend part of a website.
+
+Overall, the intern gained experience and skills in HTML, CSS, JavaScript, React, jQuery, and C# during their internship at TEA Computers.

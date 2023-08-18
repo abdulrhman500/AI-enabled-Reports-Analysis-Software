@@ -1,0 +1,17 @@
+Tasks
+1. Project basics, models, and queries
+2. Django Admin and Managers
+3. Forms, Templates, and Views
+4. Class-based Views, User class, Authentication
+5. Django REST Framework
+6. Django Extensions, Knox Token Authentication
+7. Testing using Pytest
+8. Permissions and Django Filters
+9. Running Asynchronous Tasks using Celery
+Main Resources used in the Internship
+1. MDN Docs
+2. React.js Docs
+3. Pure React book
+4. JavaScript: The Good Parts
+5. Django Docs
+V. 

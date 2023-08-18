@@ -1,0 +1,15 @@
+activities:  
+I had my internship in the information security department under the direct 
+supervision of Mr.Abbas El - Awadi  
+My main task during my internship period was database administration. I would run/write queries 
+for specific databases using MySQL and PL/SQL (depending on the required task) for things such 
+as employee's attendance (finding out who came at what time, who was late, etc) and annual 
+holidays count (for each employee how many days of annual leave do they have yet).  
+I was always supervised by my direct supervisor while doing so due to the confidentiality of the 
+department and the corporation itself.  
+ Sometimes I had to write queries to find out the name of the Head Teller at a specific branch 
+across Egypt for example find out his/her history and their previous positions at different branches, 
+give this certain person access to specific software (Oracle core bank ing system) and such.  
+The systems I worked on are confidential/sensitive as they contain bank information so I couldn’t 
+use pictures directly from said systems.  
+ 

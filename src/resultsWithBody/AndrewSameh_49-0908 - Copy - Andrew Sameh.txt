@@ -1,0 +1,76 @@
+extracted data:
+CamScanner
+CamScanner
+CamScanner
+CamScanner
+CamScanner
+Internship Report 
+ 
+Internship Title: Web development intern  
+Company / Organization Name: TEA Computers  
+ 
+In this report I will be going over the structure and flow of the internship I attended at TEA Computers as 
+a Web development intern; the education I procured, my role and my work. First of all, I will go into 
+details about the information I learnt and how it relates to the Education I gained at the University. 
+Following that, I will depict my personal role in TEA Computers as well as my role as part of a Team and 
+part of a Company. Finally, I will define and go into details about all the tasks I performed and all the 
+work I did for the company.  
+ 
+TEA Computers is a pioneering Egyptian full service information technology company founded in 1974 
+and member of a group of companies with 2000+ staff members and 12 branches in Middle East , Gulf 
+Africa and Europe. With more than four decades of experience, growth and distinction TEA Computers 
+has over 2,500 installed sites and has undertaken and successfully delivered numerous projects in Egypt 
+and elsewhere in the Arab World. The range and variety of these projects reflect the company's ability 
+to handle diversified and multi-functional projects. TEA Computers has been involved in 2 landmarks 
+projects in Egypt. Progressing in its plan to register all Egyptian Citizens across the country; The Ministry 
+of Interior (MOI) - Criminal Evidence Investigation Department (CEID) has assigned TEA Computers to 
+upgrade its NEC Automated Fingerprint Identification System (AFIS) to accommodate 100 million 
+Fingerprints while maintaining the same search performance achieved in Phase1 awarded back in 2017 
+(30 million Fingerprints). In 2014 Bibliotheca Alexandrina embarked on an ambitious project, with 
+computer technology provided by TEA Computers via its partner Artec 3D to build the Bibliotheca 
+Alexandrina Virtual Museum (BVM). Today the BVM enables visitors and researchers to take a virtual 
+self-guided tour of the Bibliotheca Antiquities Museum, home of more than 1200 artifacts that reflect 
+the rich, multi-cultural history of Egypt with its Pharaonic, Greco-Roman, Coptic, and Islamic heritage.  
+ 
+My internship at TEA Computers was mostly remote. At the start of every week, my mentor would send 
+me the calendar for that week. Every day would start with a 1-1 meeting with my supervisor where we 
+discussed my progress and elaborated on any questions I had. My working hours were 9-5. My time as a 
+Web development intern at TEA Computers was divided into phases; Phase one mainly focused on the 
+educational aspect. It was a course in Hyper Text Markup Language (HTML) language, Cascading Style 
+Sheets (CSS) and JavaScript programming language. In this course I learned to build an interactive 
+website from a blank page. First, I learned about the building blocks of any website - the foundations of 
+HTML. Next, I discovered how to use Cascading Style Sheets to change the look and layout of a website. 
+Finally, I learned the basics of computer programming and how to use JavaScript to add interactivity to 
+my site. Phase two was a course in React that helped me building user interfaces based on UI 
+components. Finally phase three was a course in jQuery and C# which was focused on the Backend part 
+of a website.  
+ 
+I believe this internship was a fruitful learning experience that helped me gain a multitude of skills that 
+would help me in my future career as a Software Engineer. Firstly, I learnt how to use HTML to define 
+the meaning and structure of a website. As well as CSS for appearance and presentation of a web page. 
+Also, JavaScript and React for functionality, behavior and user interface of a website. And finally, C# and 
+jQuery for the backend part of a website. I think this internship was an eye-opening experience for me 
+and I truly believe Web development could be the right career path for me. I was pleasantly surprised 
+how the Introduction to Communication Networks course I took in my fifth semester unknowingly 
+prepared me, by the project that we had in this course that gave me the basics of these languages, for 
+this internship. I would without a doubt recommend this company to my fellow students as it values 
+people growing and learning above all.  
+ 
+In conclusion, I would like to say that the time I spent as a web development intern at TEA Computers 
+was a great learning experience in my study field of Media Engineering and Technology (MET). It 
+expanded my horizons on the many sectors that Tech students such as myself could work in. Websites is 
+a sector that is wildly growing and nonetheless fun to work in. I think that learning about HTML and 
+JavaScript was also very helpful in my career in general if I were to ever work in web developments . It 
+also helped me with my research skills, time management, problem solving and coming up with creative 
+solutions and ideas. 
+
+response result:
+The tasks performed by the intern at TEA Computers as a Web development intern were:
+
+1. Attending a course in Hyper Text Markup Language (HTML) language, Cascading Style Sheets (CSS), and JavaScript programming language to learn how to build an interactive website from scratch.
+2. Using Cascading Style Sheets to change the look and layout of a website.
+3. Learning the basics of computer programming and using JavaScript to add interactivity to a website.
+4. Attending a course in React to build user interfaces based on UI components.
+5. Attending a course in jQuery and C# focused on the backend part of a website.
+
+Overall, the intern gained experience and skills in HTML, CSS, JavaScript, React, jQuery, and C# during their internship at TEA Computers.

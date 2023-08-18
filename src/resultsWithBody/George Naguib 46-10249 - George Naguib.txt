@@ -1,0 +1,64 @@
+extracted data:
+Cloudastick Systems Internship
+This internship was in Cairo, Egypt, at Cloudastick Systems. There were two key goals
+for the internship. One goal was to increase interns' knowledge of the Salesforce CRM
+platform and development tools needed, such as object-oriented programming , SQL
+databases , HTML, CSS and Javascript in order to build and maintain CRM systems for
+different organizations . Another goal was to teach students how to administer an org,
+managing the Sales and Service Clouds and automating workflow. This report
+demonstrates a brief description of Cloudastick systems, then the nature of tasks
+performed during the period of the internship,then my own evaluation of the internship,
+and finally a conclusion to summarize my overall experience in the internship.
+Cloudastick Systems is a Salesforce.com registered partner since 2016 specialized in
+Salesforce cloud solutions and web development. They genuinely support the EMEA
+market, as well as International companies, with professionally customized and
+out-of-the-box CRM solutions that are widely requested by customers all over the world.
+Cloudastick Systems offer various services such as Sales Cloud Implementation , Service
+cloud implementation, Mobile Development and provide solutions to multiple industries
+such as real estate and automotive. Their mission is to empower businesses with
+state-of-the-art solutions, to help them better control, measure and manage their business
+from anywhere and at any time. And their vision is excellence in Salesforce Solutions and
+Customizations.
+The internship performed tasks were mainly programming oriented from a Salesforce
+developer perspective. Using Java I created several classes and triggers that fire when a
+specific event happens in the org. For instance, a trigger fires whenever a new record is
+inserted, deleted or updated in the SQL database and performs the specific alteration
+accordingly. Other tasks include Visualforce pages, Aura components and Lightning Web
+Components. These are technologies that use HTML , CSS and JavaScript tailored to
+Salesforce. They were used in order to augment any desired web pages or  forms in the
+Salesforce org to perform any function. Moreover, I also developed several integrations
+between Salesforce and other services, such as Truecaller to verify contacts’ identity.
+These integrations were developed using RESTful API call-outs.
+The main new experiences I gained from this internship is that it got me introduced to the
+world of Salesforce development. The internship at Cloudastick Systems exceeded my
+expectations because the team was very  collaborative and supportive which helped me
+excel rapidly in a whole set of new Salesforce development skills to learn. I think the
+market for Salesforce developers is a fast-paced growing market and the need for
+Salesforce developers and administrators in the future is rising quickly. This internship
+would make me a unique candidate to any Salesforce partner that demands a Salesforce
+developer in the future. The internship is highly correlated to my studies in the GUC
+faculty of Digital Media Engineering and Technology, as it was mainly programming
+oriented and used technologies I had experience with in my academic courses such as
+Computer science 2,Computer science 4, Data Structures and Algorithms, Databases 1,
+Web Technologies and Usability and Advanced Media Lab (MERN stack) .
+To conclude, my internship at Cloudastick Systems was a major addition to my career. I
+acquired a new set of skills related to Salesforce development that would make me a
+competing candidate to any Salesforce department in the future. The internship was of
+great benefit as it is highly correlated with my studies as the tasks I performed were
+programming oriented. Currently Salesforce is the number 1 Customer Relationship
+Management system  platform in the world, thus the market and possible job
+opportunities in this field is very promising to future engineers and developers.
+
+response result:
+The tasks performed during the internship at Cloudastick Systems include:
+
+1. Increasing interns' knowledge of the Salesforce CRM platform and development tools needed, such as object-oriented programming, SQL databases, HTML, CSS, and Javascript.
+2. Building and maintaining CRM systems for different organizations using Salesforce.
+3. Administering an org, managing the Sales and Service Clouds, and automating workflow.
+4. Creating classes and triggers using Java to handle specific events in the org's SQL database.
+5. Developing Visualforce pages, Aura components, and Lightning Web Components using HTML, CSS, and JavaScript tailored to Salesforce.
+6. Integrating Salesforce with other services, such as Truecaller, using RESTful API call-outs.
+7. Collaborating with the team at Cloudastick Systems and receiving support to excel in Salesforce development skills.
+8. Gaining new experiences and skills related to Salesforce development.
+9. Applying academic knowledge and skills acquired in courses such as Computer Science, Data Structures and Algorithms, Databases, and Web Technologies.
+10. Enhancing career prospects as Salesforce is the number 1 CRM platform in the world, with promising job opportunities for engineers and developers.

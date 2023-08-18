@@ -6,7 +6,7 @@ from PIL import Image
 from pdf2image import convert_from_path
 
 def get_text(pdf_path):
-    images = convert_from_path(pdf_path)
+    images = convert_from_path(pdf_path, poppler_path="C:/Users/Ahmed Hatem/poppler-23.08.0/Library/bin")
     # Specify the page number to start from
     start_page = 4  # Change this to the desired start page number
 
@@ -73,6 +73,25 @@ def get_text(pdf_path):
                 target_section_content = target_section_content.split("Internship Performed Tasks:")[1]
     
     if not target_section_content:
-        raise Exception("No content found !!")
+        target_section_content = None
 
     return target_section_content
+
+# Loop through all the pdf files in the folder 
+# and extract the text from the pdf files
+# and save the text in a text file
+
+# import os
+# path = "C:/Users/maria/OneDrive/Desktop/Internship Project/Dirty Reports/Dirty Files/OCR/working"
+# for filename in os.listdir(path):
+#     if filename.endswith(".pdf"):
+#         pdf_path = os.path.join(path, filename)
+#         text = get_text(pdf_path)
+#         if text:
+#             text_file = open(os.path.join(path, filename.replace(".pdf", ".txt")), "w")
+#             text_file.write(text)
+#             text_file.close()
+#         else:
+#             print("No text found in: " + filename)
+#     else:
+#         continue
