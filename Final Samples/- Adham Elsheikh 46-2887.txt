@@ -1,0 +1,11 @@
+The report mentions the following tasks performed during the internship:
+
+- Going through tutorials to learn .net technology
+- Implementing a web app to manage employees and tasks using .net webforms and c#
+- Spending time in the cyber security department
+- Developing technical skills in web development
+- Developing problem-solving skills
+- Understanding the business of the company and the project's objectives
+- Working with teammates and learning how to work in a team
+- Observing the work flow and learning its importance
+- Gaining an understanding of the job market and the importance of making careful decisions after graduation.

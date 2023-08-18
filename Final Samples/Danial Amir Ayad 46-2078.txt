@@ -1,0 +1,6 @@
+The performed tasks mentioned in the report include:
+
+- The student took an internship in the software development department.
+- The student worked in both the back-end and front-end teams.
+- In the back-end department, the student handled technical and construction aspects of websites.
+- In the front-end department, the student worked on the appearance of websites, including layout and integrating

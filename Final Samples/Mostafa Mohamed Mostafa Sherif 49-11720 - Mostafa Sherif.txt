@@ -1,0 +1,15 @@
+The performed tasks during the internship at Orascom Construction include:
+
+1. Learning about the technologies used in the Research and Development (RnD) department, such as Angular, .NET CORE, and Microsoft SQL.
+2. Creating a fully-functioning website with trivial data using the aforementioned technologies.
+3. Shadowing the development of an in-house application.
+4. Creating an SQL database using Entity Framework Core that contains a list of URLs used by the company.
+5. Developing a functioning Windows Service Program that periodically checks the URLs from the database and sends alert emails with the type of connection error when one is faced.
+6. Assisting the Project Management team in coordinating between users and developers.
+7. Attending meetings and documenting the requirements needed for system development or updates.
+8. Using an in-house application to coordinate user requests.
+9. Learning multiple new technologies and applying them in practical scenarios.
+10. Analyzing situations and finding efficient solutions.
+11. Working effectively as a part of a larger team towards a common goal.
+
+Overall, the internship provided valuable experience and knowledge in various fields within the Information Technology sector, including software development, project management, and coordination between users and developers. The intern found the experience relevant to their studies and believes it will greatly benefit their future career.

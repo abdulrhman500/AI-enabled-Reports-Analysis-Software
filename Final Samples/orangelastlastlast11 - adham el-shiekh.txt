@@ -1,0 +1,10 @@
+Performed tasks: 
+
+- The main task assigned was a project called B2B_PRICE_SIMULATOR, which involved building a machine learning model to predict the outcome of clients on different tariffs.
+- Preprocessed and cleaned data of millions of clients.
+- Applied feature engineering techniques.
+- Used libraries such as pandas, NumPy, and matplotlib for data processing and visualization.
+- Attended meetings and discussed other projects assigned to team members.
+- Developed technical skills in data processing and using libraries.
+- Gained an understanding of the business and project goals to achieve the best results.
+- Enjoyed working with teammates and learned about teamwork and workflow.

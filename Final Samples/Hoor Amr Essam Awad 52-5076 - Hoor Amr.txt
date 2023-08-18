@@ -1,0 +1,1 @@
+ We were asked to study/revise fluid mechanics, and to comprehend the new concepts presented to us during the internship.  We pactically implemented different hydraulic systems in hydraulics & pneumatic labs.  We were asked to draw the different parts of the hydraulic cylinder and assemble them together on solid works. 

@@ -1,0 +1,1 @@
+ My tasks included working on a UI design for several applications weather, food etc.  This was needed to construct a full application, that was the final project for my internship. I created a database for my application using Core data. We also learned how to use APIs for our database.  

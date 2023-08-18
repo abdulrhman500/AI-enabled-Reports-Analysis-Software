@@ -1,0 +1,11 @@
+The performed tasks mentioned in the report are:
+
+1. Running queries on the Oracle database to output specific information to users.
+2. Working on a Python project that involved grouping, subcategorizing, arranging, and filtering data based on desired criteria.
+3. Acquiring technical skills in Oracle database management system.
+4. Enhancing Python skills by designing software from scratch.
+5. Improving relationships, timing, multitasking, problem-solving, and coping skills.
+6. Completing tasks related to the field of study, such as database querying programming.
+7. Finding the Databases and Video & Audio courses to be useful.
+8. Gaining valuable skills in various areas related to the field.
+9. Working for October Pharma, an organization dedicated to producing necessary drugs for medicinal purposes.
