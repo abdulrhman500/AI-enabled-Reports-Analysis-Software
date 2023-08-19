@@ -1,5 +1,0 @@
-The performed tasks during the internship are as follows:
-1. Studied a data science with python course and researched topics such as unsupervised machine learning and clustering models.
-2. Cleaned, explored, and preprocessed a dataset, and applied different clustering algorithms to segment customers and provide insights about each cluster.
-3. Conducted "recommendation and geomarketing" task by applying different clustering algorithms on a dataset to determine socioeconomic class per location and provide insights about customers in each class.
-4. Prepared a presentation about the work and presented it to the data science team.

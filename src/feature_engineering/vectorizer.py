@@ -1,16 +1,14 @@
 import os
 import tensorflow as tf
 import tensorflow_hub as hub
-from Data import Data
+from Data import Data #import the Data class from the Data.py file
 import time
-import pandas as pd  # Make sure to import pandas
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from USE import apply_USE
-from tf-idf import apply_tfidf
+import pandas as pd 
+from USE import apply_USE #import the apply_USE function from USE.py file
+from spacyTF-IDF import preprocess, apply_tfidf
 
 def get_decision(file_path)-> int:
-    return 1  
+    return 1  #TODO 
 
 def load_decision(execl_sheet_path) -> list:
     #TODO: load the decisions from the excel sheet
@@ -42,7 +40,7 @@ def get_file_paths(folder_path) -> list:
         file_paths.append(file_path)
     return file_paths
 
-def vectorize_documents_one_by_one(start_idx, end_idx, data_obj, vectorization_technique=apply_USE) -> Data:
+def vectorize_documents_one_by_one(start_idx, end_idx, data_obj, vectorization_technique) -> Data:
     for idx in range(start_idx, end_idx):
         file_path = file_paths[idx]
         text = read_text(file_path)
@@ -52,7 +50,9 @@ def vectorize_documents_one_by_one(start_idx, end_idx, data_obj, vectorization_t
         data_obj.add_data(file_name, vector, decision)
     return data_obj
 
-def vectorize_documents_once(start_idx, end_idx, data_obj, vectorization_technique) -> Data:
+def vectorize_documents_once(start_idx, end_idx, data_obj, vectorization_technique,preprocessing=None) -> Data:
+#used for Tf-idf
+    
     texts= []
     file_names = []
     vectors = []
@@ -60,10 +60,12 @@ def vectorize_documents_once(start_idx, end_idx, data_obj, vectorization_techniq
    
     for idx in range(start_idx, end_idx):
         file_path = file_paths[idx]
-        texts.append(read_text(file_path))
+        text = read_text(file_path)
+        if (preprocessing != None):
+            text = preprocessing(text)
+        texts.append(tet)
         file_names.append(file_path.split('\\')[-1])
         decisions.append(get_decision(file_path))
-    # can be used for Tf-idf
     vectors = vectorization_technique(texts)     
     
     for idx in range(len(texts)):
@@ -76,18 +78,24 @@ def vectorize_documents_once(start_idx, end_idx, data_obj, vectorization_techniq
     return data_obj
 
 
-folder_path = "E:\\NLP\\Final Samples"
-execl_sheet_path = ""
-embed = None
+folder_path = "E:\\NLP\\Final Samples" #path to the folder containing the Text files
+execl_sheet_path = "" #path to the excel sheet containing the decisions
 decisions = None
 file_paths = get_file_paths(folder_path)
 
-if __name__ == "__main__":
+
+def main():
     start_time = time.time()
     # load_decision(execl_sheet_path)
     data_obj = Data(len(file_paths)) 
-    vectorize_documents_one_by_one(0, len(file_paths), data_obj, apply_tfidf)
+    vectorize_documents_once(0, len(file_paths), data_obj, apply_tfidf, preprocess)
+    # vectorize_documents_one_by_one(0, len(file_paths), data_obj, apply_USE)
+    
     data_obj.save_to_csv("a.csv")
     end_time = time.time()
     print(f"Total time taken: {end_time - start_time} s")
     print(f"Total number of files: {len(file_paths)}")
+
+if __name__ == "__main__":
+    main()
+    

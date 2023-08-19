@@ -1,60 +1,0 @@
-extracted data:
-Machine Learning Researcher
-Ulm University
-This report will cover all of the details of my internship including tasks and the tools used. It will
-also highlight the importance of my role in the workplace and all of the skills I honed during my
-period there. There will be an introduction about the university I was working in, in addition to a
-brief overview of the department's objectives that will be shared which are basically their
-research goals and mission towards the society. The report will also discuss what new areas of
-computer science I explored and learned about more during my internship phase in Germany.
-Ulm University was founded in 1967 as the youngest university in Baden-Wuerttemberg and has
-kept evolving dynamically ever since. An attractive and future-oriented course catalog,
-high-quality academic education,international diversity, interdisciplinarity and cutting-edge
-innovative research have become the trademarks. At the Institute of Neuroinformatics the
-research techniques range from theoretical analyses, computer simulations, experiments with
-neuromorphic hardware and robots, neural and behavioral data analyses of natural learning
-systems, and learning studies with actual people in virtual environments. The purpose of this
-research is to increase our understanding of both biological and artificial intelligence, as well as
-to explore the use of biological information processing principles to advance technology
-applications.
-The tasks I performed started from researching machine learning, data engineering, ensemble
-learning and different neural networks techniques and the different uses of each technique. After
-that I started experimenting on different datasets and then compare what is the best approach in
-each case. I did multiple experiments each one with different parameters and  I achieved near
-state of the art results during my work. Then I started working on writing my paper to publish it
-in the Africon AI contest. All of this was of course achieved with the collaboration of my
-colleagues in the department and the wise supervision of my professor Friedhelm Schwenker.
-I benefited greatly from this internship. It really did exceed my expectations in a way I did not
-imagine before the internship. I learned a lot about data cleaning using different libraries. I used
-kaggle and google colab most of the time to develop, run and test my experiments. Currently I
-am very passionate about machine learning and data engineering, this internship has really
-cultivated my love for this field. I imagine myself working as a data scientist in the future
-helping my company make the best decisions to grow their customer base. I am really happy that
-I am taking a data engineering course right now in my ninth semester because I feel it correlates
-heavily with my work in the internship field and it helps me to develop my knowledge in the
-field I am passionate about.
-To conclude, my experience was very fruitful, and I learned about the industry in great detail. I
-am familiar right now with the technical terms used in the industry, moreover I know the position
-ladder quite well and I know which are the leading companies in the field of neural networks. I
-also know the growing areas of research and who are the pioneers in the field to always follow
-and keep them on your radar. I believe this internship easily kickstarted my career in a very
-interesting and competitive field, and for that I am very grateful for the University of Ulm and
-the Institute of Neuroinformatics and of course professor Schwenker.
-
-response result:
-The performed tasks for this report are as follows:
-
-- Researching machine learning, data engineering, ensemble learning, and different neural network techniques
-- Experimenting with different datasets and comparing the best approach for each case
-- Conducting multiple experiments with different parameters
-- Achieving near state-of-the-art results
-- Writing a paper to be published in the Africon AI contest 
-- Collaborating with colleagues in the department 
-- Receiving supervision from Professor Friedhelm Schwenker 
-- Learning about data cleaning using different libraries 
-- Using Kaggle and Google Colab for development, running, and testing of experiments 
-- Developing passion for machine learning and data engineering 
-- Taking a data engineering course 
-- Gaining familiarity with industry technical terms and the position ladder 
-- Knowing leading companies in the field of neural networks 
-- Being aware of growing areas of research and pioneers in the field

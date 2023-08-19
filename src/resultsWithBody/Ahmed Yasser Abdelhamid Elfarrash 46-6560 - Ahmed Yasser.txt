@@ -1,44 +1,0 @@
-extracted data:
-New Plan Developments 
-I have spent a 12 week training program in New Plan developments shareholding company. 
-There first real state projects in Egypt stand out as executive destinations including Serrano, 
-Atika, and Eleven. There mission is to provide outstanding service and expertise in the real estate 
-market and innovative living solutions to satisfy client needs. The company is located in 5th 
-Settlement, New Cairo. 
-Through the 12 weeks I have learned a lot in this company through Mr. Mohamed my supervisor 
-or through my team mates. First four weeks my given task was watching tutorials and learning 
-more about HTML, PHP and react, my knowledge in HTML was basic in which I needed the 
-tutorials they gave me to watch to learn more and be able to develop their website, also my react 
-knowledge was good but after learning more about them I became so good with react and 
-HTML. The next 8 weeks I was given a task every week which was needed to be done and 
-submitted through the same week. We used to work on Visual studio Code. Mr. Mohamed 
-always gave me feedback and evaluation about my work and he helped me to develop a lot and 
-enhance my skills in the website development. 
- 
-I gained so many skills throughout this 12 week program personally and technically. I learned a 
-lot from my teammates who were so helpful and they were always there when I feel lost and 
-need help. I also learned to work in a team with my team mates. I gained life skills like working 
-under stress that I need to finish that task before the due date and it must be handled so good for 
-a good work quality. I also developed my technical skills as I mentioned above in react and 
-HTML which I already took through out the ACL and networks courses which I took in 
-semesters 7 and 5 respectively. The training program met my expectations perfectly because I 
-am always dreaming to work in the website development field and I gained and enhanced a lot of 
-skills related to this field which will help me a lot in the future. 
-In conclusion this internship was very useful experience and I have learnt a lot through out it all 
-whether in life skills or technical skills which I believe will help me so much in my future career. 
-It was a very good experience too in learning more and seeing how the working field and how 
-real world careers work. I am totally satisfied with this internship and I will totally recommend 
-New Plan Developments to all my colleges.  
- 
-
-response result:
-The performed tasks in this report include:
-- Watching tutorials and learning about HTML, PHP, and React
-- Developing a website using HTML and React
-- Completing a task every week and submitting it
-- Receiving feedback and evaluation from Mr. Mohamed
-- Gaining skills in working under stress and meeting deadlines
-- Enhancing technical skills in website development
-- Learning from teammates and working in a team
-- Gaining life skills and technical skills related to the website development field
-- Overall satisfaction with the internship experience.
