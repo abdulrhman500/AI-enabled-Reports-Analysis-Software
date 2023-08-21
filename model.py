@@ -3,7 +3,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
 from imblearn.over_sampling import SMOTE
-from imblearn.under_sampling import RandomUnderSampler
 import ast
 
 # Load the CSV file
@@ -15,16 +14,15 @@ df['Embedding'] = df['Embedding'].apply(ast.literal_eval)
 X = df['Embedding'].tolist()
 y = df['label'].tolist()
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Apply SMOTE oversampling to the entire dataset
+oversampler = SMOTE(sampling_strategy={'Reject': 165, 'Pending': 165})
+X_resampled, y_resampled = oversampler.fit_resample(X, y)
 
-oversampler = SMOTE(sampling_strategy={'Reject': 1000, 'Pending': 1000})
-X_train_resampled, y_train_resampled = oversampler.fit_resample(X_train, y_train)
+# Split the resampled data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X_resampled, y_resampled, test_size=0.2, random_state=42, stratify=y_resampled)
 
-undersampler = RandomUnderSampler(sampling_strategy={'Approved': 100})
-X_train_final, y_train_final = undersampler.fit_resample(X_train_resampled, y_train_resampled)
-
-model = LogisticRegression(multi_class='multinomial', solver='lbfgs', max_iter=1000)
-model.fit(X_train_final, y_train_final)
+model = LogisticRegression(solver='lbfgs', max_iter=1300)
+model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
 
