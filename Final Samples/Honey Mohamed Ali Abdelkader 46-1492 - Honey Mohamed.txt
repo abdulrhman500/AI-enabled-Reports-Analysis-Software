@@ -1,0 +1,11 @@
+The performed tasks for this internship report are as follows:
+
+- The intern worked in the game development team of Phantasm.
+- The intern's tasks included writing c# scripts and working on the User Interface (UI) of the game.
+- The intern used Unity as the software for game development and Visual Studio for writing c# scripts.
+- The intern created game objects that served as the menus of the game, with each menu consisting of cards represented by classes.
+- The intern participated in agile development using the sprint methodology, with weekly meetings and progress tracking.
+- The intern learned self-learning, research skills, and how to write scalable codes.
+- The intern gained knowledge in game development that would make them more confident in applying for post-graduate jobs in this field.
+- The internship was correlated with the intern's studies in writing scripts and object-oriented programming.
+- The intern would recommend this company as it provides a valuable learning experience and prepares interns for future software engineering jobs.

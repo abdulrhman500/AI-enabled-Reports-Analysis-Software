@@ -1,0 +1,13 @@
+Tasks : My internship was a full - 
+time internship, working 5 days per week, 8 hours per day. My job title 
+was Data Engineer. I learned a lot in this field. I worked specifically in data 
+Analysis using Power BI (Visualization Tool) and Python programming 
+language. Making lots projects to Em aar by making Dashboards using 
+Power BI and Python, Also I learned using Dax, Dax is the language or the 
+code used to edit dashboards in Power BI. So first fetching the data from 
+the database, and then writing codes using python and Dax, and finally 
+making  the dashboard that meets department's requirements and display 
+it in the right place to analyse any data in the company to make it clear 
+and clean. Also I went through SQL a little bit and I gained some 
+experience regarding Sales Force  Department in Emaa r Misr.  
+Internship 

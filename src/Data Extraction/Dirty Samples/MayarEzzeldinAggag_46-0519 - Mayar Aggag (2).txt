@@ -1,0 +1,43 @@
+Activities
+As an intern at Orange, I was assigned a number of tasks to work on during the month of
+July. As a start,  my mentor “Mohamed Gamal” gave us a detailed description of the team and its
+functionalities as well as explaining the teams’  technical tasks required to work on. Access
+Conver ged Transmission Support team was responsible of monitoring the network sites, for
+example the one in the picture:
+The tasks were to be performed  in groups of 2, we were assigned the following:
+-Technical support and operation (L1 & L2) of all MW  links elements related to Ericsson,
+NEC and Alcatel-Lucent suppliers.
+Ericsson, NEC, and Alcatel-Lucent are hardware suppliers for the sites that create the network
+such as
+Routers, hubs, switches, and bridges. These
+companies create a monitoring software for
+its hardwares to track the dysfunctionalities of the hardwares or if any malfunctions appear that
+can af fect the network strength. Our responsibility was to track and supervise  the alarms on a
+daily basis and report to the mentor for the support team to solve the issue.
+- Responsible for tracking the repeated problems related to MW  links and IP  traffic
+capacity , then finding the appropriate solution.
+The softwares mentioned above, help in identifying problems that can af fect the IP  traffic
+capacity which for example, is af fected during huge crowds like in a stadium or a concert, which
+in this case requires immediate action in increasing the site capacities for enhancing the
+network’ s KPIs.
+- Preparing job plans for executing capacity upgrades actions over network elements for
+data IP  swapping projects and enhancing network's capacity .
+As engineering interns, we were required to provide a full plan on how the capacity upgrades
+will take place based on our network knowledge and what we’ve learned in university courses.
+- Ability to plan, schedule, conduct, and coordinate transmission projects.
+- Responsible for monitoring and reporting NMS and transmission links daily , weekly
+and monthly reports.
+PS. THE DA TA CHAR TS AND SOFTW ARES USED ARE  HIGHL Y CONFIDENTIAL.
+As an access transmission team consisting of daily network management and control,
+another team was responsible for analysis of network ef ficiency and customer satisfaction.
+Therefore, we were responsible for creating detailed reports about findings and issues tackled
+during a week or a month.
+“Life at Orange” as  the employees call it, was exceptional. Like any employee, we arrive
+at the of fice in Smart Village at 9:00, but unlike any other environment, people were keen on
+spending the breakfast time together , socializing and motivating each other for another day at
+work. HR were very great at keeping the interns motivated and spreading good ener gy, as well as
+helping us to discover how the job industry is functioning. On days, they or ganize sessions that
+explain how to build a professional linkedIn profile and CV . They or ganized tournaments in ping
+pong and playstation to allow the interns to build connections and enjoy the training time while
+being able to finish tasks and learn with motivation. The work day ends at 5:00pm , but
+employees are always looking forward to another day at Orange.

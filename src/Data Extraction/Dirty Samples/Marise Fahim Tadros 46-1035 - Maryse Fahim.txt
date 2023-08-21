@@ -1,0 +1,16 @@
+tasks:
+Before beginning the internship activities, we had a look at the various web
+development frameworks and when each one should be used. In order to introduce us to the
+world of software development, which demands the mastery of problem-solving techniques,
+we also conducted problem-solving exercises.
+The following phase involved choosing the framework for a web development project
+that had been assigned to us. We chose to utilise strapi for the backend and next js for the
+frontend.I was working on two tasks simultaneously because it was my first time to use strapi: I
+was learning strapi and conducting research while analysing the database to determine the
+entities and the relationships among them. During this phase I was seeing the practical use of
+the database course that we studied in semester 5 and put it to use. We also had regular
+meetings with the team working on the frontend to share our progress together .
+Later on, after I had learned more about strapi and had a good understanding of the
+database, my task was to create the tables using strapi and add the attributes. The crucial step
+that connects the frontend and backend—and ultimately ties everything together—came next.
+Internship 

@@ -1,0 +1,16 @@
+The performed tasks mentioned in the report are as follows:
+
+1. Performing mssql (Microsoft SQL) database inquiries to print reports or send notification-based emails.
+2. Developing official websites for the organization in several countries using Drupal, an open-source web content management system.
+3. Creating a full-stack web-based application on Visual Studio using ASP.NET Core Framework and C#. This involved creating the program from the ground up, including backend functions and a fully functional user interface. The application was an Inventory system to assist the Help Desk office in managing warehouse products.
+
+Additionally, the report mentions that the intern gained the following technical skills:
+
+1. .NET Framework (proprietary software framework)
+2. C# (general-purpose, high-level multi-paradigm programming language)
+3. Drupal (PHP-based web content management system)
+4. Microsoft SQL Server (relational database management system built by Microsoft)
+
+The intern also acquired better interactions, coordination, multitasking, problem-solving, and coping with stress during the internship. The report mentions that the internship exceeded expectations and provided an enjoyable working environment. Furthermore, the intern believes that interning in a multinational corporation will provide a positive image for future endeavors. The projects worked on during the internship were connected to the intern's field of study, which made full-stack development easier.
+
+Overall, the internship provided the necessary needs, useful skills, and an opportunity to be a part of a committed organization focused on keeping the environment green and healthy.

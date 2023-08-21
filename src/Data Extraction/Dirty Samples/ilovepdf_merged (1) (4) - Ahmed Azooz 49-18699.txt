@@ -1,0 +1,26 @@
+Tasks
+Month 1:
+The internship started with a meeting with the stakeholders to lay the grounds of the
+automatic defense scheduling system. Constraints were discussed and the basic skeleton of
+the system was agreed upon. We started researching different algorithms to use to solve the
+problem and after many meetings with my teammates we decided to use The Genetic
+Algorithm with Shotgun-Hill Climbing.
+Month 2:
+The implementation of the algorithm started in month 2. The Algorithm contains some
+components like solution representation, cost function and neighboring algorithm.
+So
+I
+started to represent the solution using python. The solution was represented as an array of
+size of the amount of slots. Each cell contained information about the assignment (Examiner,
+Supervisor and Student). Then I started to implement the cost function. The cost function
+calculates how much this solution costs. The lower the cost the better the solution is. In
+month 2 the cost function  only calculates if the same examiner/supervisor is present in the
+same slot more than two times.
+Month 3 and the remaining two weeks:
+Further advancements on the algorithm took place in month 3. Some Greedy Algorithm
+aspects were added into the algorithm. The cost function was also modified to account for
+continuity of slots and the number of working days an examiner has per schedule. As the
+constraints given by the coordinators was that The Examiner should have continuous slots
+and he should have no more than two working days per schedule.
+2
+Internship 

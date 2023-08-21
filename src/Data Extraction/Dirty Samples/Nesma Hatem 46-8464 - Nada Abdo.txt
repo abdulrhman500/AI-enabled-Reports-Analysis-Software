@@ -1,0 +1,19 @@
+activities  
+This section should present the activities performed during the internship period:  
+• Explain your assigned internship tasks.   
+This is confidential  but I was simply worki ng on adding a new feature in App advertisements in 
+Facebook app.  
+• Describe working conditi ons and functions: Describe your typical working day and unusual working 
+days (field trips), other team members or co -workers and their function in relation to you.  From Monday to Friday , The w ork day is from  9 to 6. I spe nd the day doing my assigned tasks and 
+attending meeting s. I have an I ntern manager and 2 peers to ask them if I find an y difficulties  doing 
+my job.  
+• Which working tools, equipment and software did you use or generally used in the organiza tion?  
+I used a mac an d a Samsung  phone  provided by the company . I mainl y worked on Visual 
+Studio@meta . Meta has their own coding languages . 
+• Did you do some research? If yes, describe the research task and experiments you have performed or 
+observed during the assigned tasks.  NO 
+• Show some work samples that you have encountered/conducted at the company through graphs, 
+pictures, analyzing dat a, drawings, or design calculations and include them in your report after 
+notifying your supervisor.  
+I worked in Audience Network as a part of the  App Discovery team  which is a product  team. As a  
+SWE Intern I worked on the backend and frontend  during my internsh ip.  

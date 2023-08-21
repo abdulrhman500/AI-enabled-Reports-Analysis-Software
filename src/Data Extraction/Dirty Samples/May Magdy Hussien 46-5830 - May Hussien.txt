@@ -1,0 +1,24 @@
+Tasks:   
+During the internship we were working in teams where each team was respons ible for a certain task and then we 
+integrated the different parts together. The aim of the project was to be able to remotely drive the self -driven car 
+(SDC) from the VR lab using  the virtual reality headset. First, I was part of the team that was working on 
+displaying the camera feed in virtual reality. So we had to search and explore how we can use unity, a cross -
+platform game engine , developed  to display the feed in VR. After some work, we managed to find a way to 
+capture the computer screen and display it in unity to be later shown in VR. Then, we joined the team that was 
+working on establishing a communication between the SDC and the PC in the VR lab to help explore the 
+different possible wa ys we can send  and receive  the camera feed along with the other controls neede d for the 
+car orientation and movement. After managing to establish the needed communication and locally test all the 
+features integrated together. We tried the prototype to evaluate its performance and see where we have a room 
+for improvement for the next  model. In the second phase our main goal was to improve the quality of the 
+communication by working on reducing the delay. Also we wanted to improve the overall quality of the users 
+experience so we added a back camera, wide angle camera (to help have a b etter view of the sidewalk s) and 
+finally we added distance leaders, used to warn the user if anything is approaching from a blind spot not 
+covered by the cameras. Also we made some improvement on the user interface to account for the new added 
+features and make the interface more user friendly .To make the users have a more realistic experience we        
+2 
+Student Career & Alumni Development Office. scad@guc.edu.eg  | German University in Cairo New Cairo City - Main Entrance Al Tagamoa Al Khames; Egypt  
+worked alongside with a team of mechatronics students that were developing haptic gloves that have different 
+levels of vibration that help the user have a feedback on t he road he is currently driving on and a taste of the 
+surrounding environment. At the end  of the internship , we tested the updated prototype and it was a success . 
+ 
+Internship 

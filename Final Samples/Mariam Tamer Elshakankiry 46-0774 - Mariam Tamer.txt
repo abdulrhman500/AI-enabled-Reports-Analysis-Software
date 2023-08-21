@@ -1,0 +1,14 @@
+The performed tasks for this internship report include:
+- Utilizing Salesforce's Lightning Web Components framework to create customized applications for clients
+- Using libraries such as 'jspdf' and 'autotable' to create downloadable PDF documents with client data
+- Integrating SaaS (Software as a Service) apps on top of Salesforce using Apex's API services
+- Writing unit tests in Salesforce's integrated developer console environment to ensure code functionality
+- Communicating with clients' developers and internal development team using Slack
+- Utilizing MuleSoft for API integration across software
+- Using Tableau to visualize data
+- Referencing Trailhead for Salesforce concepts and implementation ideas
+- Participating in weekly meetings and team-building activities organized by Coberg
+- Improving soft skills such as presenting work to clients, time management, and communication
+- Improving technical skills such as debugging, familiarity with Salesforce's framework and environments, and applying knowledge gained from relevant courses
+- Gaining insights into workplace environments and teamwork dynamics
+- Appreciating Coberg's employee-centric approach and recommending the company.

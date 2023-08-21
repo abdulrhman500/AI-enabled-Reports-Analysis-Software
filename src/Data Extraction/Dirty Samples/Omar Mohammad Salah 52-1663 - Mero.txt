@@ -1,0 +1,17 @@
+Tasks  
+ 
+Implementing New Library Management System  
+ 
+This library management system was rebuilt to be able to introduce new features and functionalities. 
+In order to do so, I needed to start by designing the database schema to efficiently store all the data. It 
+had to be easy to modify and maintain. A good design will always lead to easy retrieval of information 
+which is important in any system. The next step was to apply the d ata normalization rules to make sure 
+that the tables are structure d correctly. Once I was done with the database part, I needed to add 
+classes to build the objects as well as building the driver class to connect the database to the rest of 
+the code. I also  had to add a builder class that builds the permissions on who can access the system. 
+Once the backend part was done, I had to work on the frontend using HTML, CSS, and JavaScript.  
+ 
+ 
+ 
+ 
+Internship 

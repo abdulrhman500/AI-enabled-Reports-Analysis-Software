@@ -1,0 +1,15 @@
+- The intern was part of the data platform team in Orange Egypt.
+- The intern contributed to the architecture of the data pipeline.
+- The intern learned about the architectures/model used for the data platform and different batch and real-time processing.
+- The intern was assigned a task to minimize errors in accessing data from the data lake of the organization.
+- The intern worked on developing a distributed application to validate HDFS files on a Hadoop cluster.
+- The intern spent time researching Hadoop and HDFS to understand the task.
+- The intern learned about distributed systems and big data processing frameworks.
+- The intern learned about tools and frameworks such as Docker and Hadoop.
+- The intern had a supervisor who was helpful and passionate about software engineering.
+- The activities carried out during the internship are correlated with the intern's studies.
+- The internship provided insight into how multinational companies work with big data.
+- Courses in Software Engineering and Databases 2 at GUC were related to the internship.
+- The intern had a positive experience at Orange Egypt but recommends considering the team and supervisor pairing.
+- The internship was beneficial both technically and non-technically.
+- The telecommunication industry is recommended for engineers interested in big data, data analysis, and machine learning.

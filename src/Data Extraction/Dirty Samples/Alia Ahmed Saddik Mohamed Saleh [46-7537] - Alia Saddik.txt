@@ -1,0 +1,24 @@
+tasks we worked on during this internshi p varied from courses, proje cts, research , 
+and presenta tions . We took various courses and many presentations about the company functions 
+and software  used were  prese nted by the engineers . Golang,  Flask, Docker, Django , and GitHub  
+actions  resources were  provided b y the supervisor  for us to study. Also, presentation s about the  
+whole  ThreeFold   (their current customer) eco-system , how it works , and how a us er can use in 
+addition to all  the technologies tha t are in cluded in the whole development cycle  of the pr oject 
+were provided by the engineers who worked on it. The projects  we worked on included a s imple 
+Golang INI file parser with its unit tests  and GitHub  actions that r an the m. Also, a full sta ck to-
+do web app that was later containerized using docker . This web app  was built using Golang and 
+mongo DB for the backend and svelte and typescript for the fr ont end. The backend was tested 
+using the  Golan g unit tests, and postman and open -API (swagger API) was built to ensure the 
+robustness of the backend. Cypress was used to test the front end .  The GitHub  actions for this 
+project aut omated the buil d and updated the image for the docker container  and ran all the tests.  
+Another mini project was a telegra m bot that was built using python , this project was 
+containerized using the threefold ecosystem . Finally, we worked on a n ew HR s ystem web app 
+for Codesca lers-Egypt employees. For the backend, I worked on authentication  and authorization  
+using  JWT and Django .  I also wo rked on all the user profile ope rations for all types of users 
+(admins, s upervisors  and employees) . For the front end , I used svelte and typescript to 
+incorporate  authentication and authorization  in the front end.  In addition to building the login 
+and registration  pages. Rega rding the rese arch, research was held about  IPFS planning services 
+to discuss it with the decision  makers for Codescalers  to start using it in their current project. Finally , a presentation was p repared and held for my colleagues , supervisor and the project 
+manager about web3 . 
+ 
+Internship 
