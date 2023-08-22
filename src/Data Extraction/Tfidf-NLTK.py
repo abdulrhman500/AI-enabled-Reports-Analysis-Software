@@ -1,6 +1,7 @@
 import os
 import re
 import nltk
+import pandas as pd
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
@@ -71,19 +72,44 @@ if __name__ == "__main__":
     # print(stop_words)
     # return 0
     # print("------------************",stop_words)
-    corpus = read_text('D:/AI-enabled-Reports-Analysis-Software internship/Final Samples')
+    corpus = read_text("D:/AI-enabled-Reports-Analysis-Software internship/Final Samples")
     preprocessed_corpus = [preprocess_document(doc) for doc in corpus]
     print("Number of features:", len(preprocessed_corpus))
     # text = "The quick brown german fox jumps over the lazy dog, but the dog is not amused."
-    # preprocessed_corpus = [preprocess_document(text)]
+    #preprocessed_corpus = [preprocess_document(text)]
     features_list = []
-    for filtered_words in preprocessed_corpus:
-        try:
-            features, tfidf_array = vectorize([filtered_words])
-            features_list.append(features)
-        except Exception as e:
-            print("Error:", e)
-            continue
+    features_data = []
+
+    # for filtered_words in preprocessed_corpus:
+    #     try:
+    #         features, tfidf_array = vectorize([filtered_words])
+    #         features_data.append(features)
+    #         features_list.append(features)
+    #     except Exception as e:
+    #         print("Error:", e)
+    #         continue
+
+
+    for root, _, files in os.walk("D:/AI-enabled-Reports-Analysis-Software internship/Final Samples"):
+        for path in files:
+            if path.lower().endswith('.txt'):
+                temp = os.path.join(root, path)
+                with open(temp, 'r', encoding='iso-8859-1') as file:
+                    document_name = os.path.basename(temp)
+                    filtered_words = preprocess_document(file.read())
+                    try:
+                        features, tfidf_array = vectorize([filtered_words])
+                        features_data.append([document_name] + features.tolist())
+                        features_list.append(features)
+                    except Exception as e:
+                        print("Error:", e)
+                        continue
+    
+    features_df = pd.DataFrame(features_data)
+
+    # Save the DataFrame to a CSV file
+    output_csv_path = "document_feature_names.csv"
+    features_df.to_csv(output_csv_path, index=False)
             
     print("Number of documents processed:", len(features_list))
     total_features = sum(len(features) for features in features_list)
@@ -96,11 +122,10 @@ if __name__ == "__main__":
     list_=list(set(list_))        
     print("unique features:", len(list_))
     print(list_)
-    wordcloud = WordCloud(width=1200, height=800, background_color='white').generate(' '.join(list_))
-    plt.figure(figsize=(8, 8), facecolor=None)
-    plt.imshow(wordcloud)
-    plt.axis("off")
-    plt.tight_layout(pad=0)
-    #plt.show()
-    plt.show(block=True)
-    #plt.savefig('wordcloud.png')
+    # wordcloud = WordCloud(width=1200, height=800, background_color='white').generate(' '.join(list_))
+    # plt.figure(figsize=(8, 8), facecolor=None)
+    # plt.imshow(wordcloud)
+    # plt.axis("off")
+    # plt.tight_layout(pad=0)
+    # plt.show()
+  
