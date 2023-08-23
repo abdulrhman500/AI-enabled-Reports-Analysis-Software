@@ -4,6 +4,7 @@ import extract_unscanned_pdf
 import extract_scanned_pdf
 import constants
 import os
+import fitz
 def extract_unscanned_text(file_path)-> string :
    return extract_unscanned_pdf.get_text(file_path) 
 
