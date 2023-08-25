@@ -23,38 +23,41 @@ def preprocess(text:str):
 def apply_tfidf(corpus:list):
     return TfVectorizer.fit_transform(corpus)
 
-folder_path = "C:/Users/legion/Desktop/AI internship/AI-enabled-Reports-Analysis-Software/Final Samples"
+folder_path = "C:/Users/maria/OneDrive/Desktop/Final Samples/Final Samples"
 file_extension = '*.txt'
 
-def main:
+if __name__ == '__main__':
     corpus = []
-    for file_path in glob.glob(os.path.join(folder_path, file_extension)):
-        with open(file_path, encoding="latin-1") as file:
+for file_path in glob.glob(os.path.join(folder_path, file_extension)):
+    with open(file_path, encoding="utf8") as file:
         text = file.read()
         corpus.append(preprocess(text))
 
-    v.fit(corpus)
-    transformed_output = v.fit_transform(corpus)
-    # feature_names = v.get_feature_names_out()
-    # dense = transformed_output.todense()
-    # lst1 = dense.tolist()
+v = TfidfVectorizer()
+v.fit(corpus)
+transformed_output = v.fit_transform(corpus)
+feature_names = v.get_feature_names_out()
+dense = transformed_output.todense()
+lst1 = dense.tolist()
 
-    # df = pd.DataFrame(lst1, columns=feature_names)
+df = pd.DataFrame(lst1, columns=feature_names)
 
-    # tf_idf_counter = df.T.sum(axis=1)
+tf_idf_counter = df.T.sum(axis=1)
 
-    list_ = []
-    for i in feature_names:
-        list_.append(i)
-    list_ = list(set(list_))
-    print("unique features:", len(list_))
-    print(list_)
-    wordcloud = WordCloud(width=1200, height=800, background_color='white').generate(' '.join(list_))
-    plt.figure(figsize=(8, 8), facecolor=None)
-    plt.imshow(wordcloud)
-    plt.axis("off")
-    plt.tight_layout(pad=0)
-    plt.show()
+    # list_ = []
+    # for i in feature_names:
+    #     list_.append(i)
+    # list_ = list(set(list_))
 
-if __name__ == '__main__':
-    main()
+    # # printing the unique features in the corpus and their tf-idf score
+    # print("unique features:", len(list_))
+    # print(list_)
+
+    # # wordcloud of the unique features 
+    # wordcloud = WordCloud(width=1200, height=800, background_color='white').generate(' '.join(list_))
+    # plt.figure(figsize=(8, 8), facecolor=None)
+    # plt.imshow(wordcloud)
+    # plt.axis("off")
+    # plt.tight_layout(pad=0)
+    # plt.show()
+
