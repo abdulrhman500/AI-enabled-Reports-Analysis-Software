@@ -1,16 +1,38 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import PageNotFound from "./components/PageNotFound";
-import Home from "./pages/Home";
+import MainLayout from "./components/MainLayout";
+import { Navigate } from "react-router-dom";
 import LogIn from "./pages/LogIn";
+import AdminHome from "./pages/AdminHome";
+import MiddleWare from "./components/MiddleWare";
+import PatchView from './components/PatchView'
 function App() {
   return (
     <Router>
-            <Routes >
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<LogIn />} />
-              <Route path="*" element={<PageNotFound />} />
-            </Routes>
+      <Routes >
+
+        <Route exact path="/" element={<MiddleWare type="Guest" />} />
+
+        <Route path="/login" element={<MiddleWare type="Login" />} >
+          <Route path="/login" element={<LogIn />} />
+        </Route>
+
+        <Route path="/admin" element={<MiddleWare type="Admin"/>} >
+          <Route path="/admin" element={<MainLayout/>} >
+            <Route exact path="/admin/" element={<AdminHome />} />
+            <Route exact path="/admin/patch/:patch" element={<PatchView />} />
+          </Route>
+        </Route>
+
+        <Route path="/student" element={<MiddleWare type="Student"/>} >
+          <Route path="/student" element={<MainLayout/>} >
+            <Route exact path="/student/" element={<AdminHome />} />
+            <Route exact path="/student/patch/:patch" element={<PatchView />} />
+          </Route>
+        </Route>
+
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </Router >
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useUserContext } from "./useUserContext";
+import { http } from "../utils/AxiosUtils";
 export const useLogin = () => {
     const [error,setError] = useState(null)
     const [isLoading,setIsLoading] = useState('')
@@ -8,15 +9,19 @@ export const useLogin = () => {
         setIsLoading(true)
         setError(null)
         let success = false
-        if(email == 'osama'){
-            if(password == '123'){
-                await dispatch({type:'LOGIN',payload:{name:'Osama Hossiny', role: "admin"}})
-                success = true
-            } else setError('Wrong Password')
-        }
-        else {
-            setError('Invalid user name')
-        }
+        await http.post(
+            "/user/login",
+            {
+              email: email,
+              password: password
+            }
+          ).then( async (res)=> {
+            success = true
+            await dispatch({type:'LOGIN',payload:res.data})
+        }).catch((error)=>{
+            console.log(error);
+            setError(error.response.data.error)
+          });
         return success
     }
     return {login, isLoading, error}

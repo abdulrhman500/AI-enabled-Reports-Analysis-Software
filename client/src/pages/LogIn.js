@@ -13,18 +13,16 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { useLogin } from '../hooks/useLogin'
 import { useNavigate } from 'react-router-dom';
-
+import { userLogin } from '../utils/AxiosUtils';
 export default function LogIn() {
   const { login, isLoading, error } = useLogin()
   const navigate = useNavigate()
   const handleSubmit = (event) => {
     const data = new FormData(event.currentTarget);
     event.preventDefault();
-    if (data.get('username') && data.get('password')) {
+    if (data.get('email') && data.get('password')) {
       const request = async () => {
-        event.preventDefault()
-        const logedIn = await login(data.get('username'), data.get('password'))
-        console.log(logedIn);
+        const logedIn = await login(data.get('email'), data.get('password'))
         if (logedIn) {
           navigate('/')
         }
@@ -56,10 +54,10 @@ export default function LogIn() {
               <TextField
                 required
                 fullWidth
-                type='text'
-                id="username"
-                label="User Name"
-                name="username"
+                type='email'
+                id="email"
+                label="Email"
+                name="email"
                 autoComplete="user-name"
               />
             </Grid>
