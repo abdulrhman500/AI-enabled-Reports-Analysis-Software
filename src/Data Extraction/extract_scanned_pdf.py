@@ -15,7 +15,6 @@ def get_text(pdf_path):
     for page_num, image in enumerate(images, start=1):
         if page_num < start_page:
             continue  # Skip pages before the start page
-        #pytesseract.pytesseract.tesseract_cmd = r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
         text = pytesseract.image_to_string(image, lang='eng', )
         extracted_text += text + "\n"
 
@@ -90,6 +89,5 @@ def get_text(pdf_path):
 
             if not target_section_content:
                 target_section_content=None
-
 
     return target_section_content
