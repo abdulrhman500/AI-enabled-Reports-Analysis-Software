@@ -4,15 +4,12 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
 import Navigator from "./Navigator.js";
 import Header from "./Header";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import theme from "../theme.js";
-import AdminHome from "../pages/AdminHome.js";
 import { useUserContext } from "../hooks/useUserContext.js";
 import Loading from "./Loading.js";
 import { Navigate, Outlet } from "react-router-dom";
 
 const MainLayout = () => {
-  const [pageTitle, setPageTitle] = useState("");
   const [mobileOpen, setMobileOpen] = useState(false);
   const isSmUp = useMediaQuery('(min-width:600px)');
   const {user} = useUserContext()
@@ -47,7 +44,7 @@ const MainLayout = () => {
           </Box>
 
           <Box sx={{ flex: 1, display: "flex", flexDirection: "column" }}>
-            <Header onDrawerToggle={handleDrawerToggle} pageTitle={pageTitle} />
+            <Header onDrawerToggle={handleDrawerToggle}/>
             <div style={{margin:'calc(2% + 48px) 2% 2% 2%'}}>
                 <Outlet />
             </div>

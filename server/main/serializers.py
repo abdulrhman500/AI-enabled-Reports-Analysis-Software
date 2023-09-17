@@ -9,8 +9,7 @@ class UserRegisterSerializer(serializers.ModelSerializer):
 		model = UserModel
 		fields = '__all__'
 	def create(self, clean_data):
-		user_obj = UserModel.objects.create_user(email=clean_data['email'], password=clean_data['password'],username = clean_data['username'])
-		user_obj.type = clean_data['type']
+		user_obj = UserModel.objects.create_user(email=clean_data['email'], password=clean_data['password'],username = clean_data['username'],user_id=clean_data['user_id'] )
 		user_obj.save()
 		return user_obj
 
@@ -35,16 +34,22 @@ class PatchSerializer(serializers.ModelSerializer):
 		fields = '__all__'
 
 	def create(self, clean_data):
-		patch = Patch.objects.create(email=clean_data['semester'])
-		patch.save()
-		return patch
+		if 'start_date' in clean_data.keys():
+			patch = Patch.objects.create(semester=clean_data['semester'],close_date=clean_data['close_date'],start_date=clean_data['start_date'],open=False)
+			patch.save()
+			return patch
+		else:
+			patch = Patch.objects.create(semester=clean_data['semester'],close_date=clean_data['close_date'])
+			patch.save()
+			return patch
 	
-class PatchCreationsSerializer(serializers.ModelSerializer):
-	semester = serializers.CharField(max_length=50)
-	def create(self, clean_data):
-		patch = Patch.objects.create(semester=clean_data['semester'])
-		patch.save()
-		return patch
+# class PatchCreationsSerializer(serializers.ModelSerializer):
+# 	semester = serializers.CharField(max_length=50)
+# 	close_date = serializers.DateField()
+# 	def create(self, clean_data):
+# 		patch = Patch.objects.create(semester=clean_data['semester'])
+# 		patch.save()
+# 		return patch
 
 class SubmissionsSerializer(serializers.ModelSerializer):
 	class Meta:

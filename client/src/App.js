@@ -6,6 +6,8 @@ import LogIn from "./pages/LogIn";
 import AdminHome from "./pages/AdminHome";
 import MiddleWare from "./components/MiddleWare";
 import PatchView from './components/PatchView'
+import Register from "./pages/Register";
+import StudentHome from "./pages/StudentHome";
 function App() {
   return (
     <Router>
@@ -15,6 +17,10 @@ function App() {
 
         <Route path="/login" element={<MiddleWare type="Login" />} >
           <Route path="/login" element={<LogIn />} />
+        </Route>
+      
+        <Route path="/register" element={<MiddleWare type="Login" />} >
+          <Route path="/register" element={<Register />} />
         </Route>
 
         <Route path="/admin" element={<MiddleWare type="Admin"/>} >
@@ -26,7 +32,7 @@ function App() {
 
         <Route path="/student" element={<MiddleWare type="Student"/>} >
           <Route path="/student" element={<MainLayout/>} >
-            <Route exact path="/student/" element={<AdminHome />} />
+            <Route exact path="/student/" element={<StudentHome />} />
             <Route exact path="/student/patch/:patch" element={<PatchView />} />
           </Route>
         </Route>

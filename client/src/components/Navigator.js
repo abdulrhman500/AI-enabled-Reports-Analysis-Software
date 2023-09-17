@@ -15,6 +15,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { Link } from 'react-router-dom';
 import PendingActionsIcon from '@mui/icons-material/PendingActions';
 import { useNavigate } from 'react-router-dom';
+import { Collapse } from '@mui/material';
 const categories = [
   {
     id: "Patches",
@@ -80,23 +81,24 @@ export default function Navigator(props) {
                 <ListItemText sx={{ color: '#fff' }}>{id}</ListItemText>
                 {openCategory === id ? <ExpandLessIcon /> : <ExpandMoreIcon />}
               </ListItem>
-              {openCategory === id && (
-                <React.Fragment>
-                  {children.map(({ id: childId, icon }) => (
-                    <Link 
-                    to={`/admin/patch/${childId.toLowerCase().replace(' ','-')}`} 
-                    style={{ textDecoration: 'none' }} key={childId}>
-                      <ListItem disablePadding>
-                        <ListItemButton onClick={() => handleButtonChange(childId)} selected={activeButton === childId} sx={item}>
-                          <ListItemIcon>{icon}</ListItemIcon>
-                          <ListItemText>{childId}</ListItemText>
-                        </ListItemButton>
-                      </ListItem>
-                    </Link>
-                  ))}
-                  <Divider sx={{ mt: 2 }} />
-                </React.Fragment>
-              )}
+                <Collapse in={openCategory === id} timeout='auto'>
+                  <List>
+                    {children.map(({ id: childId, icon }) => (
+                      <Link 
+                      to={`/admin/patch/${childId.toLowerCase().replace(' ','-')}`} 
+                      replace={true}
+                      style={{ textDecoration: 'none' }} key={childId}>
+                        <ListItem disablePadding>
+                          <ListItemButton onClick={() => handleButtonChange(childId)} selected={activeButton === childId} sx={item}>
+                            <ListItemIcon>{icon}</ListItemIcon>
+                            <ListItemText>{childId}</ListItemText>
+                          </ListItemButton>
+                        </ListItem>
+                      </Link>
+                    ))}
+                    <Divider sx={{ mt: 2 }} />
+                  </List>
+                </Collapse>
             </Box>
           ))}   
         </List>

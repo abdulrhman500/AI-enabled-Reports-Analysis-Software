@@ -11,41 +11,55 @@ import { Alert } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { useLogin } from '../hooks/useLogin'
 import { useNavigate } from 'react-router-dom';
-export default function LogIn() {
-  const { login, isLoading, error } = useLogin()
+import { useRegister } from '../hooks/useRegister';
+
+export default function Register() {
   const navigate = useNavigate()
-  const handleSubmit = (event) => {
+  const { register, isLoading } = useRegister()
+  const [error, setError] = React.useState('')
+  const handleSubmit = async (event) => {
     const data = new FormData(event.currentTarget);
     event.preventDefault();
-    if (data.get('email') && data.get('password')) {
-      const request = async () => {
-        const logedIn = await login(data.get('email'), data.get('password'))
-        if (logedIn) {
-          navigate('/')
-        }
-      }
-      request()
+    if( data.get('password')!== data.get('confirm-password')){
+      setError("Passwords don't match")
+      return
     }
+    const registered = await register(data.get('email'), data.get('password'),data.get('username'),parseInt(data.get('user_id').replace('-','')))
+    if ( !registered.error) {
+      navigate('/')
+    }
+    else {
+      setError(registered.error)
+    }
+    
   };
+  const validateId = (e) => {
+    setError('')
+    const regex = /^\d{2}-\d+$/;
+    if (regex.test(e.target.value)) {
+      e.target.setCustomValidity("")
+    } else {
+      e.target.setCustomValidity("Student id should be of the format ##-#####")
+}
+  }
 
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <Box
         sx={{
-          marginTop: 20,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          margin:'10vh 0'
         }}
       >
         <Avatar sx={{ m: 1}}>
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Create an account
         </Typography>
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
           <Grid container spacing={2}>
@@ -53,10 +67,35 @@ export default function LogIn() {
               <TextField
                 required
                 fullWidth
+                type='text'
+                id="username"
+                label="Name"
+                name="username"
+                onChange={() => setError('')}
+                autoComplete="user-name"
+              />
+            </Grid>
+            <Grid item xs={12} >
+              <TextField
+                required
+                fullWidth
+                type='text'
+                id="user_id"
+                label="Student ID"
+                name="user_id"
+                onChange={validateId}
+              />
+            </Grid>
+            <Grid item xs={12} >
+              <TextField
+                required
+                fullWidth
                 type='email'
                 id="email"
-                label="Email"
+                label="Student email"
                 name="email"
+                onChange={() => setError('')}
+                autoComplete="email"
               />
             </Grid>
             <Grid item xs={12}>
@@ -67,21 +106,27 @@ export default function LogIn() {
                 label="Password"
                 type="password"
                 id="password"
+                onChange={() => setError('')}
+                autoComplete="password"
               />
             </Grid>
-          </Grid>
-          <Grid container justifyContent="flex-end">
-            <Grid item>
-              <Link href="/forgotPassword" variant="body2">
-                Forgot password?
-              </Link>
+            <Grid item xs={12}>
+              <TextField
+                required
+                fullWidth
+                name="confirm-password"
+                label="Confirm password"
+                type="password"
+                id="confirm-password"
+                onChange={() => setError('')}
+                autoComplete="password"
+              />
             </Grid>
           </Grid>
           {error && (
 
             <Grid item xs={12} marginTop={2}>
               <Alert severity="error" fullWidth>
-                {/* <AlertTitle>Error</AlertTitle> */}
                 {error}
               </Alert>
             </Grid>
@@ -93,12 +138,12 @@ export default function LogIn() {
             variant="contained"
             sx={{ mt: 3, mb: 2 }}
           >
-            Login
+            Register
           </Button>
           <Grid container justifyContent="flex-end">
             <Grid item>
-              <Link href="/register" variant="body2">
-                Don't have an account? Sign up
+              <Link href="/login" variant="body2">
+                Already have an account
               </Link>
             </Grid>
           </Grid>
