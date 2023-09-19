@@ -1,6 +1,4 @@
-import fitz
 import string
-import re
 import extract_unscanned_pdf
 import extract_scanned_pdf
 import constants
@@ -46,19 +44,16 @@ def save_text_to_file(folder_name, file_name, text):
 def extract_samples(source_folder_path,destination_folder) -> None:
     files_paths = get_pdfs_paths_in_folder(source_folder_path)
     for file_path in files_paths:
-        # print(file_path,"*************")
         text =  extract_text(file_path)
         file_name = file_path[:-3]
         arr = file_name.split('\\')
         file_name = arr[len(arr)-1]
         file_name += "txt"
-        # print("666666666666",file_name)
         
         save_text_to_file(destination_folder,file_name,text)
 
         
-# extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
-extract_samples("C:\\Users\\hoda2\\Downloads\\drive-download-20230812T135954Z-001","src\Data Extraction\Clean Samples")
+extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
 
 
 

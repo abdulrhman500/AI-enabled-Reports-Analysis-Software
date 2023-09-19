@@ -1,6 +1,4 @@
-import fitz
 import re
-import PyPDF2
 import pytesseract
 from PIL import Image
 from pdf2image import convert_from_path

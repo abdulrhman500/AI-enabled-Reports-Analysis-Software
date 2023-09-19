@@ -21,7 +21,6 @@ def check_txt_files(folder_path, min_chars=100):
             # Check the number of characters in the file
             num_chars = len(content.split())
             if num_chars >= min_chars:
-                # print(f"File '{filename}' has {num_chars} characters (>= {min_chars} characters).")
                 pass
             else:
                 i=i+1

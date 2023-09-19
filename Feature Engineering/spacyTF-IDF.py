@@ -11,7 +11,7 @@ def preprocess(text):
     cleanedtext = [item.lemma_ for item in doc if not item.is_stop and not item.is_punct and not item.is_space]     
     return " ".join(cleanedtext)
 
-folder_path = 'C:\\Users\\hoda2\\Documents\\NLP Internship\\AI-enabled-Reports-Analysis-Software\\src\\Data Extraction\\Clean Samples'
+folder_path = '' #add your folder path here
 file_extension = '*.txt'
 
 corpus = []
