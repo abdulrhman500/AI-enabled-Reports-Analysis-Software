@@ -1,9 +1,0 @@
-Tasks:  
-I took the 3 weeks of the internship exploring ISA-18.2 alarm management system. To update some
-functionality related to distrubuition-power system and water control system. And I read to the 
-systems and read the manuals for alarm system and how it is scheduled with all other systems to one
-Bay control units (BCU). The main task was to create log files for all the information and signals 
-from distrubuition-power system and water control system. I was working in producing log files for
-status of the current system on specific periods during the day. These log files will help them in 
-tracking misbehaved systems in the whole BCUs.
- Internship 
