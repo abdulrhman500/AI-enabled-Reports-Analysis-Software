@@ -1,9 +1,0 @@
-Internship Performed Tasks:
-- Specialized in Enterprise Resource Planning (ERP) systems development using the .NET ecosystem
-- Used C# programming language
-- Used Oracle database systems
-- Gained technical skills in the structure of modern ERP systems and practical usage of theoretical topics in Media Engineering and Technologies - Computer Science
-- Learned programming design patterns, database schemes, and Agile development workflow
-- Improved work ethic, teamwork, and work environment
-- Gained practical insights on the Egyptian software market
-- Related academic courses: Computer Science Labs, Databases Courses, Data Structures and Algorithms course

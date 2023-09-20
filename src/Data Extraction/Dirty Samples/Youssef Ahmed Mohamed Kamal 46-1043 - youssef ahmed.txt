@@ -1,9 +1,0 @@
-Tasks:  During this i nternship, I was given a full review about  how telecome 
-companies use cloud techn ology to assign resources  which are represented in terms of huge servers  to their 
-virtual machines  upon request. I had a hands on experience where I had a daily task to create virtual machines 
-on the test net and assign resources to them as in real life exactly.This involved m e using Vodafone's test 
-application i n which you have the full image of the total resource, amount of servers available, virtual  machines 
-create d and utili zation.  I had to deal also with crashes and overloading so I had an idea about how to manage 
-these problems in real life.  
- 
-Internship 
