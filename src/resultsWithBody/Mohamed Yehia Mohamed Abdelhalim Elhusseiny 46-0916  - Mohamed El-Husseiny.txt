@@ -1,4 +1,0 @@
-extracted data:
-b'\x0c\x0c\x0c\x0c\x0c\x0c'
- response result:
- The provided information is in the form of bytes and does not contain any specific details about performed tasks for a report.

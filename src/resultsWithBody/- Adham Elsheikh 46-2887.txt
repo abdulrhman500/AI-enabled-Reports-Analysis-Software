@@ -1,45 +1,0 @@
-extracted data:
-7
-Student Career & Alumni Development Office. scad@guc.edu.eg | German University in Cairo New Cairo City - Main Entrance Al Tagamoa Al Khames; Egypt
-The goal of this report is to show the acquired experience from my internship as a data scientist at QNB.First of
-all I am going to give a short description about the company and and the business it serves then I will go
-through the tasks I have been given there after that I will talk about my daily experience there and the skills and
-new technical concepts I have learned and dealt with there.The main purpose of me joining this internship is
-that I had a good prior knowledge in the field of Web development and Cyber security and I wanted to develop
-this knowledge by contacting the job market in such a big multinational commercial bank.
-Qatar National Bank (QNB Group) (Arabic:ﬂ‰»—ÿﬁÌ‰ÿÊ·«) is a Qatari multinational commercial bank
-headquartered in Doha, Qatar. It was founded in 1964 and currently has subsidiaries and associates in 31
-countries spanning three continents. The bank's ownership is evenly divided between the Qatar Investment
-Authority and members of the public.QNB was founded on 6 June 1964 as the country's first domestically-
-owned commercial bank. It had 35 employees in its first year and was initially headquartered in a government-
-owned building in Qatar's capital city, Doha. The two currencies in circulation at the time were the Indian rupee
-and British pound. As Qatar's population continued increasing through the century, QNB started establishing
-branches in other parts of the country
-During the first days there I was asked to go through some tutorials in order to get some knowledge in .net
-technology after that I started implementing a web app that helps in showing all the employees and assigning
-tasks to them and helps in communication between the admins and managers and the employees.This task was
-implemented using .net webforms and c# after that I have gone through another technology which is .net mvc
-also beside my time in the development department.I spent some days in the cyber security department.
-I have gained many good skills during my the time I spent there.I have developed my technical skills specially
-in the web development. Also I have developed my skills in problem solving.The main skill I learned was how
-to understand the business of the company and the main aim of the project I am working on in order to use my
-technical skills to have the best results I can get.
-To conclude , I've loved every minute of my internship, especially how kind and helpful the workplace was and
-how much everyone appreciated going to work.I have enjoyed working with my teammates and learnt how to
-work in a team and how should be the work flow. This internship taught me that choosing a job after graduation
-will require careful thought, therefore I urge you to do the same. Even if it may appear that the market has been
-taken over by competitive enterprises, QNB shows that there is still room for rivalry in the extremely exciting
-field of Software development.
-
-response result:
-The report mentions the following tasks performed during the internship:
-
-- Going through tutorials to learn .net technology
-- Implementing a web app to manage employees and tasks using .net webforms and c#
-- Spending time in the cyber security department
-- Developing technical skills in web development
-- Developing problem-solving skills
-- Understanding the business of the company and the project's objectives
-- Working with teammates and learning how to work in a team
-- Observing the work flow and learning its importance
-- Gaining an understanding of the job market and the importance of making careful decisions after graduation.

@@ -1,61 +1,0 @@
-extracted data:
-The main purpose of this report is to discuss what I have done during the internship duration 
-which was 1 month. Banque Misr was a way for me to enhance my technical knowledge and 
-skills in web development and the banking sector as this was always a field that I was trying to 
-discover until I got accepted into this internship. The internship teams were divided into 6 teams 
-frontend, backend, quality assurance, android development, IOS development, and project 
-management. Through this report, I will briefly discuss the organization description, the tasks 
-that I was assigned, the evaluation of the internship, and a brief summary of the report in the 
-conclusion. 
-Banque Misr as we all know is a governmental bank founded by Talat Harb in 1920. It was one 
-of the first banks in Egypt to be established in addition to offering online banking as a service for 
-its clients. Banque Misr established a new place called the digital transformation office which is 
-responsible for tech solutions and application development located in the fifth settlement also it 
-was one of the first banks to offer loans online by submitting some papers online you can receive 
-your loan after 3 working days which is not available anywhere else except in bank Misr. 
-I joined Banque Misr Digitory summer internship as a back-end intern as a knew some aspects of 
-the Back End but never had the chance to apply them practically. The tasks for the internship 
-were learning how to use object-oriented programming and the pros of Spring Boot which is a 
-framework for Java for back-end development every day and having an assignment related to the 
-topic we cover every day such as sorting, using solid principles solving some questions, using 
-some design patterns, using hibernate, create a database using Postgres using Java, using 
-hibernate and queries from eclipse to retrieve/add data from the database, learning about the java 
-web tokens and security. Then at the end of the internship, we were split into teams each team 
-consists of 2 back-end interns, 1 front-end, 1 android developer, and 1 IOS developer. The team 
-should work together in order to present a final shopping application project using the 
-application programming interfaces that we create as a backend to be integrated with IOS, 
-android, and frontend. 
-There are many skills I learned in the internship some are technical and some or not, firstly the 
-technical how to create APIs to be used by the other developers, how web development is used in 
-the banking sector, and the integration between the banking sector aspect and the web 
-development aspect. The non-technical was learning how to deal with the upper manager, self-
-learning, and hardworking. The internship met my expectations as it gave me technical 
-knowledge about what backend engineers do, the web development sector, and the environment 
-of working in a company using agile methods. Mainly every programming course I learned was 
-helpful during the internship specifically data structures in CSEN 301 and object-oriented 
-programming in CSEN 401.                                              
-In conclusion, I believe that this internship enhanced my technical skills by allowing me to learn 
-more about back-end development and how to deal with other teammates using agile methods, 
-Also learned more about the banking websites, the most important thing I learned during the 
-internship is dealing with teammates in the project matters for the integration using the agile 
-methods which was the first real chance to communicate with the other departments such as the 
-IOS, Front-end, and Android teams. Applying these methods after studying them in the software 
-course that we learned in the 3rd year was crucial and we used them a lot during the internship. 
- 
-Reference: Banquemisr - Home page 
- 
- 
- 
- 
-
-response result:
-The tasks performed during the internship at Banque Misr include:
-
-1. Learning how to use object-oriented programming and the pros of Spring Boot for back-end development every day.
-2. Completing daily assignments related to the topics covered, such as sorting, using SOLID principles, solving questions, using design patterns, and using Hibernate.
-3. Creating a database using Postgres and Java, and using Hibernate and queries from Eclipse to retrieve/add data from the database.
-4. Learning about Java web tokens and security.
-5. Being split into teams at the end of the internship, where each team consisted of 2 back-end interns, 1 front-end developer, 1 Android developer, and 1 iOS developer.
-6. Working together with the team to develop a final shopping application project, using the APIs created as the back-end and integrating it with the front-end, iOS, and Android.
-
-Overall, the tasks focused on enhancing technical skills in back-end development, learning about the banking sector and web development integration, and working effectively in a team using agile methods.
