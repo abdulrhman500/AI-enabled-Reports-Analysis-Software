@@ -1,9 +1,0 @@
-Internship Performed Tasks:
-- The intern chose to work in the IT operations sub-department at MIDOR.
-- At the beginning of the internship, the intern was introduced to the company values and ethics by Mr. Amr Shaaban, the General Manager of the IT department.
-- The IT department at MIDOR is divided into three sub-departments: IT Operations, Cyber Security, and Networks and Communications.
-- The intern learned about Microsoft Active Directory and Microsoft Windows Servers from their mentor, Mr. Hossam, during the first two weeks of the internship.
-- The last two weeks of the internship were practical, where the company provided the interns with PCs to simulate a company's system.
-- The intern was exposed to the on-ground servers and data center at MIDOR, as well as their on-cloud data centers provided and supported by Microsoft.
-- During the internship, the intern learned about how a company's data system is managed, controlled, and secured, as well as how to deal with Microsoft Windows Servers and Active Directory.
-- The intern mentioned that although the internship was not directly related to their studies, it was somehow correlated to their Database I course.

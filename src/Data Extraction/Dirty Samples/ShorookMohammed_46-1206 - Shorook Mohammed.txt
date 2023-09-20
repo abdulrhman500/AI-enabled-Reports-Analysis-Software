@@ -1,9 +1,0 @@
-Tasks:  
-This internship was about creating and developing a real estate website including frontend and backend (using 
-Wix, Html/CSS and Javascript) for Aqaar Group company. I was responsible for for the coding, design and 
-layout of the website.  I was also responsible for the site’s user experience and also the now site includes the 
-details of all the company's projects and also now customers can contact the people from the company through 
-the website. Moreover, customers can check its blog, know about the company and are able to pick the language
-they want as the website can be in either English or Arabic. I performed a list of tasks each week and my 
-supervisor would check daily on my progress and inform me if there are any changes needed.
-Internship 
