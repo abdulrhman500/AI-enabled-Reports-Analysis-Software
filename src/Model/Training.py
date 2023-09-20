@@ -7,7 +7,7 @@ from imblearn.over_sampling import SMOTE
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 from collections import Counter
 # Load the dataset
-data = pd.read_csv(r"d:\University\semesters\Summer 2023\AI-enabled-Reports-Analysis-Software\src\Model\Dataset.csv")
+data = pd.read_csv(r"")
 print (data.label.value_counts())
 # Define label encoder for the target variable
 # 0 -> approved  1 -> pending 2 -> reject

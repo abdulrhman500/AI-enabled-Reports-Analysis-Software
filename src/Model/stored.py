@@ -8,7 +8,7 @@ from imblearn.over_sampling import SMOTE
 from collections import Counter
 
 # Load the dataset
-data = pd.read_csv(r"d:\University\semesters\Summer 2023\AI-enabled-Reports-Analysis-Software\src\Model\Dataset.csv")
+data = pd.read_csv(r"")
 
 # Define label encoder for the target variable
 le = LabelEncoder()
