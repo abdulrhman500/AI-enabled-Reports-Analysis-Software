@@ -15,7 +15,7 @@ def preprocess_text(text):
     return preprocessed_text
 
 # Specify the path to the CSV file
-csv_file_path = "C:\\Users\\DELL\\Desktop\\USE\\AI-enabled-Reports-Analysis-Software\\USE\\Dataset.csv"
+csv_file_path = ""
 
 # Read the CSV file
 df = pd.read_csv(csv_file_path)

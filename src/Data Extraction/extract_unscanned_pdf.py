@@ -39,6 +39,6 @@ def get_text(file_path)->string:
     return tasks_text
 
 if __name__ == "__main__":
-    pdf_file_path = "C:\\Users\\hoda2\\Documents\\NLP Internship\\Dirty Files\\correct template\\(A) 1-merged - Rawan Ahmad.pdf"
+    pdf_file_path = ""
     get_text(pdf_file_path)
     # print(get_text)

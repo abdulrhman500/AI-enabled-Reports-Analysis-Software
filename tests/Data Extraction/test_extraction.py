@@ -1,4 +1,4 @@
-path =   r"C:\\Users\\hoda2\\Downloads\\Unscanned\\Anas ElNemr (46-6226) - Anas Nemr.pdf"
+path =   r""
 #for decoding
 import codecs
 #using Textract

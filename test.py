@@ -1,4 +1,4 @@
-path = r"C:\\Users\\hoda2\\Downloads\\Not Bold but following template\\Danial Amir Ayad 46-2078.pdf"
+path = r""
 
 import fitz  # this is pymupdf
 doc = fitz.open(path)

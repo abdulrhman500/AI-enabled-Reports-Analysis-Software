@@ -102,7 +102,7 @@ def extract_text_from_headline(pdf_path, start, end):
 
 
 if __name__ == "__main__":
-    pdf_file_path = "C:\\Users\\hoda2\\Downloads\\Not Bold but following template\\Yousef Walaaeldin Korayem 49-5052 - Yousef Korayem.pdf"
+    pdf_file_path = ""
     regex_pattern_start1 = "task"
     regex_pattern_start2 = "activities"
     regex_pattern_end = "evaluation"
