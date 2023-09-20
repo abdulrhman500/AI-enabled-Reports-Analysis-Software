@@ -1,7 +1,0 @@
-The performed tasks for this report are as follows:
-1. The intern worked on a project called B2B_PRICE_SIMULATOR, which involved building a machine learning model to predict the best tariff for clients.
-2. The intern also attended meetings and discussed other projects assigned to the data science team.
-3. The intern gained technical skills in data processing, using libraries such as pandas, NumPy, and matplotlib.
-4. The intern learned how to visualize data and understand the business of the company to achieve optimal results.
-5. The intern enjoyed working with teammates and learned about teamwork and workflow.
-6. The internship experience was positive, and the intern recommends considering Orange as a potential employer in the field of AI.
