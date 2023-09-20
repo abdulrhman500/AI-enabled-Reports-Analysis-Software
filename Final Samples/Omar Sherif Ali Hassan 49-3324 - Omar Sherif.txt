@@ -1,5 +1,0 @@
-The performed tasks for this report include:
-1. Refactoring code from elastic search to axios and learning the differences between the two technologies.
-2. Developing a REST API utilizing Fastify, Elastic-Search, and Axios.
-3. Documenting the entire project's code, endpoints, and API.
-4. Using

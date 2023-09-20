@@ -1,9 +1,0 @@
-Tasks:  The internship began by a familiarization period towards the 
-ERP softw are system used by SAP and brief explanatio n of the technical and functional modules 
-of SAP. I was working  with ABAP which is a high-level  programming language created by SAP 
-that helps large corporations to customize the SAP ERP . I worked with internal tables to retrieve 
-data from database tables  using ABA P and using OPEN SQL in ABAP . I also created classical 
-reports to display information stored i n the database . Final ly, I used SAP Smart For ms tool  
-which i s a tool that is used to print and send documents.  
- 
-Internship 
