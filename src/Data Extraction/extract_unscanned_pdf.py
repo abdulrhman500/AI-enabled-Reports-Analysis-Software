@@ -166,7 +166,7 @@ def tf_idf(tasks):
 
 #   *******MAINNNNNN*********
 if __name__ == "__main__":
-    pdf_file_path = "D:/AI-enabled-Reports-Analysis-Software internship/Dirty Files/correct template/(A) Ahmed Abdelazeem Omar 40-13742.pdf"
+    pdf_file_path = ""
     #print("\nTASKS:\n\n"+get_text(pdf_file_path))
     extracted_text = get_text(pdf_file_path)
     print("Extracted text: \n ", extracted_text)
