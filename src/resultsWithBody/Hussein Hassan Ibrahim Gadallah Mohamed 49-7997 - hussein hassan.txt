@@ -1,77 +1,0 @@
-extracted data:
- 
- 
- 
- 
- 
-I have started internship in EJADA starting 24th of July until 22nd of September. This report 
-will cover my whole experience in a 2-month internship at EJADA and how they added new 
-skills and made me experience working in an actual workplace. Working at EJADA Increased 
-my communication skills since I used to communicate with new people since day 1 there. In 
-addition, learning new skills related to Computer science was the main purpose of having this 
-internship. However, Having the sense of identity was a big advantage that wasn’t on my mind 
-before entering this internship but after joining EJADA I felt that I have an identity by working 
-in such a company as same as employees there. 
- 
-EJADA is a leading IT services provider in the Middle East and Africa region, enabling 
-enterprises and public-sector organizations to maintain and increase their competitive edge 
-through innovative IT solutions. It was established in 2005 as a result of merging three 
-companies that existed in the KSA market since early and mid 1990(ACT, NEWTEK, and Elite). 
-The objective of Establishing EJADA is to become the largest and most reputable regional IT 
-services & Solutions company in the MEA region. Enjoyed accelerated growth; was recognized 
-as a key player in the IT services market in KSA, and a leader in serving the banking sector. 
-Here is their Web address: http://www.ejada.com. 
-Here is their Mail:  hhenry@ejada.com. 
- 
-I learned how to work with Java EE, hibernate, and spring so I was assigned some backend 
-coding on how to build a Database web application. Moreover, I was shadowing my supervisor 
-who made frontend for website that is related to food delivering companies. Every time, I went 
-to work, I met my supervisor first and ask him any question related to the task given to me, then 
-my teammates and I discussed what did we do and what to do and help each other in solving 
-errors. All people who work there was very helpful and professional. I used eclipse and SQL 
-workbench while I was working at EJADA. Here are some of my works: 
- 
- 
- 
- 
- 
- 
- 
-I learned how to work in a workplace so I gained some experience in the work field, developed 
-my problem-solving skills, communication skills and team work. Internship at EJADA met my 
-expectations because it made me gain experience, how to evaluate myself right, provided a good 
-working environment, people who work there were friendly, professional and very helpful they 
-made me feel that they are friends not my co-workers or supervisor, etc. They made more 
-interested and motivated to become a backend developer and develop many software 
-applications. I knew which companies are good and available at the market. I learned how to take 
-opportunities and they made me think about making Masters as it differs in the working salary 
-and in progress at any company. Since that I learned eclipse, java and SQL at GUC, it was a little 
-bit easy to use them as I already know them from all CSEN courses and Database courses. I 
-would recommend EJADA to my colleagues in university as it is extremely good working 
-experience as they treated me and another trainee from GUC very well, very respectful in 
-addition to all I said above. 
- 
-Lastly, after my internship at EJADA ended I can say that the key factors that can be concluded 
-from it is new skills learnt, meeting and communicating with new people, more experience at 
-workplace and understanding the world better. As a general observation on the sector that 
-EJADA works in EJADA makes it easier for customers to deal with company’s products since 
-EJADA creates mobile applications for companies which give customers easy access for 
-products / services of a specific company. In addition, everything nowadays became digital and 
-depends mainly on technology and IT which is the sector of EJADA so it an excellent career 
-path on the short and long term as well. 
- 
-
-response result:
-The performed tasks for this report include:
-- Working with Java EE, hibernate, and spring to build a Database web application
-- Shadowing supervisor in creating frontend for a website related to food delivering companies
-- Using eclipse and SQL workbench for development work
-- Developing problem-solving skills, communication skills, and teamwork through the internship
-- Learning about the work field and gaining experience
-- Evaluating oneself and setting career goals
-- Gaining knowledge about companies in the market
-- Considering further education, such as pursuing a Masters degree
-- Overall positive experience at EJADA, with friendly and professional coworkers
-- Recommendations to colleagues at university to consider interning at EJADA
-- Concluding that the internship provided new skills, new connections, workplace experience, and a better understanding of the industry
-- Noting that EJADA's focus on mobile applications and technology make it a promising career path.
