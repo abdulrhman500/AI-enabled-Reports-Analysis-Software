@@ -132,6 +132,6 @@ def get_text(file_path)->string:
     return tasks_text
 
 if __name__ == "__main__":
-    pdf_file_path = "C:\\Users\\hoda2\\Documents\\NLP Internship\\Dirty Files\\correct template\\TASKS PERFORMED (A) Maryam Khaled, 43-7239 - Maryam Amin.pdf"
+    pdf_file_path = ""
     print("\nTASKS:\n\n"+get_text(pdf_file_path))
 
