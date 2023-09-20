@@ -57,6 +57,4 @@ def extract_samples(source_folder_path,destination_folder) -> None:
         save_text_to_file(destination_folder,file_name,text)
 
         
-# extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
-extract_samples("C:/Users/maria/OneDrive/Desktop/Internship Project/MET Batch-1","src\Data Extraction\Dirty Samples")
-
+extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
