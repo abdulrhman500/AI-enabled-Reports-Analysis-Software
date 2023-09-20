@@ -58,7 +58,7 @@ def extract_samples(source_folder_path,destination_folder) -> None:
 
         
 # extract_samples(constants.SOURCE_FOLDER_PATH,constants.EXTRACTED_SAMPLEs_FOLDER)
-extract_samples("C:\\Users\\hoda2\\Downloads\\drive-download-20230812T135954Z-001","src\Data Extraction\Clean Samples")
+extract_samples("")
 
 
 
