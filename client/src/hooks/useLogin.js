@@ -20,7 +20,8 @@ export const useLogin = () => {
             await dispatch({type:'LOGIN',payload:res.data})
         }).catch((error)=>{
             console.log(error);
-            setError(error.response.data.error)
+            if (error.response && error.response.data && error.response.data.error) setError(error.response.data.error)
+            else setError("Server error")
           });
         return success
     }

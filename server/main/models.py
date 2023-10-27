@@ -5,7 +5,7 @@ import time
 import datetime
 
 def get_date():
-	return datetime.datetime.now()
+	return datetime.datetime.now().replace(hour=0,minute=0,second=0,microsecond=0)
 
 def upload_to(instance, filename):
 	current_time_millis = str(int(round(time.time() * 1000)))
@@ -78,6 +78,7 @@ class Submissions(models.Model):
 	judgement = models.BooleanField(default = False)
 	created_at = models.DateTimeField(auto_now_add = True)
 	patch = models.ForeignKey(Patch, on_delete = models.CASCADE)
+	note = models.CharField(max_length=500, null=True)
 	REQUIRED_FIELDS = ['file_upload','name']
 	def __str__(self):
 		return self.file_upload

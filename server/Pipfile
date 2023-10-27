@@ -10,6 +10,7 @@ django-cors-headers = "*"
 djangorestframework = "*"
 gunicorn = "*"
 python-dotenv = "*"
+django4-background-tasks = "*"
 
 [dev-packages]
 

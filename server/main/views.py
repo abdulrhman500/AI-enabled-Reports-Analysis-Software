@@ -93,8 +93,11 @@ class PatchsView(APIView):
 			return JsonResponse(clean_data, status=500)
 		serializer = PatchSerializer(data=clean_data)
 		if serializer.is_valid(raise_exception=True):
-			patch = serializer.create(clean_data) 
-			return JsonResponse({'message': 'successully created patch','data':patch}, status=status.HTTP_200_OK)
+			patch = serializer.create(clean_data)
+			if patch:
+				serializer = PatchSerializer(patch)
+				return JsonResponse({'message': 'successully created patch','data':serializer.data}, status=status.HTTP_200_OK)
+				
 		return Response(status=status.HTTP_400_BAD_REQUEST)
 
 class FileUploadView(APIView):
