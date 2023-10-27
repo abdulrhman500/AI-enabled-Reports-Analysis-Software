@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PageNotFound from "./components/PageNotFound";
-import MainLayout from "./components/MainLayout";
 import { Navigate } from "react-router-dom";
 import LogIn from "./pages/LogIn";
 import AdminHome from "./pages/AdminHome";
@@ -8,6 +7,8 @@ import MiddleWare from "./components/MiddleWare";
 import PatchView from './components/PatchView'
 import Register from "./pages/Register";
 import StudentHome from "./pages/StudentHome";
+import AdminMainLayout from "./components/AdminMainLayout";
+import StudentMainLayout from "./components/StudentMainLayout";
 function App() {
   return (
     <Router>
@@ -24,14 +25,14 @@ function App() {
         </Route>
 
         <Route path="/admin" element={<MiddleWare type="Admin"/>} >
-          <Route path="/admin" element={<MainLayout/>} >
+          <Route path="/admin" element={<AdminMainLayout/>} >
             <Route exact path="/admin/" element={<AdminHome />} />
             <Route exact path="/admin/patch/:patch" element={<PatchView />} />
           </Route>
         </Route>
 
         <Route path="/student" element={<MiddleWare type="Student"/>} >
-          <Route path="/student" element={<MainLayout/>} >
+          <Route path="/student" element={<StudentMainLayout/>} >
             <Route exact path="/student/" element={<StudentHome />} />
             <Route exact path="/student/patch/:patch" element={<PatchView />} />
           </Route>

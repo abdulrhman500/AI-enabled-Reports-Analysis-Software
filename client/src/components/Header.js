@@ -18,9 +18,6 @@ function Header(props) {
   const { onDrawerToggle } = props;
   const navigate = useNavigate()
   const {user} =useUserContext()
-  const handleNotifications = ()=>{
-    navigate('/home/notifications')
-  }
 
   return (
     <React.Fragment>
@@ -37,6 +34,7 @@ function Header(props) {
                 <MenuIcon />
               </IconButton>
             </Grid>
+            <Grid item></Grid>
             <Grid item xs />
 
             <AccountMenu />

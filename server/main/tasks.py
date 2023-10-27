@@ -1,7 +1,7 @@
 from background_task import background
 from main.models import Patch
 import datetime
-
+import os
 @background()
 def my_scheduled_task():
 
@@ -17,6 +17,18 @@ def my_scheduled_task():
         if close_date < today:
             p.open = False
             p.save()
+            directory = p.semester
+  
+            # Parent Directory path 
+            parent_dir = "uploads"
+            
+            # Path 
+            path = os.path.join(parent_dir, directory) 
+            try:
+                os.makedirs(path, exist_ok = True) 
+                print("Directory '%s' created successfully" % directory) 
+            except OSError as error: 
+                print("Directory '%s' can not be created" % directory) 
         
         if oneOpen:
             continue

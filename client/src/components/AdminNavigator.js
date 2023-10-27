@@ -48,7 +48,7 @@ const itemCategory = {
 export default function Navigator(props) {
     const { ...other } = props;
     const [openCategory, setOpenCategory] = useState(null);
-    const [activeButton, setActiveButton] = useState('Authentication');
+    const [activeButton, setActiveButton] = useState('');
     const navigate = useNavigate()
     const handleCategoryToggle = (category) => {
       if (category === openCategory) {

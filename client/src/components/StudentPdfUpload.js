@@ -9,14 +9,17 @@ import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import CloseIcon from "@mui/icons-material/Close";
-import { TextField } from "@mui/material";
+import { Card, CardContent, Grid, TextField } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
 import UploadIcon from '@mui/icons-material/Upload';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import swal from 'sweetalert2'
 import { api } from "../utils/AxiosUtils";
+import Loading from "./Loading";
+import NoActivePatch from "./NoActivePatch";
+import { formatDistanceToNow } from "date-fns";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -32,7 +35,9 @@ export default function StudentPdfUpload() {
   const [pdfFile , setPdfFile] = useState("");
   const [uploading, setUploading] = useState(false)
   const [changed, setChanged] = useState(false) 
-
+  const [patch, setPatch] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [already, setAlready] = useState(false)
   const [openEdit, setOpenEdit] = useState(false);
   
   const handleCloseEdit = (e) => {
@@ -55,6 +60,10 @@ export default function StudentPdfUpload() {
     }
   };
 
+  const handelClickEdit = () => {
+    setOpenEdit(true)
+  }
+
   const handelSubmitEdit = async (e) => {
     e.preventDefault();
     const data = new FormData();
@@ -66,12 +75,13 @@ export default function StudentPdfUpload() {
     api({
         method: 'post',
         maxBodyLength: Infinity,
-        url: '/user/upload',
+        url: '/user/student-submission',
         data : data,
       }).then((res)=>{
       setChanged(false)
       setUploading(false)
       setOpenEdit(false)
+      setAlready(true)
       setPdf('')
       setPdfFile('')
       swal.fire('Uploaded internship report Successfully', 'Successful', 'success');
@@ -83,34 +93,66 @@ export default function StudentPdfUpload() {
         setPdfFile('')
         swal.fire('failed to uploade internship report', 'Failed', 'error');
       })
-    // const val = await Edit(element._id , index ,title , description , pdf , pdfFile)
-    // if(val) {
-    //   setChanged(false)
-    //   setUploading(false)
-    //   setOpenEdit(false)
-    //   swalAlert('success', 'Successful', `${type} updated Successfully`);
-    // } else {
-    //   setUploading(false)
-    //   swalAlert('error', 'Server Error', `Failed to update ${type.toLowerCase()}, please try again.`);
-    // }
   }
+  
+  useEffect(()=>{
+    if(!patch){
+      api({
+        method: 'get',
+        url: '/user/student-patch',
+      }).then((res)=>{
+        if (res.data.data) {
+          console.log(res.data.data);
+          setPatch(res.data.data)
+          setAlready(res.data.uploaded)
+          setLoading(false)
+        }
+        else {
+          setLoading(false)
+        }
+      }).catch((error)=>{
+        console.log(error);
+        setLoading(false)
+      })
+    }
+  },[])
 
-  const handelClickEdit= () =>{
-    setOpenEdit(true);
-  }
-
+  if (loading) return (<Loading />)
+  if (!patch) return (<NoActivePatch />)
   return (
     <div>
-      <IconButton
-        aria-label="more"
-        id="long-button"
-        aria-controls={openEdit ? "long-menu" : undefined}
-        aria-expanded={openEdit ? "true" : undefined}
-        aria-haspopup="true"
-        onClick={handelClickEdit}
-      >
-        <CloudUploadIcon />
-      </IconButton>
+      <Grid container>
+        <Grid item xs={12}>
+          <Card>
+            <CardContent sx={{display:'flex',flexDirection:'column',padding:'10px 20px'}} >
+              <Box sx={{ flexGrow: 1 }}>
+                <Grid container spacing={2}>
+                  <Grid item xs={12}>
+                      <Typography textAlign={'center'} marginBottom='10px' variant="h5" color='gray'>{patch.semester} patch is currently open</Typography>
+                  </Grid>
+                  <Grid item xs={12} >
+                      <Typography textAlign={'center'}>Opened <span style={{color:'Highlight'}}>{formatDistanceToNow(new Date(patch.start_date))}</span> ago</Typography>
+                  </Grid>
+                  <Grid item xs={12}>
+                      <Typography textAlign={'center'}>Closes in <span style={{color:'darkcyan'}}>{formatDistanceToNow(new Date(patch.close_date))}</span></Typography>
+                  </Grid>
+                  <Grid item xs={12} sx={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+                      <Button
+                      endIcon={<CloudUploadIcon />}
+                      aria-haspopup="true"
+                      onClick={handelClickEdit}
+                    >Upload
+                    </Button> 
+                  </Grid>
+                  {already? <Grid item xs={12}>
+                      <Typography textAlign={'center'}>You uploaded a report in this patch, uploading again will replace your previous upload</Typography>
+                  </Grid>: false}
+              </Grid>
+            </Box>
+          </CardContent>  
+        </Card>
+      </Grid>
+    </Grid>
 
       <BootstrapDialog
         onClose={(changed || uploading)? ()=>{}:handleCloseEdit}

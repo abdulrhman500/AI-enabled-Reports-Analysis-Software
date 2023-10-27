@@ -11,9 +11,6 @@ export const http = axios.create({
 
 export const api = ({ method, headers, data, url }) => {
   let cookie = Cookies.get('csrftoken')
-  let Co = Cookies.get()
-  console.log(cookie);
-  console.log(Co);
   if(method =='get') return http.request({method,url,headers:{'X-CSRFToken': cookie,...headers}})
   return http.request({method,url,data,headers:{'X-CSRFToken': Cookies.get('csrftoken'),...headers}})
 }

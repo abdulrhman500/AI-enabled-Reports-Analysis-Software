@@ -5,7 +5,7 @@ const AdminHome = () => {
         <Box>
             <Grid container spacing={2} columns={12} minWidth={'500px'}>
                 <Grid item xs={12} md={12} lg={6} >
-                    <Card>
+                    <Card sx={{height:'100%'}}>
                         <CardContent sx={{display:'flex',flexDirection:'column',padding:'10px 20px'}} >
                             <Box sx={{ flexGrow: 1 }}>
                                 <Grid container spacing={2}>
@@ -33,7 +33,7 @@ const AdminHome = () => {
                     </Card>
                 </Grid>
                 <Grid item xs={12} md={12} lg={6}>
-                    <Card>
+                    <Card sx={{height:'100%'}}>
                         <CardContent sx={{display:'flex',flexDirection:'column',padding:'10px 20px'}} >
                             <Box sx={{ flexGrow: 1 }}>
                                 <Grid container spacing={2}>
@@ -61,7 +61,7 @@ const AdminHome = () => {
                     </Card>
                 </Grid>
                 <Grid item xs={12} md={12} lg={12}>
-                    <Card>
+                    <Card sx={{height:'100%'}}>
                         <CardContent sx={{display:'flex',flexDirection:'column',padding:'10px 20px'}} >
                             <Box sx={{ flexGrow: 1 }}>
                                 <Grid container spacing={2}>

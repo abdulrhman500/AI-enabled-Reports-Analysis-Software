@@ -11,6 +11,20 @@ from django.core.mail import send_mail
 from django.conf import settings
 import os
 from rest_framework.parsers import FileUploadParser,MultiPartParser, FormParser
+import datetime
+from pytz import timezone
+
+def handle_uploaded_file(file,patch):
+	file_name = file.name
+	if not os.path.exists(r'uploads/'+patch.semester):
+		os.makedirs(r'uploads/'+patch.semester)
+	with open(r'uploads/'+patch.semester+'/'+file_name, "wb+") as destination:
+		for chunk in file.chunks():
+			destination.write(chunk)
+
+def delete_file(file_name, patch):
+	if os.path.exists(r'uploads/'+patch.semester+'/'+file_name):
+		os.remove(r'uploads/'+patch.semester+'/'+file_name)
 
 class UserRegister(APIView):
 	permission_classes = (permissions.AllowAny,)
@@ -100,6 +114,57 @@ class PatchsView(APIView):
 				
 		return Response(status=status.HTTP_400_BAD_REQUEST)
 
+class StudentPatchView(APIView):
+	permission_classes = (permissions.IsAuthenticated,)
+	authentication_classes = (SessionAuthentication,)
+	def get(self, request):
+		patch = Patch.objects.get(open = True)
+		uploaded_once = False
+		if Submissions.objects.filter(patch = patch, student = request.user).exists():
+			uploaded_once = True
+		if patch:
+				serializer = PatchSerializer(patch)
+				return JsonResponse({'message': 'successully created patch','data':serializer.data,'uploaded':uploaded_once}, status=status.HTTP_200_OK)
+		return JsonResponse({'error':'No patch found'}, status=500)
+
+class StudentSubmissionsView(APIView):
+	permission_classes = (permissions.IsAuthenticated,)
+	authentication_classes = (SessionAuthentication,)
+	parser_classes = [MultiPartParser, FormParser]
+
+	def post(self, request, format=None):
+		print(request.path)
+		user = request.user
+		if(user.type == 'Admin'):
+			return JsonResponse({'error':'You are not authorized'}, status=500)
+		file_obj = request.FILES['file']
+		patch = Patch.objects.get(open=True)
+		if not patch:
+			return JsonResponse({'error':'No open patches are available'}, status=500)
+		handle_uploaded_file(file_obj, patch)
+		serializer = SubmissionsSerializer()
+		if Submissions.objects.filter(patch=patch, student = request.user).exists():
+			previous = Submissions.objects.get(patch=patch, student = request.user)
+			delete_file(previous.file_upload, patch)
+			previous.file_upload = file_obj.name
+			upload_date = datetime.datetime.now(timezone('UTC'))
+			upload_date = upload_date.astimezone(timezone('Africa/Cairo'))
+			previous.upload_date = upload_date
+			previous.save()
+			return JsonResponse({'message': 'Report submitted successfully'}, status=status.HTTP_200_OK)
+		submission = serializer.create(student = user, patch = patch, file_name = file_obj.name)
+		if submission:
+			return JsonResponse({'message': 'Report submitted successfully'}, status=status.HTTP_200_OK)
+			
+		return Response(status=status.HTTP_400_BAD_REQUEST)
+	
+	def get(self, request):
+		submissions = Submissions.objects.filter(student=request.user)
+		if submissions:
+				serializer = SubmissionsSerializer(submissions, many=True)
+				return JsonResponse({'data':serializer.data}, status=status.HTTP_200_OK)
+		return JsonResponse({'data':{}}, status=status.HTTP_200_OK)
+
 class FileUploadView(APIView):
 	permission_classes = (permissions.IsAuthenticated,)
 	authentication_classes = (SessionAuthentication,)
@@ -112,8 +177,8 @@ class FileUploadView(APIView):
 		print(request.user)
 		# print(filename)
 		print(format)
-		print(file_obj)
+		print(file_obj.name)
 		print(request.data)
+		handle_uploaded_file(file_obj)
         # do some stuff with uploaded file
 		return Response(status=status.HTTP_200_OK)
-

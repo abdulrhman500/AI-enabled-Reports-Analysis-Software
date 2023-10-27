@@ -69,16 +69,14 @@ class Patch(models.Model):
 	def __str__(self):
 		return self.semester
 
-	
-
 class Submissions(models.Model):
-	name = models.CharField(max_length=50)
-	registeration_id = models.ForeignKey(AppUser, on_delete = models.CASCADE)
-	file_upload = models.FileField(upload_to=upload_to)
+	student = models.ForeignKey(AppUser, on_delete = models.CASCADE)
+	file_upload = models.CharField(max_length=100, null=False)
 	judgement = models.BooleanField(default = False)
+	upload_date = models.DateTimeField(default=get_date)
+	TYPES = [('Approved', "Approved"),('Rejected', "Rejected"),("Pending","Pending")]
+	verdict = models.CharField(choices = TYPES, default = 'Pending')
 	created_at = models.DateTimeField(auto_now_add = True)
 	patch = models.ForeignKey(Patch, on_delete = models.CASCADE)
 	note = models.CharField(max_length=500, null=True)
-	REQUIRED_FIELDS = ['file_upload','name']
-	def __str__(self):
-		return self.file_upload
+	REQUIRED_FIELDS = ['file_upload','student','patch']

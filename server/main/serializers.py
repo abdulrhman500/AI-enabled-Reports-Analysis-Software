@@ -42,16 +42,13 @@ class PatchSerializer(serializers.ModelSerializer):
 			patch = Patch.objects.create(semester=clean_data['semester'],close_date=clean_data['close_date'])
 			patch.save()
 			return patch
-	
-# class PatchCreationsSerializer(serializers.ModelSerializer):
-# 	semester = serializers.CharField(max_length=50)
-# 	close_date = serializers.DateField()
-# 	def create(self, clean_data):
-# 		patch = Patch.objects.create(semester=clean_data['semester'])
-# 		patch.save()
-# 		return patch
 
 class SubmissionsSerializer(serializers.ModelSerializer):
+	patch = PatchSerializer(read_only=True)
 	class Meta:
 		model = Submissions
 		fields = '__all__'
+	def create(self, student, patch, file_name):
+		submission = Submissions.objects.create(student = student, file_upload = file_name, patch = patch)
+		submission.save()
+		return submission
