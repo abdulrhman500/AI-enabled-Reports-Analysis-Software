@@ -61,6 +61,8 @@ def validate_patch(data):
 
     if not semester:
         return {"error":'Semester is required'}
+    if Patch.objects.filter(semester=semester).exists():
+        return {"error":'This semester is already registered for this year. Please chose another semester form the list.'}
     if not close_date:
         return {"error":'Close date is required'}
     if not start_date and Patch.objects.filter(open=True).exists():
@@ -73,5 +75,20 @@ def validate_patch(data):
         cur_start_date = datetime.datetime.now().replace(hour=0,minute=0,second=0,microsecond=0, day=p.start_date.day,month=p.start_date.month,year=p.start_date.year)
         cur_close_date = datetime.datetime.now().replace(hour=0,minute=0,second=0,microsecond=0, day=p.close_date.day,month=p.close_date.month,year=p.close_date.year)
         if (cur_start_date <= patch_close_date and patch_start_date <= cur_close_date) or (cur_start_date >= patch_close_date and patch_start_date >= cur_close_date) :
-            return {"error":'This patch overlaps with an existing patch.'}
+            if not p.processed:
+                return {"error":'This patch overlaps with an existing patch.'}
+    return data
+
+def validate_sub_data(data):
+    sub_ids = data['sub_ids']
+    verdict = data['verdict']
+    if not 'note' in data:
+        data['note'] = ''
+    note = data['note']
+    if not sub_ids or not Submissions.objects.filter(id__in = sub_ids).exists():
+        return {"error":"Invalid submission ids."}
+    if not verdict in ['Approved', 'Rejected','Pending']:
+        return {"error":"Invalid verdict."}
+    if not isinstance(note, str):
+        return {"error":"Invalid value for note."}
     return data

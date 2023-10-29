@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model, authenticate
 from main.models import Patch,Submissions
+import datetime
+from pytz import timezone
 
 UserModel = get_user_model()
 
@@ -35,11 +37,17 @@ class PatchSerializer(serializers.ModelSerializer):
 
 	def create(self, clean_data):
 		if 'start_date' in clean_data.keys():
-			patch = Patch.objects.create(semester=clean_data['semester'],close_date=clean_data['close_date'],start_date=clean_data['start_date'],open=False)
+			start_date = datetime.datetime.strptime(clean_data['start_date'], '%Y-%m-%d').replace(tzinfo=datetime.timezone.utc)
+			start_date=start_date.astimezone(timezone('Africa/Cairo'))
+			close_date = datetime.datetime.strptime(clean_data['close_date'], '%Y-%m-%d').replace(tzinfo=datetime.timezone.utc)
+			close_date=close_date.astimezone(timezone('Africa/Cairo'))
+			patch = Patch.objects.create(semester=clean_data['semester'],close_date=close_date,start_date=start_date,open=False)
 			patch.save()
 			return patch
 		else:
-			patch = Patch.objects.create(semester=clean_data['semester'],close_date=clean_data['close_date'])
+			close_date = datetime.datetime.strptime(clean_data['close_date'], '%Y-%m-%d').replace(tzinfo=datetime.timezone.utc)
+			close_date=close_date.astimezone(timezone('Africa/Cairo'))
+			patch = Patch.objects.create(semester=clean_data['semester'],close_date=close_date)
 			patch.save()
 			return patch
 
@@ -52,3 +60,15 @@ class SubmissionsSerializer(serializers.ModelSerializer):
 		submission = Submissions.objects.create(student = student, file_upload = file_name, patch = patch)
 		submission.save()
 		return submission
+
+class StudentSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = UserModel
+		fields = ('username', 'user_id')
+
+
+class AdminSubmissionsSerializer(serializers.ModelSerializer):
+	student = StudentSerializer(read_only=True)
+	class Meta:
+		model = Submissions
+		fields = '__all__'

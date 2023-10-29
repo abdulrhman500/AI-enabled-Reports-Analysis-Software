@@ -25,14 +25,16 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 const actions = [
   { icon: <LibraryAddIcon />, name: 'Start instant patch', id: 'start' },
   { icon: <EditCalendarIcon />, name: 'Schedual patch', id: 'schedual' },
-  { icon: <SaveAltIcon />, name: 'Export patch results', id: 'export' },
 ];
-const AdminDial = () => {
+const AdminHomePageDial = () => {
     const [openDialog, setOpenDialog] = useState()
     const [uploading, setUploading] = useState(false)
     const [changed, setChanged] = useState(false) 
     const todaysDate = new Date().toISOString().split("T")[0]
     const dialogRef = useRef()
+
+    const reload = () => window.location.reload(false);
+
     const handleDial = (id) => {
         setOpenDialog(id)
     }
@@ -57,6 +59,7 @@ const AdminDial = () => {
             setOpenDialog('')
             setUploading(false)
             swal.fire('Created patch Successfully', 'Successful', 'success');
+            setTimeout( reload, 3000)
             }).catch((error)=>{
               console.log(error);
               setUploading(false)
@@ -155,4 +158,4 @@ const AdminDial = () => {
     );
 }
  
-export default AdminDial;
+export default AdminHomePageDial;

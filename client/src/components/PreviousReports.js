@@ -31,7 +31,7 @@ const PreviousReports = () => {
   </div> 
     )
     return (
-        <Grid container>
+        <Grid container gap={2}>
           {data.map((sub,idx) => 
             <Grid item xs={12} key={idx}>
               <Card>
@@ -48,12 +48,17 @@ const PreviousReports = () => {
                 </Grid>
                 {sub.patch.processed? 
                 <Grid item xs={12}>
-                <Typography marginTop={'20px'} textAlign={'center'}>Verdict / {sub.verdict}</Typography>
-              </Grid>:
-              <Grid item xs={12}>
-              <Typography marginTop={'20px'} color={'gray'} textAlign={'center'}>{sub.patch.open? "Awaiting patch closing" : "Awaiting confirmation"}</Typography>
-            </Grid>
-              }
+                  <Typography marginTop={'20px'} textAlign={'center'} color={sub.verdict == 'Approved'? 'darkcyan': '#AA4A44'}>{sub.verdict}</Typography>
+                </Grid>:
+                <Grid item xs={12}>
+                  <Typography marginTop={'20px'} color={'gray'} textAlign={'center'}>{sub.patch.open? "Awaiting patch closing" : "Awaiting confirmation"}</Typography>
+                </Grid>
+                }
+                {sub.patch.processed && sub.note? 
+                <Grid item xs={12}>
+                  <Typography marginTop={'20px'} textAlign={'center'} color={'GrayText'}>{sub.note}</Typography>
+                </Grid> : false
+                }
               </Grid>
             </CardContent>
               </Card>

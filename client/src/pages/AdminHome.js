@@ -1,5 +1,5 @@
 import { Box, Button, Card, CardContent, Grid, Typography } from "@mui/material";
-import AdminDial from "../components/AdminDial";
+import AdminHomePageDial from "../components/AdminHomePageDial";
 const AdminHome = () => {
     return (
         <Box>
@@ -83,14 +83,14 @@ const AdminHome = () => {
                                         <Typography marginTop='10px' color='gray'>automatically closes on 12/12/2023</Typography>
                                     </Grid>
                                     <Grid item xs={6}>
-                                        <Grid container spacing={2} >
+                                        {/* <Grid container spacing={2} >
                                             <Grid item xs={6}>
                                                 <Button variant="outlined" color='warning' sx={{width:'100px'}} >Run Tests</Button>
                                             </Grid>
                                             <Grid item xs={6}>
                                                 <Button variant="outlined" color="error" sx={{width:'100px'}} >Close</Button>
                                             </Grid>
-                                        </Grid>
+                                        </Grid> */}
                                     </Grid>
                                 </Grid>
                             </Box>
@@ -98,7 +98,7 @@ const AdminHome = () => {
                     </Card>
                 </Grid>
             </Grid>
-            <AdminDial />
+            <AdminHomePageDial />
         </Box>
     );
 }

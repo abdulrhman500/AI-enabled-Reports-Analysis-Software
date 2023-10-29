@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, ThemeProvider, CssBaseline } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
@@ -8,6 +8,7 @@ import theme from "../theme.js";
 import { useUserContext } from "../hooks/useUserContext.js";
 import Loading from "./Loading.js";
 import { Navigate, Outlet } from "react-router-dom";
+import { api } from "../utils/AxiosUtils.js";
 
 const AdminMainLayout = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -16,6 +17,31 @@ const AdminMainLayout = () => {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+  const [patchData, setPatchData] = useState(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(()=>{
+    if (!patchData){
+      api({
+        method: 'get',
+        url: '/user/patch',
+      }).then((res)=>{
+        if (res.data.data) {
+          console.log(res.data.data);
+          setPatchData(res.data.data)
+          setLoading(false)
+        }
+        else {
+          setLoading(false)
+          setPatchData([])
+        }
+      }).catch((error)=>{
+        console.log(error);
+        setLoading(false)
+      })
+    }
+  },[])
+
   const drawerWidth = 256;
   if(!user) return <Loading />
   else if(!user.username) return (<Navigate to="/login" />)
@@ -24,7 +50,7 @@ const AdminMainLayout = () => {
         <ThemeProvider theme={theme}>
         <Box sx={{ display: "flex", minHeight: "100vh" }}>
           <CssBaseline />
-          <Box
+          {!loading? <Box
             component="nav"
             sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
           >
@@ -34,14 +60,16 @@ const AdminMainLayout = () => {
                 variant="temporary"
                 open={mobileOpen}
                 onClose={handleDrawerToggle}
+                patchData={patchData}
               />
             )}
 
             <Navigator
               PaperProps={{ style: { width: drawerWidth } }}
               sx={{ display: { sm: "block", xs: "none" } }}
+              patchData={patchData}
             />
-          </Box>
+          </Box> : false}
 
           <Box sx={{ flex: 1, display: "flex", flexDirection: "column" }}>
             <Header onDrawerToggle={handleDrawerToggle}/>

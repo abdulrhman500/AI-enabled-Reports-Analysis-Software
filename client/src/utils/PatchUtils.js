@@ -50,4 +50,10 @@ export const headCells = [
       disablePadding: true,
       label: 'Judgement',
     },
+    {
+      id: 'verdict',
+      numeric: false,
+      disablePadding: true,
+      label: 'Verdict',
+    },
 ];

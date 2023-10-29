@@ -16,19 +16,7 @@ import { Link } from 'react-router-dom';
 import PendingActionsIcon from '@mui/icons-material/PendingActions';
 import { useNavigate } from 'react-router-dom';
 import { Collapse } from '@mui/material';
-const categories = [
-  {
-    id: "Patches",
-    children: [
-      { id: "Winter 23", icon: <PendingActionsIcon /> },
-      { id: "Spring 22", icon: <TaskAltIcon /> },
-      { id: "Winter 22", icon: <TaskAltIcon /> },
-      { id: "Spring 21", icon: <TaskAltIcon /> },
-      { id: "Winter 21", icon: <TaskAltIcon /> },
-      { id: "Spring 20", icon: <TaskAltIcon /> },
-    ],
-  },
-];
+import ScheduleIcon from '@mui/icons-material/Schedule';
 
 const item = {
   py: '2px',
@@ -46,7 +34,17 @@ const itemCategory = {
 };
 
 export default function Navigator(props) {
-    const { ...other } = props;
+    const { patchData,...other } = props;
+    const categories = [
+      {
+        id: "Patches",
+        children: [],
+      },
+    ];
+    patchData.forEach(patch => {
+      let category = {id: patch.semester, patch_id: patch.id, icon: (patch.processed)?  <TaskAltIcon/>: patch.open?  <ScheduleIcon /> : <PendingActionsIcon />  }
+      categories[0].children.push(category)
+    });
     const [openCategory, setOpenCategory] = useState(null);
     const [activeButton, setActiveButton] = useState('');
     const navigate = useNavigate()
@@ -83,9 +81,9 @@ export default function Navigator(props) {
               </ListItem>
                 <Collapse in={openCategory === id} timeout='auto'>
                   <List>
-                    {children.map(({ id: childId, icon }) => (
+                    {children.map(({ id: childId, patch_id, icon }) => (
                       <Link 
-                      to={`/admin/patch/${childId.toLowerCase().replace(' ','-')}`} 
+                      to={`/admin/patch/${patch_id}/${childId.toLowerCase().replace(' ','-')}`} 
                       replace={true}
                       style={{ textDecoration: 'none' }} key={childId}>
                         <ListItem disablePadding>

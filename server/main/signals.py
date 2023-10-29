@@ -3,7 +3,6 @@ from django.dispatch import receiver
 from background_task.models import Task
 from .tasks import my_scheduled_task
 import datetime
-import pytz
 from pytz import timezone
 
 @receiver(post_migrate)

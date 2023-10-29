@@ -1,28 +1,24 @@
 import * as React from 'react';
-import { useEffect } from 'react';
-import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react';
 import { alpha } from '@mui/material/styles';
 import DoneAllIcon from '@mui/icons-material/DoneAll';
-import FilterListIcon from '@mui/icons-material/FilterList';
 import { visuallyHidden } from '@mui/utils';
-import { Button, Tooltip, IconButton, Checkbox, Paper, Typography, Toolbar, TableSortLabel, TableRow, TableHead, TableContainer, TableCell, TableBody, Table, Box } from '@mui/material';
+import { Button, Checkbox, Paper, Typography, Toolbar, TableSortLabel, TableRow, TableHead, TableContainer, TableCell, TableBody, Table, Box, Card, CardContent, Grid, ListItem, ListItemText, Collapse, List, Tooltip } from '@mui/material';
 import { getComparator, stableSort, headCells} from '../utils/PatchUtils'
 import { useParams } from 'react-router-dom';
-const rows = [
-    {name:'Abdelrahman Saleh Hassan Saleh 01',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'accepted'},
-    {name:'Abdelrahman Saleh Hassan Saleh 02',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'accepted'},
-    {name:'Abdelrahman Saleh Hassan Saleh 03',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'accepted'},
-    {name:'Abdelrahman Saleh Hassan Saleh 04',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'accepted'},
-    {name:'Abdelrahman Saleh Hassan Saleh 05',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'accepted'},
-    {name:'Abdelrahman Saleh Hassan Saleh 06',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'accepted'},
-    {name:'Abdelrahman Saleh Hassan Saleh 07',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'rejected'},
-    {name:'Abdelrahman Saleh Hassan Saleh 08',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'rejected'},
-    {name:'Abdelrahman Saleh Hassan Saleh 09',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'rejected'},
-    {name:'Abdelrahman Saleh Hassan Saleh 10',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'rejected'},
-    {name:'Abdelrahman Saleh Hassan Saleh 11',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'rejected'},
-    {name:'Abdelrahman Saleh Hassan Saleh 12',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'rejected'},
-    {name:'Abdelrahman Saleh Hassan Saleh 13',id:'52-11256',filename:'Abdelrahman Saleh Hassan Saleh  52-11256 - Abdelrahman Saleh',judgement:'rejected'},
-];
+import swal from 'sweetalert2'
+import { api } from '../utils/AxiosUtils';
+import Loading from './Loading';
+import { formatDistanceToNow, format } from 'date-fns';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import { BarChart } from '@mui/x-charts/BarChart';
+import AdminPatchDial from './AdminPatchDial';
+import ChangeVerdict from './ChangeVerdict';
+
+const valueFormatter = (value) => `${value} report`;
+
+
 const EnhancedTableHead = (props) => {
   const { onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort, puplished } =
     props;
@@ -45,6 +41,7 @@ const EnhancedTableHead = (props) => {
               active={orderBy === headCell.id}
               direction={orderBy === headCell.id ? order : 'asc'}
               onClick={createSortHandler(headCell.id)}
+              sx={{color:'darkgoldenrod',marginLeft:"18px"}}
             >
               {headCell.label}
               {orderBy === headCell.id ? (
@@ -72,7 +69,7 @@ const EnhancedTableHead = (props) => {
 }
 
 function EnhancedTableToolbar(props) {
-  const { numSelected, patch } = props;
+  const { numSelected, setOpenEdit } = props;
   return (
     <Toolbar
       sx={{
@@ -93,41 +90,83 @@ function EnhancedTableToolbar(props) {
         >
           {numSelected} selected
         </Typography>
-      ) : (
-        <Typography
-          sx={{ flex: '1 1 100%' }}
-          variant="h6"
-          id="tableTitle"
-          component="div"
-          color={'GrayText'}
-          marginLeft={'15px'}
-        >
-          {`${patch.charAt(0).toUpperCase()}${patch.replace('-',' ').substring(1)}`}
-        </Typography>
-      )}
+      ) : false}
 
       {numSelected > 0 ? (
-          <Button sx={{width:'200px'}}>
-            <DoneAllIcon />Change status
+          <Button sx={{width:'200px'}} onClick={()=> setOpenEdit(true)}>
+            <DoneAllIcon />Change verdict
           </Button>
-          ) : (
-        <Tooltip title="Filter list">
-          <IconButton>
-            <FilterListIcon />
-          </IconButton>
-        </Tooltip>
-      )}
+          ) : false}
     </Toolbar>
   );
 }
 
-export default function EnhancedTable() {
+export default function PatchView() {
     const [order, setOrder] = React.useState('asc');
     const [orderBy, setOrderBy] = React.useState('calories');
     const [selected, setSelected] = React.useState([]);
-    const [puplished, setPuplished] = React.useState(true)
 
-    const { patch } = useParams()
+    const [patchData,setPatchData] = useState(null)
+    const [submissionsData,setSubmissionsData] = useState([])
+    const [loading,setLoading] = useState(true)
+    const { patch_id } = useParams()
+    const [statisticsOpen, setStatisticsOpen] = useState(false)
+    const [statistics, setStatistics] = useState([])
+    
+    const [openEdit, setOpenEdit] = useState(false)
+
+    useEffect(()=>{
+      api({
+        method: 'get',
+        url: `/user/patch/${patch_id}/data`,
+      }).then((res)=>{
+        if (!res.data.error) {
+          // console.log(res.data);
+          setPatchData(res.data.patch)
+          let temp = []
+          let accepted = 0
+          let falseAccepted = 0
+          let rejected = 0
+          let falseRejected = 0
+          res.data.submissions.forEach(sub => {
+            if (sub.judgement) accepted++
+            else rejected++
+            if (sub.judgement && ['Rejected','Pending'].includes(sub.verdict)) falseAccepted++
+            if (!sub.judgement && ['Approved'].includes(sub.verdict)) falseRejected++
+
+            let id_str = `${sub.student.user_id}`
+              if (id_str.length >= 2) {
+              const leftmostTwoDigits = id_str.slice(0, 2);
+              const remainingDigits = id_str.slice(2);
+              
+              id_str = `${leftmostTwoDigits}-${remainingDigits}`;
+            }
+            let row = {name:sub.student.username, id:id_str,filename:sub.file_upload, judgement:sub.judgement? "Approved":"Rejected",verdict:sub.verdict,subId: sub.id, note: sub.note}
+            temp.push(row)
+          });
+          setSubmissionsData(temp)
+          setStatistics([{
+            accepted,
+            rejected,
+            falseAccepted,
+            falseRejected,
+            total: accepted + rejected,
+            type: res.data.patch.semester,
+          }])
+          setLoading(false)
+        }
+        else {
+          swal.fire('Server Error', 'Error', 'error');
+          setLoading(false)
+        }
+      }).catch((error)=>{
+        console.log(error);
+        setLoading(false)
+        swal.fire('Server Error', 'Error', 'error');
+      })
+    },[patch_id])
+
+
     const handleRequestSort = (event, property) => {
       const isAsc = orderBy === property && order === 'asc';
       setOrder(isAsc ? 'desc' : 'asc');
@@ -135,21 +174,19 @@ export default function EnhancedTable() {
     };
 
     const handleSelectAllClick = (event) => {
-        if(puplished) return
         if (event.target.checked) {
-          const newSelected = rows.map((n) => n.name);
+          const newSelected = submissionsData.map((n) => n.subId);
           setSelected(newSelected);
           return;
         }
         setSelected([]);
     };
 
-    const handleClick = (event, name) => {
-        if(puplished) return
-        const selectedIndex = selected.indexOf(name);
+    const handleClick = (event, subId) => {
+        const selectedIndex = selected.indexOf(subId);
         let newSelected = [];
         if (selectedIndex === -1) {
-          newSelected = newSelected.concat(selected, name);
+          newSelected = newSelected.concat(selected, subId);
         } else if (selectedIndex === 0) {
           newSelected = newSelected.concat(selected.slice(1));
         } else if (selectedIndex === selected.length - 1) {
@@ -163,22 +200,84 @@ export default function EnhancedTable() {
         setSelected(newSelected);
     };
 
-    const isSelected = (name) => selected.indexOf(name) !== -1;
+    const isSelected = (subId) => selected.indexOf(subId) !== -1;
 
     const visibleRows = React.useMemo(
       () =>
-        stableSort(rows, getComparator(order, orderBy)).slice(0,rows.length),
-      [order, orderBy],
+        stableSort(submissionsData, getComparator(order, orderBy)).slice(0,submissionsData.length),
+      [order, orderBy, submissionsData],
     );
-    useEffect(()=>{
-      if(patch=='winter-23') setPuplished(false)
-      else setPuplished(true)
-    },[patch])
 
+    if (loading) return (<Loading />)
+    if ( !patchData ) return( false )
     return (
       <Box sx={{ width: '100%' }}>
+        <Card sx={{marginBottom:'20px'}}>
+          <CardContent sx={{display:'flex',flexDirection:'column',padding:'10px 20px'}} >
+            <Grid container gap={2}>
+              <Grid item xs={12}>
+                <Typography textAlign={'center'}variant="h5" color='gray'>{patchData.semester} Patch</Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Typography textAlign={'center'} variant="h6" color={patchData.open? "green":'#AB4B52'}>{(patchData.processed)?  "Finalized": patchData.open?  "Open" : (new Date(patchData.start_date) < new Date())? "Closed":"Scheduled"}</Typography>
+              </Grid>
+              {
+                (new Date(patchData.start_date) < new Date())?
+                  <Grid item xs={12} >
+                    <Typography textAlign={'center'}>Opened <span style={{color:'Highlight'}}>{formatDistanceToNow(new Date(patchData.start_date), { addSuffix: true })}</span> <span style={{color:'gray'}}>({format(new Date(patchData.start_date), 'MMM do yy')})</span></Typography>
+                </Grid>
+                : 
+                <Grid item xs={12} >
+                <Typography textAlign={'center'}>Openes in <span style={{color:'Highlight'}}>{formatDistanceToNow(new Date(patchData.start_date))}</span> <span style={{color:'gray'}}>({format(new Date(patchData.start_date), 'MMM do yy')})</span></Typography>
+            </Grid>
+              }
+              {
+                (new Date(patchData.close_date) > new Date())?
+                <Grid item xs={12}>
+                  <Typography textAlign={'center'}>Closes in <span style={{color:'darkcyan'}}>{formatDistanceToNow(new Date(patchData.close_date))}</span> <span style={{color:'gray'}}>({format(new Date(patchData.close_date), 'MMM do yy')})</span></Typography>
+                </Grid>
+                : false
+              }
+              <Grid item xs={12} >
+                <Box>
+                  <ListItem sx={{ py: 2, px: 3 }} onClick={() => setStatisticsOpen(!statisticsOpen)}>
+                    <ListItemText sx={{textAlign:'center', color:'maroon',marginLeft:'24px'}}>Patch Statistics
+                    </ListItemText>
+                    {statisticsOpen? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                  </ListItem>
+                  <Collapse in={statisticsOpen} timeout='auto'>
+                    <List>
+                      <ListItem disablePadding>
+                        <BarChart
+                          dataset={statistics}
+                          xAxis={[{ scaleType: 'band', dataKey: 'type' }]}
+                          series={[
+                            { dataKey: 'accepted', label: 'Accepted', valueFormatter },
+                            { dataKey: 'rejected', label: 'Rejected', valueFormatter },
+                            { dataKey: 'falseAccepted', label: 'False accepted', valueFormatter },
+                            { dataKey: 'falseRejected', label: 'False rejected', valueFormatter },
+                            { dataKey: 'total', label: 'Total submissions', valueFormatter },
+                          ]}
+                          colors={['green','orange','darkcyan','red','purple']}
+                          yAxis={[
+                              {
+                              label: 'Reports',
+                              max: ( statistics[0].total+ 10) - (statistics[0].total + 10) % 10
+                              },
+                          ]}
+                          width={ 800 }
+                          height={ 300 }
+                        />
+                      </ListItem>
+                    </List>
+                  </Collapse>
+                  </Box>
+              </Grid>
+            </Grid>
+          </CardContent>
+        </Card>
         <Paper sx={{ width: '100%', mb: 2 }}>
-          <EnhancedTableToolbar numSelected={selected.length} patch={patch} puplished={puplished} />
+          <EnhancedTableToolbar numSelected={selected.length} patch={patchData.semester} setOpenEdit={setOpenEdit} />
           <TableContainer>
             <Table
               sx={{ minWidth: 750 }}
@@ -191,30 +290,32 @@ export default function EnhancedTable() {
                 orderBy={orderBy}
                 onSelectAllClick={handleSelectAllClick}
                 onRequestSort={handleRequestSort}
-                rowCount={rows.length}
-                puplished={puplished}
+                rowCount={submissionsData.length}
+                puplished={patchData.processed}
               />
               <TableBody>
                 {visibleRows.map((row, index) => {
-                  const isItemSelected = isSelected(row.name);
+                  const isItemSelected = isSelected(row.subId);
                   const labelId = `enhanced-table-checkbox-${index}`;
 
                   return (
+                    <Tooltip title={row.note? row.note : "No note"}>
                     <TableRow
                       hover
-                      onClick={(event) => handleClick(event, row.name)}
+                      onClick={(event) => handleClick(event, row.subId)}
                       role="checkbox"
                       aria-checked={isItemSelected}
                       tabIndex={-1}
-                      key={row.name}
+                      key={row.subId}
                       selected={isItemSelected}
                       sx={{ cursor: 'pointer' }}
                     >
                       <TableCell align="center" component="th" id={labelId} scope="row" padding="none"> {row.name}</TableCell>
                       <TableCell align="center">{row.id}</TableCell>
                       <TableCell align="center">{row.filename}</TableCell>
-                      <TableCell align="center"><Typography color={row.judgement=='accepted'? 'Highlight': 'red' }>{row.judgement}</Typography></TableCell>
-                      {!puplished && 
+                      <TableCell align="center"><Typography color={row.judgement=='Accepted'? 'darkcyan': '#AA4A44' }>{row.judgement}</Typography></TableCell>
+                      <TableCell align="center"><Typography color={row.verdict=='Approved'? 'darkcyan': '#AA4A44' }>{row.verdict}</Typography></TableCell>
+                      {!patchData.processed && 
                       <TableCell padding="checkbox">
                         <Checkbox
                           color="primary"
@@ -225,13 +326,15 @@ export default function EnhancedTable() {
                         />
                       </TableCell>}
                     </TableRow>
+                    </Tooltip>
                   );
                 })}
               </TableBody>
             </Table>
           </TableContainer>
         </Paper>
-
+        <AdminPatchDial patchData={patchData} submissionsData={submissionsData}/>
+        <ChangeVerdict openEdit={openEdit} setOpenEdit={setOpenEdit} selected={selected} patchData={patchData} submissionsData={submissionsData} />
       </Box>
     );
 }

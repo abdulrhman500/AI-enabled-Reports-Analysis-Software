@@ -2,9 +2,9 @@ from django.contrib.auth import get_user_model, login, logout
 from rest_framework.authentication import SessionAuthentication
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializers import UserRegisterSerializer, UserLoginSerializer, UserSerializer, PatchSerializer, SubmissionsSerializer
+from .serializers import UserRegisterSerializer, UserLoginSerializer, UserSerializer, PatchSerializer, SubmissionsSerializer, AdminSubmissionsSerializer
 from rest_framework import permissions, status
-from .validations import custom_validation, validate_email, validate_password, validate_patch
+from .validations import custom_validation, validate_email, validate_password, validate_patch, validate_sub_data
 from main.models import AppUser,Patch,Submissions
 from django.http import JsonResponse
 from django.core.mail import send_mail
@@ -93,8 +93,8 @@ class PatchsView(APIView):
 		if(user.type == 'Student'):
 			return JsonResponse({'error':'You are not authorized'}, status=500)
 		data = Patch.objects.all()
-		serializer = PatchSerializer(data)
-		return Response({'patches': serializer.data}, status=status.HTTP_200_OK)
+		serializer = PatchSerializer(data, many = True)
+		return Response({'data': serializer.data}, status=status.HTTP_200_OK)
 	##
 	def post(self, request):
 		user = request.user
@@ -112,6 +112,79 @@ class PatchsView(APIView):
 				serializer = PatchSerializer(patch)
 				return JsonResponse({'message': 'successully created patch','data':serializer.data}, status=status.HTTP_200_OK)
 				
+		return Response(status=status.HTTP_400_BAD_REQUEST)
+
+class PatchView(APIView):
+	permission_classes = (permissions.IsAuthenticated,)
+	authentication_classes = (SessionAuthentication,)
+	##
+	def get(self, request, patch_id, action):
+		if action == 'data':
+			user = request.user
+			if(user.type == 'Student'):
+				return JsonResponse({'error':'You are not authorized'}, status=500)
+			if not Patch.objects.filter(id = patch_id).exists():
+				return JsonResponse({'error':'No such patch'}, status=500)
+			patch = Patch.objects.get( id=patch_id)
+			patch_serializer = PatchSerializer(patch)
+			submissions = Submissions.objects.filter(patch=patch)
+			submissions_serializer = AdminSubmissionsSerializer(submissions, many = True)
+			return Response({'patch': patch_serializer.data, 'submissions': submissions_serializer.data}, status=status.HTTP_200_OK)
+		return JsonResponse({'error':'You are not authorized'}, status=500)
+	##
+	def post(self, request, patch_id, action):
+		user = request.user
+		if(user.type == 'Student'):
+			return JsonResponse({'error':'You are not authorized'}, status=500)
+		if not Patch.objects.filter(id = patch_id).exists():
+				return JsonResponse({'error':'No such patch'}, status=500)
+		
+		patch = Patch.objects.get( id=patch_id)
+		if action == 'save':
+			if patch.open:
+				return JsonResponse({'error':"Patch is still open. Patchs must be closed in order to finalize it's results."}, status=500)
+			if patch.start_date > datetime.datetime.now(timezone('UTC')).astimezone(timezone('Africa/Cairo')):
+				return JsonResponse({'error':"Patch has not open yet. Finalizing a patch that was never open will result in an empty patch."}, status=500)
+			patch.processed = True
+			patch.save()
+			return Response({'message':'Patch finalized successfully.'}, status=status.HTTP_200_OK)
+		
+		if action == 'delete':
+			if patch.open:
+				return JsonResponse({'error':"Patch is still open. Patchs can not be deleted once opened."}, status=500)
+			if patch.start_date < datetime.datetime.now(timezone('UTC')).astimezone(timezone('Africa/Cairo')):
+				return JsonResponse({'error':"Patch can not be deleted. Patchs can not be deleted once opened."}, status=500)
+			patch.delete()
+			return Response({'message':'Patch deleted successfully.'}, status=status.HTTP_200_OK)
+		if action == 'close':
+			if patch.open:
+				patch.open = False
+				patch.save()
+				return Response({'message':'Patch closed successfully.'}, status=status.HTTP_200_OK)
+			else:
+				return JsonResponse({'error':"Patch is not open. Patchs must be open to be closed."}, status=500)
+		if action == 'resume':
+			if not patch.open:
+				if patch.start_date > datetime.datetime.now(timezone('UTC')).astimezone(timezone('Africa/Cairo')):
+					return JsonResponse({'error':"Patch is not open yet. Patchs can not be started ahead of schedual."}, status=500)
+				if patch.close_date < datetime.datetime.now(timezone('UTC')).astimezone(timezone('Africa/Cairo')):
+					return JsonResponse({'error':"Patch duration ended. Patchs can not be resumed past duration."}, status=500)
+				patch.open = True
+				patch.save()
+				return Response({'message':'Patch resumed successfully.'}, status=status.HTTP_200_OK)
+			else:
+				return JsonResponse({'error':"Patch is not closed. Patchs must be closed to be opened."}, status=500)
+		
+		if action == 'update':
+			clean_data = validate_sub_data(request.data)
+			subs = Submissions.objects.filter(id__in = clean_data['sub_ids'])
+			for sub in subs:
+				print(clean_data['verdict'])
+				sub.verdict =  clean_data['verdict']
+				sub.note =  clean_data['note']
+				sub.save()
+			return Response({'message':'Submissions updated successfully.'}, status=status.HTTP_200_OK)
+		
 		return Response(status=status.HTTP_400_BAD_REQUEST)
 
 class StudentPatchView(APIView):

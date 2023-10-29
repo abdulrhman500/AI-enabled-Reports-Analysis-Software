@@ -27,7 +27,7 @@ function App() {
         <Route path="/admin" element={<MiddleWare type="Admin"/>} >
           <Route path="/admin" element={<AdminMainLayout/>} >
             <Route exact path="/admin/" element={<AdminHome />} />
-            <Route exact path="/admin/patch/:patch" element={<PatchView />} />
+            <Route exact path="/admin/patch/:patch_id/:patch" element={<PatchView />} />
           </Route>
         </Route>
 

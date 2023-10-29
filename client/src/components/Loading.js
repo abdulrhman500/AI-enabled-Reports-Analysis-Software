@@ -9,8 +9,8 @@ const variants = ['h1', 'h2', 'h1', 'h2', 'h1'];
 const Loading = () => {
   return (
     <div>
-      {variants.map((variant) => (
-        <Typography component="div" key={variant} variant={variant}>
+      {variants.map((variant, index) => (
+        <Typography component="div" key={index} variant={variant}>
             <Skeleton />
         </Typography>
       ))}

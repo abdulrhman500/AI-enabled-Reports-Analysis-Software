@@ -75,7 +75,7 @@ class Submissions(models.Model):
 	judgement = models.BooleanField(default = False)
 	upload_date = models.DateTimeField(default=get_date)
 	TYPES = [('Approved', "Approved"),('Rejected', "Rejected"),("Pending","Pending")]
-	verdict = models.CharField(choices = TYPES, default = 'Pending')
+	verdict = models.CharField(choices = TYPES, default = 'Rejected')
 	created_at = models.DateTimeField(auto_now_add = True)
 	patch = models.ForeignKey(Patch, on_delete = models.CASCADE)
 	note = models.CharField(max_length=500, null=True)
